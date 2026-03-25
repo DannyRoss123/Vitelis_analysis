@@ -586,36 +586,104 @@ with tab_kpi:
 # ============================================================================
 # TAB: Run Diffs
 # ============================================================================
+
+# This tab compares the current run to the most recent previous run for the same company domain.
+# It summarizes what changed in overall score, KPI scores and confidence, and which citation sources 
+# were added or removed, with a simple one line reason for the biggest movers. It also warns if the 
+# two runs used different settings like model or temperature, and lets you drill down via a
+# filtered table and citation details.
+
 with tab_diff:
     st.markdown("### Run to run diffs")
 
-    current_snap = build_snapshot(report_data, report_path="")
-    prev_path = find_previous_snapshot_for_domain(domain, exclude_run_id=run_id)
+    current_snap = build_snapshot(report_data, report_path="")  # build a compact snapshot from the currently loaded report
+    prev_path = find_previous_snapshot_for_domain(domain, exclude_run_id=run_id)  # find the most recent prior snapshot for same domain
 
     if not prev_path:
-        st.info("No previous snapshot found for this domain yet. Run it again with a new run id to see diffs.")
-    else:
-        prev_snap = load_snapshot(str(prev_path))
-        d = diff_snapshots(prev_snap, current_snap)
+        st.info("No previous snapshot found for this domain yet. Run again with a new run id to see diffs.")
+        st.stop()  # nothing to compare against
 
+    prev_snap = load_snapshot(str(prev_path))  # load the prior snapshot JSON from disk
+    d = diff_snapshots(prev_snap, current_snap)  # compute a diff dict (summary + table + reasons)
+
+    cfg = d.get("config", {}) or {}  # old vs new run settings (model, temperature, etc.)
+    if cfg.get("changed"):
+        st.warning("Run settings differ between runs. Diffs may reflect config changes, not evidence changes.")
+        st.json(cfg)
+
+    st.write(  # headline score change
+        f"Overall score: {d['overall_old']:.2f} to {d['overall_new']:.2f}  delta {d['overall_delta']:+.2f}"
+    )
+
+    s = d.get("summary", {}) or {}  # short summary counts
+    st.write(
+        f"KPIs changed: {s.get('total_kpis_changed', 0)}  "
+        f"Citations added: {s.get('total_citations_added', 0)}  "
+        f"Citations removed: {s.get('total_citations_removed', 0)}"
+    )
+
+    rag = d.get("rag_eval", {}) or {}  # optional: RAG eval summary deltas if report has rag_evaluation
+    if rag.get("old") or rag.get("new"):
+        st.write("RAG eval delta summary")
+        st.json(rag.get("delta", {}))
+
+    st.markdown("#### Biggest movers")  # top 5 KPI changes with a 1 line explanation
+    for r in (d.get("biggest_movers") or [])[:5]:
         st.write(
-            f"Overall score: {d['overall_old']:.2f} to {d['overall_new']:.2f}  delta {d['overall_delta']:+.2f}"
+            f"{r.get('kpi_id','')}: score {r.get('score_delta',0):+.2f}, conf {r.get('confidence_delta',0):+.2f}, {r.get('reason','')}"
         )
 
-        st.markdown("#### Biggest score changes")
-        for r in (d.get("top_score_changes") or [])[:10]:
-            st.write(
-                f"{r.get('kpi_id','')}: score {r.get('score_delta',0):+.2f}  conf {r.get('confidence_delta',0):+.2f}"
-            )
+    with st.expander("Show table view"):
+        rows = d.get("table_rows", []) or []  # full KPI diff rows
+        df = pd.DataFrame(rows)  # make it easy to filter and display
 
-        st.markdown("#### Biggest confidence changes")
-        for r in (d.get("top_confidence_changes") or [])[:10]:
-            st.write(
-                f"{r.get('kpi_id','')}: conf {r.get('confidence_delta',0):+.2f}  score {r.get('score_delta',0):+.2f}"
-            )
+        only_changes = st.toggle("Show only changed KPIs", value=True)  # hide noise
+        pillar_options = ["All"] + sorted(df["pillar"].fillna("Unknown").unique().tolist()) if len(df) else ["All"]
+        pillar_choice = st.selectbox("Pillar", pillar_options, index=0)  # filter by pillar
+        min_abs = st.slider("Min absolute score delta", 0.0, 5.0, 0.1, 0.1)  # filter by magnitude
 
-        with st.expander("Show full diff json"):
-            st.json(d)
+        if len(df):
+            if only_changes:
+                df = df[
+                    (df["score_delta"].abs() > 1e-9)
+                    | (df["confidence_delta"].abs() > 1e-9)
+                    | (df["new_citations_count"] > 0)
+                    | (df["removed_citations_count"] > 0)
+                ]
+            if pillar_choice != "All":
+                df = df[df["pillar"] == pillar_choice]
+            df = df[df["score_delta"].abs() >= min_abs]
+
+            show_cols = [  # keep the table compact and readable
+                "kpi_id",
+                "pillar",
+                "score_old",
+                "score_new",
+                "score_delta",
+                "confidence_old",
+                "confidence_new",
+                "confidence_delta",
+                "new_citations_count",
+                "removed_citations_count",
+                "reason",
+            ]
+            st.dataframe(df[show_cols], use_container_width=True, hide_index=True)
+
+    with st.expander("Show citation changes for one KPI"):
+        rows = d.get("table_rows", []) or []
+        if rows:
+            pick = st.selectbox("Pick KPI", sorted({r.get("kpi_id", "") for r in rows if r.get("kpi_id")}))
+            r = next((x for x in rows if x.get("kpi_id") == pick), None)
+            if r:
+                st.write("New citations")
+                for u in (r.get("new_citations") or [])[:50]:
+                    st.write(u)
+                st.write("Removed citations")
+                for u in (r.get("removed_citations") or [])[:50]:
+                    st.write(u)
+
+    with st.expander("Show full diff json"):
+        st.json(d)  # full raw diff for debugging
             
 # ============================================================================
 # TAB: Source Evaluation (NEW — v2 deep dive)
