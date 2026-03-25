@@ -3,85 +3,129 @@ from __future__ import annotations
 """
 batch_run.py
 
-Purpose
-- Run the pipeline for multiple companies so you have more than one dataset.
-- Run the same company twice so Run Diffs can compare two runs.
-- Keep runs more repeatable by setting env defaults (temperature, delay).
+Run the pipeline for a user-provided list of companies/domains, optionally repeated N times.
+This makes it easy to generate many runs for diffs without hardcoding companies.
 
-How to use
-- Activate venv
-- Ensure .env has OPENAI_API_KEY
-- Run: python3 batch_run.py
+Examples
+1) Provide companies inline (repeat twice):
+python3 batch_run.py --companies "Goldman Sachs|goldmansachs.com,JPMorgan Chase|jpmorganchase.com" --repeat 2
+
+2) Provide a file (one company per line):
+python3 batch_run.py --file companies.txt --repeat 2
+
+companies.txt format (one per line):
+Goldman Sachs|goldmansachs.com
+JPMorgan Chase|jpmorganchase.com
 """
 
-import os
+import argparse
 import subprocess
 import time
-import uuid
+from dataclasses import dataclass
+from pathlib import Path
 from typing import List, Tuple
 
-# List of (display name, domain) to run.
-# Add or remove companies here.
-COMPANIES: List[Tuple[str, str]] = [
-    ("Goldman Sachs", "goldmansachs.com"),
-    ("JPMorgan Chase", "jpmorganchase.com"),
-    ("Morgan Stanley", "morganstanley.com"),
-    ("BlackRock", "blackrock.com"),
-    ("Bloomberg", "bloomberg.com"),
-]
+
+@dataclass(frozen=True)
+class Company:
+    name: str
+    domain: str
 
 
-def run_one(company_name: str, company_domain: str, run_id: str, max_urls: int) -> None:
-    """
-    Runs run.py once using subprocess so this script can loop over many runs.
-    """
+def parse_companies_arg(s: str) -> List[Company]:
+    # Format: "Name|domain,Name2|domain2"
+    out: List[Company] = []
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    for p in parts:
+        if "|" not in p:
+            raise ValueError(f"Bad company entry '{p}'. Expected Name|domain.")
+        name, domain = [x.strip() for x in p.split("|", 1)]
+        if not name or not domain:
+            raise ValueError(f"Bad company entry '{p}'. Name and domain required.")
+        out.append(Company(name=name, domain=domain))
+    return out
+
+
+def parse_companies_file(path: str) -> List[Company]:
+    # Each non-empty non-comment line: Name|domain
+    out: List[Company] = []
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "|" not in line:
+            raise ValueError(f"Bad line '{line}'. Expected Name|domain.")
+        name, domain = [x.strip() for x in line.split("|", 1)]
+        out.append(Company(name=name, domain=domain))
+    return out
+
+
+def run_one(company: Company, run_id: str) -> None:
     cmd = [
         "python3",
         "run.py",
         "--company-name",
-        company_name,
+        company.name,
         "--company-domain",
-        company_domain,
+        company.domain,
         "--run-id",
         run_id,
-        "--max-urls",
-        str(max_urls),
     ]
     print("Running:", " ".join(cmd))
     subprocess.check_call(cmd)
 
 
 def main() -> None:
-    """
-    Main runner.
-    - Sets defaults for repeatability.
-    - Runs each company once.
-    - Runs one extra repeat run for Goldman Sachs so diffs are immediately demoable.
-    """
-    # Repeatability knobs.
-    # These only affect the pipeline if the code reads these env vars.
-    os.environ.setdefault("OPENAI_TEMPERATURE", "0")
-    os.environ.setdefault("OPENAI_MIN_DELAY_SECONDS", "10")
-
-    # URL cap to help avoid 429 rate limits. Override by setting MAX_URLS in your shell.
-    max_urls = int(os.environ.get("MAX_URLS", "40"))
-
-    # First pass for all companies.
-    for name, domain in COMPANIES:
-        short = domain.split(".")[0]
-        run_id = f"{short}_{str(uuid.uuid4())[:6]}"
-        run_one(name, domain, run_id, max_urls=max_urls)
-
-        # Small pause between runs to reduce rate limit spikes.
-        time.sleep(2)
-
-    # Second pass for a single company, so you can diff two runs for the same domain.
-    run_one(
-        "Goldman Sachs",
-        "goldmansachs.com",
-        f"gs_{str(uuid.uuid4())[:6]}",
-        max_urls=max_urls,
+    parser = argparse.ArgumentParser(description="Run Vitelis for multiple companies and repeated runs.")
+    parser.add_argument(
+        "--companies",
+        default="",
+        help='Inline list: "Name|domain,Name2|domain2"',
     )
+    parser.add_argument(
+        "--file",
+        default="",
+        help="Path to companies file. Each line: Name|domain",
+    )
+    parser.add_argument(
+        "--repeat",
+        type=int,
+        default=2,
+        help="How many runs per company (default 2 so diffs work).",
+    )
+    parser.add_argument(
+        "--sleep",
+        type=float,
+        default=2.0,
+        help="Seconds to sleep between runs (helps rate limits).",
+    )
+    args = parser.parse_args()
+
+    if not args.companies and not args.file:
+        raise SystemExit('Provide --companies or --file. Example: --companies "Goldman Sachs|goldmansachs.com"')
+
+    companies: List[Company] = []
+    if args.companies:
+        companies.extend(parse_companies_arg(args.companies))
+    if args.file:
+        companies.extend(parse_companies_file(args.file))
+
+    # Deduplicate exact duplicates while preserving order
+    seen: set[Tuple[str, str]] = set()
+    unique: List[Company] = []
+    for c in companies:
+        key = (c.name.lower(), c.domain.lower())
+        if key not in seen:
+            seen.add(key)
+            unique.append(c)
+
+    for c in unique:
+        for i in range(1, args.repeat + 1):
+            # Deterministic run_id format so diffs are easy: shortdomain_r1, shortdomain_r2, etc.
+            short = c.domain.split(".")[0]
+            run_id = f"{short}_r{i}"
+            run_one(c, run_id)
+            time.sleep(args.sleep)
 
 
 if __name__ == "__main__":
