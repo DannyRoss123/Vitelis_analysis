@@ -1,0 +1,910 @@
+run_id: d814ad0c
+company_name: Orange S.A
+company_domain: orange.com
+timestamp: '2026-03-27T01:34:48.552633+00:00'
+url_count: 10
+kpi_results:
+- kpi_id: '1'
+  pillar: Strategy
+  type: rubric
+  score: 5.0
+  confidence: 0.55
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "In 2024, the laboratories focused on use cases designed to create tangible\
+      \ value for the company. \u201CPrediction is at the heart of this strategy.\
+      \ The second pillar is the deployment of generative AI for employees.\u201D\
+      \ Since its launch more than "
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: In the end, the e-commerce company used the outputs of generative AI to
+      retrain its Deep Learning model and boost its native performance. Building on
+      this success, and by combining AI approaches, the marketplace is now working
+      on a new vers
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "However, it also observed that sellers do not always provide accurate\
+      \ product categories. As Aur\xE9lie Gon\xE7alves, Strategy & Innovation Manager\
+      \ at Orange Business, points out: \u201CA miscategorized product can mean 20\
+      \ to 30% fewer sales.\u201D\n\nBy imp"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    retrieval_metrics:
+      hit_rate: 0.0
+      mrr: 0.0
+      ndcg: 0.0
+  baseline_score: 4.0
+  live_score: 4.0
+  score_split_delta: 0.0
+  scoring_distribution:
+    baseline_mean: 4.0
+    baseline_std: 0.0
+    baseline_raw_scores:
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    live_mean: 4.0
+    live_std: 0.0
+    live_raw_scores:
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+  quality_gates:
+    blocked: false
+    display_as_range: false
+    score_range_display: null
+    suppress_structural_score: false
+    competitor_bleed_detected: false
+    gates:
+      faithfulness_gate:
+        passed: null
+        reason: faithfulness_unavailable
+      stability_gate:
+        passed: true
+        reason: null
+        std: 0.0
+        score_range_display: null
+      source_coverage_gate:
+        passed: true
+        reason: null
+        primary_fraction: 1.0
+        primary_count: 3
+        total_count: 3
+      competitor_bleed_gate:
+        passed: true
+        reason: null
+        bleed_count: 0
+  score_attribution:
+    event_type: score_attribution
+    company_id: orange.com
+    kpi_id: '1'
+    delta: 1.0
+    attribution_type: prompt_change
+    new_score: 4.0
+    previous_score: 3.0
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4
+  prompt_hash: a52a36bccc10fec2b534d60c96d1d79f5bf3aaf1e9d18554e796ec5a64737520
+  mlflow_run_id: 3133f0583ff640bda53f2b3ec2f7d370
+- kpi_id: '2'
+  pillar: Strategy
+  type: rubric
+  score: 5.0
+  confidence: 0.47
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 9069dd78
+    url: https://www.orange.com/en/group/innovation/useful-innovation-that-enables-everyone-to-progress/ai-orange-adopts-pragmatic-and
+    quote: 'Optimizing AI for efficient networks and improved customer experience
+
+
+      AI integration optimizes our performance through a reliable and secure network.
+      It also enables more efficient and meaningful interactions with customers, while
+      increasi'
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "This ebook from Orange Business explores how organizations can turn AI\
+      \ potential into measurable value at scale. Unlock the real-world lessons behind\
+      \ AI at scale Featuring in-depth case studies from Banque Populaire \u2013 Caisse\
+      \ d\u2019\xC9pargne (BPCE"
+  - source_id: 1fd5e05f
+    url: https://techinformed.com/orange-business-genai-solution-meta-openai-african-languages-opentech/
+    quote: "In addition, Orange has secured direct access to OpenAI\u2019s models,\
+      \ which aim to help improve solutions across Europe, including AI-driven voice\
+      \ interactions for customers. [![Aryaka SASE Advertisement](\n\n[Personalized\
+      \ Feed](\n\n### [Dreamforce"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 2
+      tier2: 1
+      tier3: 0
+      avg: 1.33
+    corroboration_score: 0.3
+    unique_sources: 3
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          9069dd78: 28
+          2564949a: 30
+          1fd5e05f: 14
+        unique_sources: 3
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 3
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          9069dd78:
+            freshness_score: 0.247
+            newest_date: '2024-11-25T00:00:00+00:00'
+            dates_found: 2
+            age_days: 487
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+          1fd5e05f:
+            freshness_score: 0.651
+            newest_date: '2025-10-15T14:32:46+00:00'
+            dates_found: 1
+            age_days: 162
+      authority:
+        boost: 0.15
+        per_source:
+          9069dd78:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          1fd5e05f:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (techinformed.com), no authority signals
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 4
+        contradictions:
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: 2564949a
+          source_b: 9069dd78
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: strategic focus
+          claim_b: exploring
+          type: opposing_claims
+        confidence_penalty: -0.2
+        detection_method: regex
+    retrieval_metrics:
+      hit_rate: 0.0
+      mrr: 0.0
+      ndcg: 0.0
+  baseline_score: 5.0
+  live_score: 3.0
+  score_split_delta: -2.0
+  scoring_distribution:
+    baseline_mean: 5.0
+    baseline_std: 0.0
+    baseline_raw_scores:
+    - 5.0
+    - 5.0
+    - 5.0
+    - 5.0
+    - 5.0
+    live_mean: 3.0
+    live_std: 0.0
+    live_raw_scores:
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+  quality_gates:
+    blocked: false
+    display_as_range: false
+    score_range_display: null
+    suppress_structural_score: false
+    competitor_bleed_detected: false
+    gates:
+      faithfulness_gate:
+        passed: null
+        reason: faithfulness_unavailable
+      stability_gate:
+        passed: true
+        reason: null
+        std: 0.0
+        score_range_display: null
+      source_coverage_gate:
+        passed: true
+        reason: null
+        primary_fraction: 0.6667
+        primary_count: 2
+        total_count: 3
+      competitor_bleed_gate:
+        passed: true
+        reason: null
+        bleed_count: 0
+  score_attribution:
+    event_type: score_attribution
+    company_id: orange.com
+    kpi_id: '2'
+    delta: -1.0
+    attribution_type: prompt_change
+    new_score: 3.0
+    previous_score: 4.0
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4
+  prompt_hash: 07c63db9920e270580e905c9b9b05877127fd02b50b4ee457533fd197681633d
+  mlflow_run_id: 32546f33e8cd4d8e8d031f0c74c889a7
+- kpi_id: '3'
+  pillar: Strategy
+  type: rubric
+  score: 2.0
+  confidence: 0.34
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "Let\u2019s take a closer look at what it means and explore the best enterprise\
+      \ approaches to make a real impact, interview-style \U0001F609 What does RAG\
+      \ mean, and when is it used? Mick Levy: RAG\u2026](\n- [![Sovereign AI: The\
+      \ Smart Hybrid Approach For Speed "
+  - source_id: f5ba3770
+    url: https://www.gartner.com/reviews/market/unified-communications-as-a-service/vendor/orange-business
+    quote: "## Orange Business Ratings Overview Review weighting _\uE88F_ Reviewed\
+      \ in Last 12 Months [mail\\_outlineEmail Page](mailto:?subject=Unified%20Communications%20as%20a%20Service%20%20Reviews%20on%20Gartner%20Peer%20Insights&body=Hi,%20%0A%0A%20Chec"
+  - source_id: 9069dd78
+    url: https://www.orange.com/en/group/innovation/useful-innovation-that-enables-everyone-to-progress/ai-orange-adopts-pragmatic-and
+    quote: 'This approach aims to increase value across all our lines of business
+      and support app development, while ensuring that AI is accessible and beneficial
+      to all. [webreader]( "Ecoutez le texte avec ReadSpeaker webReader")
+
+
+      [Share](
+
+
+      ## How AI '
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 2
+      tier2: 1
+      tier3: 0
+      avg: 1.33
+    corroboration_score: 0.3
+    unique_sources: 3
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          2564949a: 30
+          f5ba3770: 18
+          9069dd78: 28
+        unique_sources: 3
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 3
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: -0.005
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+          f5ba3770:
+            freshness_score: 0.338
+            newest_date: '2025-02-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 405
+          9069dd78:
+            freshness_score: 0.247
+            newest_date: '2024-11-25T00:00:00+00:00'
+            dates_found: 2
+            age_days: 487
+      authority:
+        boost: 0.15
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          f5ba3770:
+            authority_type: third_party_analyst
+            authority_score: 0.9
+            authority_reason: Known analyst/consulting domain (gartner.com)
+            is_third_party: true
+          9069dd78:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 6
+        contradictions:
+        - source_a: f5ba3770
+          source_b: 2564949a
+          claim_a: mature
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: 2564949a
+          source_b: 9069dd78
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: 9069dd78
+          source_b: 2564949a
+          claim_a: strategic focus
+          claim_b: exploring
+          type: opposing_claims
+        - source_a: f5ba3770
+          source_b: 9069dd78
+          claim_a: mature
+          claim_b: pilot
+          type: opposing_claims
+        confidence_penalty: -0.2
+        detection_method: regex
+    retrieval_metrics:
+      hit_rate: 0.0
+      mrr: 0.0
+      ndcg: 0.0
+  baseline_score: 3.0
+  live_score: 2.0
+  score_split_delta: -1.0
+  scoring_distribution:
+    baseline_mean: 3.0
+    baseline_std: 0.0
+    baseline_raw_scores:
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+    live_mean: 2.0
+    live_std: 0.0
+    live_raw_scores:
+    - 2.0
+    - 2.0
+    - 2.0
+    - 2.0
+    - 2.0
+  quality_gates:
+    blocked: false
+    display_as_range: false
+    score_range_display: null
+    suppress_structural_score: false
+    competitor_bleed_detected: false
+    gates:
+      faithfulness_gate:
+        passed: null
+        reason: faithfulness_unavailable
+      stability_gate:
+        passed: true
+        reason: null
+        std: 0.0
+        score_range_display: null
+      source_coverage_gate:
+        passed: true
+        reason: null
+        primary_fraction: 0.6667
+        primary_count: 2
+        total_count: 3
+      competitor_bleed_gate:
+        passed: true
+        reason: null
+        bleed_count: 0
+  score_attribution:
+    event_type: score_attribution
+    company_id: orange.com
+    kpi_id: '3'
+    delta: 1.0
+    attribution_type: prompt_change
+    new_score: 2.0
+    previous_score: 1.0
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4
+  prompt_hash: d78525eeebf9810f02e8a1b282bee48ca3e7cc1372f7ae0086c5c1c5af6a3f3f
+  mlflow_run_id: 0bfe11eceb4b43f5abd496ef74ef5392
+- kpi_id: '19'
+  pillar: Strategy
+  type: rubric
+  score: 3.0
+  confidence: 0.5
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "However, it also observed that sellers do not always provide accurate\
+      \ product categories. As Aur\xE9lie Gon\xE7alves, Strategy & Innovation Manager\
+      \ at Orange Business, points out: \u201CA miscategorized product can mean 20\
+      \ to 30% fewer sales.\u201D\n\nBy imp"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "In 2024, the laboratories focused on use cases designed to create tangible\
+      \ value for the company. \u201CPrediction is at the heart of this strategy.\
+      \ The second pillar is the deployment of generative AI for employees.\u201D\
+      \ Since its launch more than "
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: In the end, the e-commerce company used the outputs of generative AI to
+      retrain its Deep Learning model and boost its native performance. Building on
+      this success, and by combining AI approaches, the marketplace is now working
+      on a new vers
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    retrieval_metrics:
+      hit_rate: null
+      mrr: null
+      ndcg: null
+  baseline_score: 4.0
+  live_score: 3.0
+  score_split_delta: -1.0
+  scoring_distribution:
+    baseline_mean: 4.0
+    baseline_std: 0.0
+    baseline_raw_scores:
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    live_mean: 3.0
+    live_std: 0.0
+    live_raw_scores:
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+  quality_gates:
+    blocked: false
+    display_as_range: false
+    score_range_display: null
+    suppress_structural_score: false
+    competitor_bleed_detected: false
+    gates:
+      faithfulness_gate:
+        passed: null
+        reason: faithfulness_unavailable
+      stability_gate:
+        passed: true
+        reason: null
+        std: 0.0
+        score_range_display: null
+      source_coverage_gate:
+        passed: true
+        reason: null
+        primary_fraction: 1.0
+        primary_count: 3
+        total_count: 3
+      competitor_bleed_gate:
+        passed: true
+        reason: null
+        bleed_count: 0
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4
+  prompt_hash: bf5231d0495bd18f54b83a6a49cf8d5c80273c0480edee669311889673a1a138
+  mlflow_run_id: 9b4be25cf46e455cac09820213fb0a3a
+- kpi_id: '5'
+  pillar: Strategy
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 14372f64
+    url: https://www.orange.com/en/group/our-activities/networks
+    quote: 'The aim is to do so in the most fluid, fast and secure way possible. ##
+      A global network leader
+
+
+      Orange is one of the main global telecommunications network operators offering
+      connectivity services to individuals, businesses and [operators '
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: '## Generative AI opens up new possibilities
+
+
+      The third and most recent wave of AI is generative AI, which unlocks entirely
+      new types of use cases. One bank, for instance, is leveraging this technology
+      to translate its legacy applications wr'
+  - source_id: 14372f64
+    url: https://www.orange.com/en/group/our-activities/networks
+    quote: "It\u2019s also where we\u2019re making the greatest gains in performance\
+      \ and innovation, with AI playing a fundamental role in our ability to maintain\
+      \ an excellent and scalable service. > We also use AI in our network planning\
+      \ and investment choices,"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 1
+      tier2: 2
+      tier3: 0
+      avg: 1.67
+    corroboration_score: 0.2
+    unique_sources: 2
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.2
+        corroborated_claims: []
+        claim_counts:
+          14372f64: 16
+          2564949a: 30
+        unique_sources: 2
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 2
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          14372f64:
+            freshness_score: 0.521
+            newest_date: '2025-07-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 255
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.15
+        per_source:
+          14372f64:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 1
+        contradictions:
+        - source_a: 14372f64
+          source_b: 2564949a
+          claim_a: dedicated
+          claim_b: exploring
+          type: opposing_claims
+        confidence_penalty: -0.07
+        detection_method: regex
+    retrieval_metrics:
+      hit_rate: 0.0
+      mrr: 0.0
+      ndcg: 0.0
+  baseline_score: 4.0
+  live_score: 3.0
+  score_split_delta: -1.0
+  scoring_distribution:
+    baseline_mean: 4.0
+    baseline_std: 0.0
+    baseline_raw_scores:
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    - 4.0
+    live_mean: 3.0
+    live_std: 0.0
+    live_raw_scores:
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+    - 3.0
+  quality_gates:
+    blocked: false
+    display_as_range: false
+    score_range_display: null
+    suppress_structural_score: true
+    competitor_bleed_detected: false
+    gates:
+      faithfulness_gate:
+        passed: null
+        reason: faithfulness_unavailable
+      stability_gate:
+        passed: true
+        reason: null
+        std: 0.0
+        score_range_display: null
+      source_coverage_gate:
+        passed: false
+        reason: low_primary_coverage
+        primary_fraction: 0.3333
+        primary_count: 1
+        total_count: 3
+      competitor_bleed_gate:
+        passed: true
+        reason: null
+        bleed_count: 0
+  score_attribution:
+    event_type: score_attribution
+    company_id: orange.com
+    kpi_id: '5'
+    delta: 2.0
+    attribution_type: prompt_change
+    new_score: 3.0
+    previous_score: 1.0
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4
+  prompt_hash: 899fae0f1db43c1db55681f2e7cd4c38c58f064fe0e30e4171877123929bf1ef
+  mlflow_run_id: 861db0af12f04819a9025235d50057b8
+pillar_scores:
+- pillar: Strategy
+  score: 3.73
+  confidence: 0.47
+  kpis:
+  - '1'
+  - '2'
+  - '3'
+  - '19'
+  - '5'
+overall_score: 3.73
+missing_evidence: []
+debug_log: null
+kpi_definitions: null
+rag_evaluation:
+  evaluated_kpi_count: 5
+  flagged_kpi_count: 5
+  flagged_kpi_ids:
+  - '1'
+  - '2'
+  - '3'
+  - '19'
+  - '5'
+  overall_verdict: 5 KPIs evaluated. 5 of 5 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 52%. 5 of 5 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: '1'
+    ground_truth_used: AI is core to business model, continuous optimization, differentiated
+      innovation, automated governance, and measurable impact.
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.029
+    ragas_context_recall: 0.273
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.841
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.55
+  - kpi_id: '2'
+    ground_truth_used: Multiple initiatives with clearly quantified and recurring
+      impact across business lines
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.019
+    ragas_context_recall: 0.222
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.997
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.601
+  - kpi_id: '3'
+    ground_truth_used: "Board\u2011level oversight (committee/charter), public change\
+      \ KPIs (e.g., % workforce trained, adoption rates), union/regulator agreements\
+      \ where relevant, "
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.003
+    ragas_context_recall: 0.042
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.98
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.537
+  - kpi_id: '19'
+    ground_truth_used: "\u22653 directors with AI/ML track records AND an active board\
+      \ committee overseeing AI strategy/risk/ethics; regular AI reporting in the\
+      \ annual report and "
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.056
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.841
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.429
+  - kpi_id: '5'
+    ground_truth_used: ">20 items; sustained multi\u2011channel presence; bold, target\u2011\
+      backed claims (e.g., care deflection \u226520%, RAN energy \u2193 \u226510%),\
+      \ multiple reference customers,"
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.043
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.983
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.5
+chromadb_snapshot_id: null

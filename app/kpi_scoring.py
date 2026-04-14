@@ -11,19 +11,19 @@ import requests
 
 from app.debug_log import add_debug
 from app.models import Citation, KPIDefinition, KPIDriverResult
+from app.score_extensions import compute_prompt_hash
 from app.vectorstore import retrieve_evidence
+from app.reranker import rerank
 from app.tier_weighting import (
-    retrieve_evidence_weighted,
     calculate_tier_quality,
     get_tier_distribution,
 )
-from app.corroboration import detect_corroboration
-from app.dynamic_retrieval import determine_optimal_k
 from app.source_eval import (
     detect_semantic_corroboration,
     calculate_freshness_boost,
     calculate_authority_boost,
     detect_contradictions,
+    detect_source_independence,
 )
 
 
@@ -44,14 +44,26 @@ def _extract_json(text: str) -> Optional[dict]:
         return None
 
 
-def _llm_score(prompt: str) -> Optional[dict]:
+def _llm_score(prompt: str, temperature: float = 0.2) -> Optional[dict]:
+    """Call the configured LLM provider and return parsed JSON, or None on failure.
+
+    Args:
+        prompt: Full user prompt string.
+        temperature: Sampling temperature (default 0.2 for deterministic scoring;
+            pass a higher value from score_extensions for statistical runs).
+
+    Returns:
+        Parsed dict from the LLM JSON response, or None on any failure.
+    """
     global _LAST_LLM_CALL_AT
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
+    provider = (os.getenv("VITELIS_LLM_PROVIDER") or "").strip().lower()
+    google_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY")
+    use_gemini = provider in {"gemini", "google"} or (google_key and provider != "openai")
+    if provider in {"gemini", "google"} and not google_key:
         if os.getenv("VITELIS_DEBUG", "").lower() in {"1", "true", "yes"}:
-            add_debug("[llm] missing OPENAI_API_KEY; using fallback")
+            add_debug("[llm] provider set to Gemini but GEMINI/GOOGLE key missing; using fallback scoring")
         return None
-    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
     max_retries = int(os.getenv("VITELIS_OPENAI_MAX_RETRIES", "3"))
     base_backoff = float(os.getenv("VITELIS_OPENAI_BACKOFF", "1.5"))
     min_delay = float(os.getenv("VITELIS_OPENAI_MIN_DELAY", "5.0"))
@@ -62,19 +74,43 @@ def _llm_score(prompt: str) -> Optional[dict]:
             if elapsed < min_delay:
                 time.sleep(min_delay - elapsed)
         try:
-            response = requests.post(
-                "https://api.openai.com/v1/chat/completions",
-                headers={"Authorization": f"Bearer {api_key}"},
-                json={
-                    "model": model,
-                    "messages": [
-                        {"role": "system", "content": "You are a strict JSON generator."},
-                        {"role": "user", "content": prompt},
-                    ],
-                    "temperature": 0.2,
-                },
-                timeout=30,
-            )
+            if use_gemini and google_key:
+                model_candidates = []
+                configured = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+                for m in [configured, "gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-flash-8b"]:
+                    if m and m not in model_candidates:
+                        model_candidates.append(m)
+                response = None
+                for model in model_candidates:
+                    response = requests.post(
+                        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={google_key}",
+                        json={
+                            "contents": [{"parts": [{"text": prompt}]}],
+                            "generationConfig": {"temperature": temperature},
+                        },
+                        timeout=60,
+                    )
+                    if response.status_code != 404:
+                        break
+            else:
+                if not openai_key:
+                    if os.getenv("VITELIS_DEBUG", "").lower() in {"1", "true", "yes"}:
+                        add_debug("[llm] missing OpenAI/Gemini key; using fallback")
+                    return None
+                model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+                response = requests.post(
+                    "https://api.openai.com/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {openai_key}"},
+                    json={
+                        "model": model,
+                        "messages": [
+                            {"role": "system", "content": "You are a strict JSON generator."},
+                            {"role": "user", "content": prompt},
+                        ],
+                        "temperature": temperature,
+                    },
+                    timeout=30,
+                )
             _LAST_LLM_CALL_AT = time.time()
             if response.status_code == 429 and attempt < max_retries:
                 retry_after = response.headers.get("Retry-After")
@@ -83,9 +119,19 @@ def _llm_score(prompt: str) -> Optional[dict]:
                     add_debug(f"[llm] 429 received; retrying in {wait_time:.1f}s")
                 time.sleep(wait_time)
                 continue
+            if response.status_code != 200:
+                provider_name = "Gemini" if (use_gemini and google_key) else "OpenAI"
+                print(f"[KPI scoring] {provider_name} API returned {response.status_code}; using heuristic fallback.")
+                return None
             response.raise_for_status()
-            content = response.json()["choices"][0]["message"]["content"]
+            if use_gemini and google_key:
+                parts = response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [])
+                content = parts[0].get("text", "") if parts else ""
+            else:
+                content = response.json()["choices"][0]["message"]["content"]
             data = _extract_json(content)
+            if not data:
+                print("[KPI scoring] LLM response had no valid JSON; using heuristic fallback.")
             if os.getenv("VITELIS_DEBUG", "").lower() in {"1", "true", "yes"}:
                 add_debug("[llm] response parsed" if data else "[llm] response missing JSON")
             return data
@@ -96,12 +142,53 @@ def _llm_score(prompt: str) -> Optional[dict]:
                     add_debug(f"[llm] request failed; retrying in {wait_time:.1f}s ({exc})")
                 time.sleep(wait_time)
                 continue
+            print(f"[KPI scoring] LLM call failed after retries ({exc!s}); using heuristic fallback.")
             if os.getenv("VITELIS_DEBUG", "").lower() in {"1", "true", "yes"}:
                 add_debug(f"[llm] request failed; using fallback ({exc})")
             return None
 
 
-def _fallback_rubric_score(text_blob: str) -> Tuple[int, float, str]:
+def _score5_from_rubric(rubric: Optional[List[str]]) -> Optional[str]:
+    """Extract the Score-5 (Quality Criteria = High) description from the rubric."""
+    if not rubric:
+        return None
+    for line in rubric:
+        stripped = line.strip()
+        if stripped.startswith("5:"):
+            return stripped[2:].strip()
+    return None
+
+
+def _fallback_rubric_score(
+    text_blob: str,
+    rubric: Optional[List[str]] = None,
+) -> Tuple[int, float, str]:
+    """
+    Score 1-5 when LLM is unavailable.
+    If rubric has Score-5 text, use evidence overlap with that ideal; else use keyword hints.
+    """
+    ideal_5 = _score5_from_rubric(rubric) if rubric else None
+    if ideal_5 and text_blob:
+        # Rubric-aware: how much does evidence overlap with "ideal (5)" description?
+        ideal_tokens = set(re.findall(r"\b\w{3,}\b", ideal_5.lower()))
+        evidence_tokens = set(re.findall(r"\b\w{3,}\b", text_blob.lower()))
+        if ideal_tokens:
+            overlap = len(ideal_tokens & evidence_tokens) / len(ideal_tokens)
+            if overlap >= 0.35:
+                score = 5
+            elif overlap >= 0.22:
+                score = 4
+            elif overlap >= 0.12:
+                score = 3
+            elif overlap >= 0.05:
+                score = 2
+            else:
+                score = 1
+            confidence = 0.35 + min(0.25, overlap)
+            rationale = "Heuristic fallback: evidence overlap with Quality Criteria (5=High)."
+            return score, round(confidence, 2), rationale
+
+    # Legacy: positive/negative keyword counts when no rubric or no ideal_5
     score = 3
     for word in POSITIVE_HINTS:
         if word in text_blob:
@@ -197,6 +284,7 @@ def calculate_enhanced_confidence(
 
     Components (v2 — new):
     - Semantic corroboration boost (0 to +0.15) — claim-level agreement
+    - Source independence check — reduces corroboration for syndicated duplicates
     - Freshness boost/penalty (-0.15 to +0.10) — recency of evidence
     - Authority boost (0 to +0.15) — 3rd-party validation
     - Contradiction penalty (0 to -0.20) — conflicting evidence
@@ -232,8 +320,14 @@ def calculate_enhanced_confidence(
     semantic_corr = detect_semantic_corroboration(full_evidences)
     corroboration_max = float(os.getenv("VITELIS_CORROBORATION_BOOST_MAX", "0.15"))
     corr_boost = semantic_corr["corroboration_score"] * corroboration_max
-    confidence += corr_boost
     eval_details["semantic_corroboration"] = semantic_corr
+
+    # --- v2: Source independence check — reduce corroboration for near-duplicate sources ---
+    independence = detect_source_independence(full_evidences)
+    corr_boost = max(0.0, corr_boost + independence["corroboration_penalty"])
+    eval_details["source_independence"] = independence
+
+    confidence += corr_boost
 
     # --- v2: Freshness boost/penalty (uses full text for date parsing) ---
     freshness_boost, freshness_per_source = calculate_freshness_boost(full_evidences)
@@ -273,40 +367,76 @@ def calculate_enhanced_confidence(
     return round(max(0.0, min(1.0, confidence)), 2), eval_details
 
 
+def build_rubric_prompt(
+    kpi: KPIDefinition,
+    evidences: List[Tuple[dict, str, float]],
+) -> Tuple[str, str]:
+    """
+    Build the system and user prompt strings for a rubric KPI scoring call.
+
+    Exposed so callers can compute a prompt hash (Feature 10) and run
+    statistical scoring (Feature 2) without duplicating prompt logic.
+
+    Args:
+        kpi: KPIDefinition with name, question, and rubric fields.
+        evidences: List of (metadata, document, score) tuples to embed
+            as evidence in the prompt.
+
+    Returns:
+        Tuple of (system_prompt, user_prompt) strings.
+    """
+    rubric = "\n".join(kpi.rubric or [])
+    ideal_5 = _score5_from_rubric(kpi.rubric)
+    char_limit = 1000
+    evidence_block = "\n".join(
+        f"- [{meta.get('source_id', '')}] {meta.get('url', '')}: {doc[:char_limit]}"
+        for meta, doc, _ in evidences
+    )
+    ideal_line = (
+        f'\nIdeal (5 = High): "{ideal_5}"\n'
+        "Score how close the evidence supports this level (1 = not at all, 5 = fully).\n"
+        if ideal_5
+        else ""
+    )
+    system_prompt = "You are a strict JSON generator."
+    user_prompt = (
+        f"You are a Business Analyst. Your task is to audit the following context using \n"
+        f"the KPI Drivers.\n"
+        f"Score the KPI from 1-5 using the rubric and evidence.\n"
+        f'Return strict JSON: {{"kpi_id": "...", "score": 1-5, "confidence": 0-1, "rationale": "...", '
+        f'"citations": [{{"source_id": "...", "url": "...", "quote": "..."}}]}}.\n'
+        f"Citations must include source_id, url, quote.\n\n"
+        f"KPI: {kpi.name}\n"
+        f"Question: {kpi.question}\n"
+        f"Rubric:\n{rubric}\n"
+        f"{ideal_line}"
+        f"Evidence:\n{evidence_block}\n"
+    )
+    return system_prompt, user_prompt
+
+
 def score_rubric_kpi(
     kpi: KPIDefinition,
     collection,
-    k: int = 6,
+    k: int = 10,
+    top_n: int = 3,
     company_domain: str = "",
     full_sources: Optional[List[Dict]] = None,
 ) -> Tuple[KPIDriverResult, bool]:
-    # Determine optimal k (dynamic tuning if enabled)
-    k_used = determine_optimal_k(kpi, default_k=k)
+    # --- Stage 1: Retrieve top-k by cosine similarity (pure semantic) ---
+    evidences = retrieve_evidence(collection, kpi.question, k=k)
 
-    # Retrieve evidence with tier weighting (if enabled)
-    tier_weighting_enabled = os.getenv("VITELIS_ENABLE_TIER_WEIGHTING", "true").lower() in {"1", "true"}
+    # --- Stage 2: Cross-encoder rerank to top-n ---
+    evidences = rerank(kpi.question, evidences, top_n=top_n)
 
-    if tier_weighting_enabled:
-        evidences = retrieve_evidence_weighted(collection, kpi.question, k=k_used)
-    else:
-        # Fall back to standard retrieval
-        evidences_basic = retrieve_evidence(collection, kpi.question, k=k_used)
-        # Convert to format expected by new functions: add dummy score
-        evidences = [(meta, doc, 0.5) for meta, doc in evidences_basic]
+    k_used = k  # Track original retrieval depth for reporting
 
-    # Extract text for fallback scoring (handle both formats)
-    if evidences and len(evidences[0]) == 3:
-        evidence_text = " ".join(doc for _, doc, _ in evidences).lower()
-        citations = _build_citations([(meta, doc) for meta, doc, _ in evidences])
-    else:
-        evidence_text = " ".join(doc for _, doc in evidences).lower()
-        citations = _build_citations(evidences)
+    # Extract text for fallback scoring
+    evidence_text = " ".join(doc for _, doc, _ in evidences).lower()
+    citations = _build_citations([(meta, doc) for meta, doc, _ in evidences])
 
-    # Detect cross-source corroboration (if enabled)
-    corroboration_enabled = os.getenv("VITELIS_ENABLE_CORROBORATION", "true").lower() in {"1", "true"}
+    # Corroboration is computed in calculate_enhanced_confidence via source_eval
     corroboration = 0.0
-    if corroboration_enabled and evidences:
-        corroboration = detect_corroboration(evidences, min_sources=2)
 
     if not evidences:
         return (
@@ -318,34 +448,18 @@ def score_rubric_kpi(
                 confidence=0.2,
                 rationale="No evidence retrieved for this KPI.",
                 citations=[],
-                details={"llm_used": False},
+                details={"llm_used": False, "k_used": k_used, "top_n": top_n},
             ),
             True,
         )
 
-    rubric = "\n".join(kpi.rubric or [])
-
-    # Handle both evidence formats: (meta, doc) or (meta, doc, score)
-    if evidences and len(evidences[0]) == 3:
-        evidence_block = "\n".join(
-            f"- [{meta.get('source_id', '')}] {meta.get('url', '')}: {doc[:300]}"
-            for meta, doc, _ in evidences
-        )
-    else:
-        evidence_block = "\n".join(
-            f"- [{meta.get('source_id', '')}] {meta.get('url', '')}: {doc[:300]}"
-            for meta, doc in evidences
-        )
-
-    prompt = (
-        "Score the KPI from 1-5 using the rubric and evidence. "
-        "Return strict JSON: {kpi_id, score, confidence, rationale, citations}. "
-        "Citations must include source_id, url, quote.\n\n"
-        f"KPI: {kpi.name}\n"
-        f"Question: {kpi.question}\n"
-        f"Rubric:\n{rubric}\n\n"
-        f"Evidence:\n{evidence_block}\n"
-    )
+    system_prompt, prompt = build_rubric_prompt(kpi, evidences)
+    # Feature 10: Prompt hash (compute before LLM call so it's a true pre-call fingerprint)
+    prompt_hash = ""
+    try:
+        prompt_hash = compute_prompt_hash(system_prompt, prompt)
+    except Exception:
+        prompt_hash = ""
 
     llm_data: Optional[dict] = None
     try:
@@ -389,12 +503,14 @@ def score_rubric_kpi(
 
         details = {
             "llm_used": True,
+            "retrieval_pipeline": "openai-embed → top-10 → cross-encoder-rerank → top-3",
             "tier_distribution": tier_distribution,
             "corroboration_score": eval_details.get("semantic_corroboration", {}).get("corroboration_score", corroboration),
             "unique_sources": unique_sources,
             "k_used": k_used,
-            # v2: Full source evaluation breakdown
+            "top_n_reranked": top_n,
             "source_evaluation": eval_details,
+            "prompt_hash": prompt_hash or None,
         }
 
         return (
@@ -407,11 +523,12 @@ def score_rubric_kpi(
                 rationale=rationale or "LLM scoring with evidence.",
                 citations=parsed_citations or citations,
                 details=details,
+                prompt_hash=prompt_hash or None,
             ),
             missing_flag,
         )
 
-    score, confidence, rationale = _fallback_rubric_score(evidence_text)
+    score, confidence, rationale = _fallback_rubric_score(evidence_text, rubric=kpi.rubric)
 
     # Calculate enhanced confidence for fallback path too (v2: tuple return)
     final_confidence, eval_details = calculate_enhanced_confidence(
@@ -429,10 +546,12 @@ def score_rubric_kpi(
 
     details = {
         "llm_used": False,
+        "retrieval_pipeline": "openai-embed → top-10 → cross-encoder-rerank → top-3",
         "tier_distribution": tier_distribution,
         "corroboration_score": eval_details.get("semantic_corroboration", {}).get("corroboration_score", corroboration),
         "unique_sources": unique_sources,
         "k_used": k_used,
+        "top_n_reranked": top_n,
         "source_evaluation": eval_details,
     }
 

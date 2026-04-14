@@ -1,0 +1,1893 @@
+run_id: e3556854
+company_name: Orange S.A
+company_domain: orange.com
+timestamp: '2026-03-04T20:56:10.922338+00:00'
+url_count: 70
+kpi_results:
+- kpi_id: strat_ai_vision
+  pillar: Strategy & Governance
+  type: rubric
+  score: 3.0
+  confidence: 0.35
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: Orange employees have integrated generative AI tools into their professional
+      routines shortly after their emergence. Through acculturation and hands-on training
+      for all, coupled with proactive communication, the adoption of generative AI
+      is
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: in together to reimagine the network for it to unlock the transformative
+      potential of AI, drive innovation, and expand digital inclusivity on a global
+      scale with the power of this formidable duo. Introduction The fusion of AI and
+      Networks i
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "n, Orange Business has deployed a generative AI solution. It engages in\
+      \ dialogue with the technician to identify the best solution for each issue\
+      \ encountered. It also generates a \u201Cclear and intelligible\u201D summary\
+      \ of the operations carried ou"
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 4
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          www.sofrecom.com-44d73afd72: 30
+          aws.amazon.com-c5ca0376f8: 30
+          perspective.orange-business.com-d38ea29ff2: 30
+          www.artefact.com-e0963de230: 30
+        unique_sources: 4
+      freshness:
+        boost: 0.1
+        per_source:
+          www.sofrecom.com-44d73afd72:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:09.382114+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          perspective.orange-business.com-d38ea29ff2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:00.261300+00:00'
+            dates_found: 1
+            age_days: 0
+          www.artefact.com-e0963de230:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:55:42.310619+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.105
+        per_source:
+          www.sofrecom.com-44d73afd72:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          perspective.orange-business.com-d38ea29ff2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (perspective.orange-business.com), no
+              authority signals
+            is_third_party: true
+          www.artefact.com-e0963de230:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 4
+        contradictions:
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.sofrecom.com-44d73afd72
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.artefact.com-e0963de230
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.artefact.com-e0963de230
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: sophisticated
+          claim_b: lagging
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: strat_ai_governance
+  pillar: Strategy & Governance
+  type: rubric
+  score: 2.0
+  confidence: 0.31
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: rai.orange.com-a1d2e97686
+    url: https://rai.orange.com/en/
+    quote: models that still consume large amounts of data, bandwidth and therefore
+      energy. There will be no AI without high-performance, secure network infrastructure.
+      There will be no AI without the support and guidance of people. So there will
+      be n
+  - source_id: hellofuture.orange.com-b162d76ae2
+    url: https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/
+    quote: "h provides measures to assess the impact of an AI system based on model\
+      \ type and use. Its commitment also extends to the field of standardisation,\
+      \ and more generally to platforms urging greater transparency. \u201CIn addition,\
+      \ we are working int"
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: nimal risk, they must also be assessed. The legislation is not without
+      challenges. There is a strong emphasis on accountability, for example. Our business
+      lines must ensure that they have human oversight mechanisms in place for high-risk
+      sy
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 5
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          rai.orange.com-a1d2e97686: 30
+          hellofuture.orange.com-b162d76ae2: 23
+          www.orange-business.com-14bf498fac: 30
+          perspective.orange-business.com-d38ea29ff2: 30
+          aws.amazon.com-c5ca0376f8: 30
+        unique_sources: 5
+      freshness:
+        boost: 0.016
+        per_source:
+          rai.orange.com-a1d2e97686:
+            freshness_score: 0.1
+            newest_date: '2023-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 901
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          perspective.orange-business.com-d38ea29ff2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:00.261300+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.15
+        per_source:
+          rai.orange.com-a1d2e97686:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          perspective.orange-business.com-d38ea29ff2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (perspective.orange-business.com), no
+              authority signals
+            is_third_party: true
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 8
+        contradictions:
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: strat_responsible_ai_mentions
+  pillar: Strategy & Governance
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 14 keyword mentions.
+  citations:
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: Orange employees have integrated generative AI tools into their professional
+      routines shortly after their emergence. Through acculturation and hands-on training
+      for all, coupled with proactive communication, the adoption of generative AI
+      is
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: "Orange Business is on the frontline of ethical AI, aligning its innovations\
+      \ with the EU\u2019s AI Act and our own Data & AI Ethics Charter. Through robust\
+      \ governance, lifecycle management and tools like Live Intelligence, we ensure\
+      \ AI systems ar"
+  details:
+    count: 14
+    keywords:
+    - responsible ai
+    - ai ethics
+    - ai governance
+    - ai safety
+    - responsible use
+- kpi_id: strat_ai_case_studies
+  pillar: Strategy & Governance
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 6 keyword mentions.
+  citations:
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: 'Note from the Authors: At Mobile World Congress Barcelona 2025, the GSMA
+      hosted a generative AI summit featuring industry leaders across the globe including
+      McKinsey, NVIDIA, and others. In our jointly-hosted fireside chat, we had the
+      chanc'
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: "Orange Business is on the frontline of ethical AI, aligning its innovations\
+      \ with the EU\u2019s AI Act and our own Data & AI Ethics Charter. Through robust\
+      \ governance, lifecycle management and tools like Live Intelligence, we ensure\
+      \ AI systems ar"
+  details:
+    count: 6
+    keywords:
+    - case study
+    - customer story
+    - success story
+    - AI deployment
+- kpi_id: strat_ai_announcement_recency
+  pillar: Strategy & Governance
+  type: quant
+  score: 5.0
+  confidence: 0.6
+  rationale: Most recent AI mention -150 days ago.
+  citations: []
+  details:
+    days_since: -150
+- kpi_id: prod_ai_product_depth
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.31
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "e The \xCEle-de-France Region also places strong emphasis on the issue\
+      \ of sovereignty. This is why all its AI applications are developed on Cloud\
+      \ Avenue, the Orange Business cloud offering. With infrastructure natively designed\
+      \ for AI and gene"
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: abilities while expanding digital inclusion. As we look ahead, this partnership
+      sets a compelling blueprint for how telecom companies can use AI to not only
+      optimize their operations but also create meaningful impact across diverse geograph
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: "tory and trust imperative. To optimize enterprises\u2019 return on investment,\
+      \ Orange Business can help implement and maintain compliance with AI systems.\
+      \ For example, we offer our customers the first IaaS-trusted GenAI platform,\
+      \ which provides "
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 5
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          perspective.orange-business.com-d38ea29ff2: 30
+          aws.amazon.com-c5ca0376f8: 30
+          www.orange-business.com-14bf498fac: 30
+          hellofuture.orange.com-b162d76ae2: 23
+          rai.orange.com-a1d2e97686: 30
+        unique_sources: 5
+      freshness:
+        boost: 0.016
+        per_source:
+          perspective.orange-business.com-d38ea29ff2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:00.261300+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          rai.orange.com-a1d2e97686:
+            freshness_score: 0.1
+            newest_date: '2023-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 901
+      authority:
+        boost: 0.15
+        per_source:
+          perspective.orange-business.com-d38ea29ff2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (perspective.orange-business.com), no
+              authority signals
+            is_third_party: true
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          rai.orange.com-a1d2e97686:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 8
+        contradictions:
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: prod_ai_use_cases
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.38
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: co-imagining the future of AI and networks, we fundamentally believe that
+      the resulting innovations will be multi-sector, multi-national, and multi-modal.
+      This will create transformative impacts across industries and geographies using
+      agent
+  - source_id: hellofuture.orange.com-b162d76ae2
+    url: https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/
+    quote: "e incorporation of AI into our products and services Key assessment considerations\
+      \ Assessing this impact is a business matter. Nathalie Charbonniaud, responsible\
+      \ AI research lead and expert at Orange: \u201CTraditionally, classic AI use\
+      \ cases ar"
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: eploying AI in Europe should prioritize platforms purpose-built for managing
+      AI systems, ensuring governance and transparency from development to deployment.
+      Partnering with strategic experts like Orange Business can help organizations
+      stay
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          aws.amazon.com-c5ca0376f8: 30
+          hellofuture.orange.com-b162d76ae2: 23
+          www.orange-business.com-14bf498fac: 30
+          www.orange-business.com-d7145ed2a0: 30
+          www.ainvest.com-f9b8fa608d: 28
+          www.orange-ir.pl-2aaf5772b2: 0
+        unique_sources: 6
+      freshness:
+        boost: 0.08
+        per_source:
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          www.orange-business.com-d7145ed2a0:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:31.965673+00:00'
+            dates_found: 1
+            age_days: 0
+          www.ainvest.com-f9b8fa608d:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:53:41.159631+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-ir.pl-2aaf5772b2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:55:03.854234+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.15
+        per_source:
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          www.orange-business.com-d7145ed2a0:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-business.com), no authority signals
+            is_third_party: true
+          www.ainvest.com-f9b8fa608d:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (ainvest.com), no authority signals
+            is_third_party: true
+          www.orange-ir.pl-2aaf5772b2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-ir.pl), no authority signals
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 5
+        contradictions:
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.ainvest.com-f9b8fa608d
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: prod_ai_features_count
+  pillar: Product & Delivery
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 20 keyword mentions.
+  citations:
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: Companies are investing heavily to unlock the potential of generative AI.
+      At the same time, they are not turning away from other forms of AI, such as
+      Machine Learning and Deep Learning. Across the spectrum, there is no shortage
+      of high-valu
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: 'Note from the Authors: At Mobile World Congress Barcelona 2025, the GSMA
+      hosted a generative AI summit featuring industry leaders across the globe including
+      McKinsey, NVIDIA, and others. In our jointly-hosted fireside chat, we had the
+      chanc'
+  details:
+    count: 20
+    keywords:
+    - ai feature
+    - predictive
+    - recommendation
+    - automation
+    - ml model
+- kpi_id: prod_ai_pricing_signal
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.43
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: hellofuture.orange.com-6ceabedf96
+    url: https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/
+    quote: algorithms or energy-saving applications remain untested and dormant. Fostering
+      innovation with accessible and affordable RIC Testing To address this need and
+      provide opportunities to third parties, Orange developing an open-source, free
+      RI
+  - source_id: www.ainvest.com-f9b8fa608d
+    url: https://www.ainvest.com/news/orange-strategic-execution-ai-driven-efficiency-compelling-case-undervalued-growth-european-telecom-2507/
+    quote: ost savings, AI is a revenue driver. Orange's partnership with Mistral
+      AI and its launch of Live Intelligence in Europe position it as a leader in
+      enterprise AI-as-a-Service. The company is also expanding AI into emerging markets,
+      such as A
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: core pillars of speed, scale, and security while adapting to specific regional
+      needs. To learn more about how Networks could be underpinning generative AI
+      applications at-scale, check out Building generative AI applications with on-premises
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 5
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          hellofuture.orange.com-6ceabedf96: 29
+          www.ainvest.com-f9b8fa608d: 28
+          aws.amazon.com-c5ca0376f8: 30
+          www.orange-business.com-a4db9428f9: 30
+          hellofuture.orange.com-b162d76ae2: 23
+        unique_sources: 5
+      freshness:
+        boost: 0.0
+        per_source:
+          hellofuture.orange.com-6ceabedf96:
+            freshness_score: 0.552
+            newest_date: '2025-07-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 232
+          www.ainvest.com-f9b8fa608d:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:53:41.159631+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-a4db9428f9:
+            freshness_score: 0.131
+            newest_date: '2024-07-15T00:00:00+00:00'
+            dates_found: 2
+            age_days: 597
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+      authority:
+        boost: 0.15
+        per_source:
+          hellofuture.orange.com-6ceabedf96:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.ainvest.com-f9b8fa608d:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (ainvest.com), no authority signals
+            is_third_party: true
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          www.orange-business.com-a4db9428f9:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 1
+        contradictions:
+        - source_a: hellofuture.orange.com-6ceabedf96
+          source_b: www.orange-business.com-a4db9428f9
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        confidence_penalty: -0.07
+- kpi_id: prod_ai_quality
+  pillar: Product & Delivery
+  type: rubric
+  score: 4.0
+  confidence: 0.48
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: "udes tasks in legal, procurement, programming, and agile coaching, among\
+      \ others. Between 10,000 and 12,000 employees use Dinootoo each week, and these\
+      \ numbers continue to grow, notes C\xE9dric Goutard, Team Leader and Product\
+      \ Owner of Dinootoo"
+  - source_id: www.orange-ir.pl-2aaf5772b2
+    url: https://www.orange-ir.pl/wp-content/uploads/2025/02/consolidated-financial-report-2024.pdf
+    quote: "\uFFFD\u0703\uFFFDN\u0708.\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDU\uFFFDp~$\\\uFFFD\
+      \uFFFD\uFFFD\uFFFD\uFFFDM\uFFFDwJ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\
+      +)\uFFFD\uFFFD\uFFFD%\uFFFDPE\uFFFDj\u0277\uFFFDs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\
+      \uFFFD\uFFFD\u038Fo*\uFFFDS\uFFFD)\uFFFD>6 g\uFFFD\uFFFD\uFFFD7\uFFFD\uFFFD\uFFFD\
+      \uFFFDt%U\uFFFDR(Z\uFFFD\uFFFDR\uFFFD^\uFFFD\uFFFD\uFFFD^ )\uFFFD\u03B6\uFFFD\
+      >6`g@%\uFFFD\uFFFD\uFFFDE*\uFFFDh\uFFFD\u04D0 \uFFFD\uFFFD\uFFFDH5o\uFFFD\uFFFD\
+      \uFFFDxh\uFFFD\uFFFD\uFFFDpm\uFFFD\uFFFD\uFFFDp\u0727\uFFFD;Rh|\uFFFD\uFFFD\uFFFD\
+      \uFFFD1Q\uFFFD~B@ \uFFFDSt\uFFFD?\uFFFD`<\uFFFD\uFFFD\uFFFDe\u0406 \uFFFD\uFFFD\
+      $\uFFFD>6Uo\uFFFD\uFFFD/\uFFFD \u07C7\uFFFD endstream endobj 74860 0 obj <>stream\
+      \ H\uFFFD\uFFFDWmoG\uFFFD~\uFFFDa?\uFFFDEb\uFFFD\uFFFD{\uFFFD\uFFFDH\uFFFD\uFFFD"
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: Orange employees have integrated generative AI tools into their professional
+      routines shortly after their emergence. Through acculturation and hands-on training
+      for all, coupled with proactive communication, the adoption of generative AI
+      is
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 3
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          www.sofrecom.com-44d73afd72: 30
+          www.orange-ir.pl-2aaf5772b2: 0
+          www.orange-business.com-14bf498fac: 30
+        unique_sources: 3
+      freshness:
+        boost: 0.1
+        per_source:
+          www.sofrecom.com-44d73afd72:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:09.382114+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-ir.pl-2aaf5772b2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:55:03.854234+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+      authority:
+        boost: 0.105
+        per_source:
+          www.sofrecom.com-44d73afd72:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          www.orange-ir.pl-2aaf5772b2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-ir.pl), no authority signals
+            is_third_party: true
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 1
+        contradictions:
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: www.sofrecom.com-44d73afd72
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        confidence_penalty: -0.07
+- kpi_id: people_ai_hiring_volume
+  pillar: People & Operations
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 13 keyword mentions.
+  citations:
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: Companies are investing heavily to unlock the potential of generative AI.
+      At the same time, they are not turning away from other forms of AI, such as
+      Machine Learning and Deep Learning. Across the spectrum, there is no shortage
+      of high-valu
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: Orange employees have integrated generative AI tools into their professional
+      routines shortly after their emergence. Through acculturation and hands-on training
+      for all, coupled with proactive communication, the adoption of generative AI
+      is
+  details:
+    count: 13
+    keywords:
+    - machine learning
+    - ml engineer
+    - data scientist
+    - ai engineer
+    - mlops
+- kpi_id: people_ai_team_org
+  pillar: People & Operations
+  type: rubric
+  score: 2.0
+  confidence: 0.3
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: rai.orange.com-a1d2e97686
+    url: https://rai.orange.com/en/
+    quote: "on of the roles of Chairman of the Board and Chief Executive Officer \u2014\
+      \ proved effective? J. A._ Since the separation of the roles of Chairman of\
+      \ the Board and Chief Executive Officer, Orange\u2019s governance has proven\
+      \ fully satisfactory. The a"
+  - source_id: hellofuture.orange.com-6ceabedf96
+    url: https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/
+    quote: al resources, the resolution of which does not require advanced technical
+      expertise. Automating interventions with the help of Artificial Intelligence
+      (AI) seems to be an obvious solution. However, while AI is widely used in IT
+      and software
+  - source_id: hellofuture.orange.com-b162d76ae2
+    url: https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/
+    quote: "h provides measures to assess the impact of an AI system based on model\
+      \ type and use. Its commitment also extends to the field of standardisation,\
+      \ and more generally to platforms urging greater transparency. \u201CIn addition,\
+      \ we are working int"
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          rai.orange.com-a1d2e97686: 30
+          hellofuture.orange.com-6ceabedf96: 29
+          hellofuture.orange.com-b162d76ae2: 23
+          www.orange-business.com-14bf498fac: 30
+          hellofuture.orange.com-1b705cd2b9: 16
+          www.orange-business.com-d7145ed2a0: 30
+        unique_sources: 6
+      freshness:
+        boost: 0.0
+        per_source:
+          rai.orange.com-a1d2e97686:
+            freshness_score: 0.1
+            newest_date: '2023-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 901
+          hellofuture.orange.com-6ceabedf96:
+            freshness_score: 0.552
+            newest_date: '2025-07-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 232
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          hellofuture.orange.com-1b705cd2b9:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.orange-business.com-d7145ed2a0:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:31.965673+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.15
+        per_source:
+          rai.orange.com-a1d2e97686:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+          hellofuture.orange.com-6ceabedf96:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-1b705cd2b9:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.orange-business.com-d7145ed2a0:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-business.com), no authority signals
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 14
+        contradictions:
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: hellofuture.orange.com-6ceabedf96
+          claim_a: proven
+          claim_b: proof of concept
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: hellofuture.orange.com-1b705cd2b9
+          claim_a: priorit
+          claim_b: exploring
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: hellofuture.orange.com-6ceabedf96
+          claim_a: established
+          claim_b: proof of concept
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-6ceabedf96
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: hellofuture.orange.com-6ceabedf96
+          claim_a: production-grade
+          claim_b: proof of concept
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-6ceabedf96
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: people_ai_training
+  pillar: People & Operations
+  type: rubric
+  score: 4.0
+  confidence: 0.35
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: co-imagining the future of AI and networks, we fundamentally believe that
+      the resulting innovations will be multi-sector, multi-national, and multi-modal.
+      This will create transformative impacts across industries and geographies using
+      agent
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: meras deployed along production lines now automate quality control and
+      speed up vaccine production. Generative AI opens up new possibilities The third
+      and most recent wave of AI is generative AI, which unlocks entirely new types
+      of use case
+  - source_id: www.orange-business.com-d7145ed2a0
+    url: https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data
+    quote: "ngle day?) Like a good idea that doesn\u2019t work out in practice, don\u2019\
+      t bin a projected AI service because it can\u2019t be achieved today. Instead,\
+      \ put it in the \u2018parking lot\u2019 for later review. The AI market moves\
+      \ so swiftly that what is impractic"
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          aws.amazon.com-c5ca0376f8: 30
+          perspective.orange-business.com-d38ea29ff2: 30
+          www.orange-business.com-d7145ed2a0: 30
+          www.orange-business.com-14bf498fac: 30
+          investisseurs-individuels.orange.com-f9b3908785: 22
+          rai.orange.com-a1d2e97686: 30
+        unique_sources: 6
+      freshness:
+        boost: 0.05
+        per_source:
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          perspective.orange-business.com-d38ea29ff2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:00.261300+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-d7145ed2a0:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:31.965673+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          investisseurs-individuels.orange.com-f9b3908785:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:53:19.250022+00:00'
+            dates_found: 1
+            age_days: 0
+          rai.orange.com-a1d2e97686:
+            freshness_score: 0.1
+            newest_date: '2023-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 901
+      authority:
+        boost: 0.15
+        per_source:
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          perspective.orange-business.com-d38ea29ff2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (perspective.orange-business.com), no
+              authority signals
+            is_third_party: true
+          www.orange-business.com-d7145ed2a0:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-business.com), no authority signals
+            is_third_party: true
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          investisseurs-individuels.orange.com-f9b3908785:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (investisseurs-individuels.orange.com)
+            is_third_party: false
+          rai.orange.com-a1d2e97686:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 16
+        contradictions:
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: aws.amazon.com-c5ca0376f8
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: production-grade
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: investisseurs-individuels.orange.com-f9b3908785
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: mature
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: ops_data_infra
+  pillar: People & Operations
+  type: rubric
+  score: 1.0
+  confidence: 0.31
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: rai.orange.com-5ee1ccedac
+    url: https://rai.orange.com/fr/
+    quote: "pagnement des personnes. Il n\u2019y aura donc pas d\u2019IA responsable\
+      \ et inclusive sans Orange. Christel Heydemann Q/ Vous adapter aux nouvelles\
+      \ technologies, accompagner vos clients : tout cela repose sur les femmes et\
+      \ les hommes d\u2019Orange. Commen"
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: master multiple query languages to access network and service data. Our
+      generative AI assistant eliminates these barriers by creating a unified, intuitive
+      interface. Analyzing performance management (PM) data, fault management (FM)
+      metrics,
+  - source_id: rai.orange.com-a1d2e97686
+    url: https://rai.orange.com/en/
+    quote: lusion through digital technology extends to everything we do. Christel
+      Heydemann Download the Integrated Annual Report
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 5
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          rai.orange.com-5ee1ccedac: 24
+          aws.amazon.com-c5ca0376f8: 30
+          rai.orange.com-a1d2e97686: 30
+          hellofuture.orange.com-b162d76ae2: 23
+          www.orange-business.com-14bf498fac: 30
+        unique_sources: 5
+      freshness:
+        boost: 0.016
+        per_source:
+          rai.orange.com-5ee1ccedac:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:23.746218+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          rai.orange.com-a1d2e97686:
+            freshness_score: 0.1
+            newest_date: '2023-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 901
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+      authority:
+        boost: 0.15
+        per_source:
+          rai.orange.com-5ee1ccedac:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          rai.orange.com-a1d2e97686:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (rai.orange.com)
+            is_third_party: false
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 3
+        contradictions:
+        - source_a: rai.orange.com-5ee1ccedac
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: rai.orange.com-a1d2e97686
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: priorit
+          claim_b: evaluating
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-14bf498fac
+          claim_a: dedicated
+          claim_b: evaluating
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: ops_ai_partnerships
+  pillar: People & Operations
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 62 keyword mentions.
+  citations:
+  - source_id: techinformed.com-307ec4a7cd
+    url: https://techinformed.com/orange-business-genai-solution-meta-openai-african-languages-opentech/
+    quote: "Orange Business has announced the launch of a multi-LLM GenAI solution\
+      \ for businesses of all sizes, and local authorities. The \u201CLive Intelligence\u201D\
+      \ offering aims to democratise access to GenAI for European companies, starting\
+      \ in France early"
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: Companies are investing heavily to unlock the potential of generative AI.
+      At the same time, they are not turning away from other forms of AI, such as
+      Machine Learning and Deep Learning. Across the spectrum, there is no shortage
+      of high-valu
+  details:
+    count: 62
+    keywords:
+    - partner
+    - partnership
+    - collaboration
+    - aws
+    - azure
+    - google cloud
+    - openai
+- kpi_id: ops_ai_compliance
+  pillar: Strategy & Governance
+  type: rubric
+  score: 3.0
+  confidence: 0.36
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: investisseurs-individuels.orange.com-f9b3908785
+    url: https://investisseurs-individuels.orange.com/fr/news/list
+    quote: "menteront la croissance du chiffre d'affaires et stimuleront la croissance\
+      \ de EBITDAaL \u2013 eCAPEX. Le Groupe pr\xE9voit une am\xE9lioration de +2\
+      \ points de la marge de Cash-flow op\xE9rationnel entre 2025 et 2028. La pleine\
+      \ reconsolidation de MasOrang"
+  - source_id: investisseurs-individuels.orange.com-f9b3908785
+    url: https://investisseurs-individuels.orange.com/fr/news/list
+    quote: "o par action (payable en 2027), avec un nouveau plancher \xE0 0,85 euro\
+      \ pour l'exercice 2028, alors que le Groupe conservera un bilan solide, avec\
+      \ un d\xE9sendettement progressif vers son objectif \xE0 moyen terme d'un ratio\
+      \ dette nette/EBITDAaL d'e"
+  - source_id: aws.amazon.com-c5ca0376f8
+    url: https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/
+    quote: 'ptimized. This two-way relationship amplifies both technologies: networks
+      provide the critical infrastructure needed for distributed AI deployments at
+      scale, while AI revolutionizes network operations through automated optimization,
+      predict'
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 4
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          investisseurs-individuels.orange.com-f9b3908785: 22
+          aws.amazon.com-c5ca0376f8: 30
+          www.orange-business.com-a4db9428f9: 30
+          hellofuture.orange.com-1b705cd2b9: 16
+        unique_sources: 4
+      freshness:
+        boost: 0.0
+        per_source:
+          investisseurs-individuels.orange.com-f9b3908785:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:53:19.250022+00:00'
+            dates_found: 1
+            age_days: 0
+          aws.amazon.com-c5ca0376f8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:19.283645+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-a4db9428f9:
+            freshness_score: 0.131
+            newest_date: '2024-07-15T00:00:00+00:00'
+            dates_found: 2
+            age_days: 597
+          hellofuture.orange.com-1b705cd2b9:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+      authority:
+        boost: 0.15
+        per_source:
+          investisseurs-individuels.orange.com-f9b3908785:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (investisseurs-individuels.orange.com)
+            is_third_party: false
+          aws.amazon.com-c5ca0376f8:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          www.orange-business.com-a4db9428f9:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-1b705cd2b9:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 2
+        contradictions:
+        - source_a: investisseurs-individuels.orange.com-f9b3908785
+          source_b: www.orange-business.com-a4db9428f9
+          claim_a: mature
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: investisseurs-individuels.orange.com-f9b3908785
+          source_b: hellofuture.orange.com-1b705cd2b9
+          claim_a: priorit
+          claim_b: exploring
+          type: opposing_claims
+        confidence_penalty: -0.14
+- kpi_id: prod_ai_support
+  pillar: Product & Delivery
+  type: rubric
+  score: 2.0
+  confidence: 0.31
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: 'efficiency, whether by processing documents, verifying information, or
+      extracting it to feed into its systems. AI use cases: from risk management to
+      customer relations In risk management, AI helps the banking group assign a score
+      to each tr'
+  - source_id: www.orange-business.com-a4db9428f9
+    url: https://www.orange-business.com/en/blogs/genai-transforming-hr-employees-enablement
+    quote: "ent domain. The new job-market reality is that GenAI skills are now a\
+      \ hot commodity as one of the key hiring criteria for employers. An organization\u2019\
+      s sustainability is dependent on how well we encourage GenAI innovation and\
+      \ provide valuabl"
+  - source_id: www.orange-business.com-d7145ed2a0
+    url: https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data
+    quote: "ore surprising use case. CMOs are already imagining the creation of digital\
+      \ twins of customers to drive hyper-personalisation. Not only would this provide\
+      \ individual offers and incentives, but \u2013 because this is a generative\
+      \ form of AI \u2013 it "
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 5
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          perspective.orange-business.com-d38ea29ff2: 30
+          www.orange-business.com-a4db9428f9: 30
+          www.orange-business.com-d7145ed2a0: 30
+          hellofuture.orange.com-b162d76ae2: 23
+          www.artefact.com-e0963de230: 30
+        unique_sources: 5
+      freshness:
+        boost: 0.018
+        per_source:
+          perspective.orange-business.com-d38ea29ff2:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:00.261300+00:00'
+            dates_found: 1
+            age_days: 0
+          www.orange-business.com-a4db9428f9:
+            freshness_score: 0.131
+            newest_date: '2024-07-15T00:00:00+00:00'
+            dates_found: 2
+            age_days: 597
+          www.orange-business.com-d7145ed2a0:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:52:31.965673+00:00'
+            dates_found: 1
+            age_days: 0
+          hellofuture.orange.com-b162d76ae2:
+            freshness_score: 0.639
+            newest_date: '2025-09-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 170
+          www.artefact.com-e0963de230:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:55:42.310619+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.15
+        per_source:
+          perspective.orange-business.com-d38ea29ff2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (perspective.orange-business.com), no
+              authority signals
+            is_third_party: true
+          www.orange-business.com-a4db9428f9:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          www.orange-business.com-d7145ed2a0:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (orange-business.com), no authority signals
+            is_third_party: true
+          hellofuture.orange.com-b162d76ae2:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+          www.artefact.com-e0963de230:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 11
+        contradictions:
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-a4db9428f9
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: production-grade
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: advanced
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: perspective.orange-business.com-d38ea29ff2
+          source_b: www.artefact.com-e0963de230
+          claim_a: proven
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.artefact.com-e0963de230
+          source_b: perspective.orange-business.com-d38ea29ff2
+          claim_a: sophisticated
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: www.orange-business.com-a4db9428f9
+          claim_a: production-grade
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-b162d76ae2
+          source_b: www.orange-business.com-d7145ed2a0
+          claim_a: leading
+          claim_b: lagging
+          type: opposing_claims
+        - source_a: www.orange-business.com-d7145ed2a0
+          source_b: www.artefact.com-e0963de230
+          claim_a: production-grade
+          claim_b: pilot
+          type: opposing_claims
+        confidence_penalty: -0.2
+- kpi_id: ops_ai_publications
+  pillar: People & Operations
+  type: quant
+  score: 5.0
+  confidence: 0.7
+  rationale: Matched 19 keyword mentions.
+  citations:
+  - source_id: perspective.orange-business.com-d38ea29ff2
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: Companies are investing heavily to unlock the potential of generative AI.
+      At the same time, they are not turning away from other forms of AI, such as
+      Machine Learning and Deep Learning. Across the spectrum, there is no shortage
+      of high-valu
+  - source_id: hellofuture.orange.com-640ceed4a6
+    url: https://hellofuture.orange.com/fr/mot-cle/5g-fr/
+    quote: "Innovation \xE9v\xE8nementielle : une bulle de connectivit\xE9 5G au skicross\
+      \ de Val Thorens dans le cadre du projet ME/CT Les 11 et 12 d\xE9cembre 2025,\
+      \ Val Thorens a accueilli la Coupe du Monde de ski cross en France. \xC0 cette\
+      \ occasion, Orange a franc"
+  details:
+    count: 19
+    keywords:
+    - research
+    - paper
+    - publication
+    - conference
+    - arxiv
+pillar_scores:
+- pillar: Strategy & Governance
+  score: 4.22
+  confidence: 0.5
+  kpis:
+  - strat_ai_vision
+  - strat_ai_governance
+  - strat_responsible_ai_mentions
+  - strat_ai_case_studies
+  - strat_ai_announcement_recency
+  - ops_ai_compliance
+- pillar: Product & Delivery
+  score: 3.6
+  confidence: 0.43
+  kpis:
+  - prod_ai_product_depth
+  - prod_ai_use_cases
+  - prod_ai_features_count
+  - prod_ai_pricing_signal
+  - prod_ai_quality
+  - prod_ai_support
+- pillar: People & Operations
+  score: 4.19
+  confidence: 0.51
+  kpis:
+  - people_ai_hiring_volume
+  - people_ai_team_org
+  - people_ai_training
+  - ops_data_infra
+  - ops_ai_partnerships
+  - ops_ai_publications
+overall_score: 4.02
+missing_evidence: []
+debug_log: null
+rag_evaluation:
+  evaluated_kpi_count: 11
+  flagged_kpi_count: 11
+  flagged_kpi_ids:
+  - strat_ai_vision
+  - strat_ai_governance
+  - prod_ai_product_depth
+  - prod_ai_use_cases
+  - prod_ai_pricing_signal
+  - prod_ai_quality
+  - people_ai_team_org
+  - people_ai_training
+  - ops_data_infra
+  - ops_ai_compliance
+  - prod_ai_support
+  overall_verdict: 11 KPIs evaluated. 11 of 11 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 53%. 11 of 11 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: strat_ai_vision
+    ground_truth_used: Clear, coherent AI strategy with priorities and outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.003
+    ragas_context_recall: 0.4
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.882
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: strat_ai_governance
+    ground_truth_used: Formal governance structure, committees, or policies referenced.
+    ragas_faithfulness: 0.167
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.023
+    ragas_context_recall: 0.167
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.901
+    factual_correctness: 0.0
+    noise_sensitivity: 0.167
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_product_depth
+    ground_truth_used: AI is central to products with multiple concrete features.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.009
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.82
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_use_cases
+    ground_truth_used: Multiple specific use cases with outcomes or metrics.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.019
+    ragas_context_recall: 0.5
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.895
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.629
+  - kpi_id: prod_ai_pricing_signal
+    ground_truth_used: AI explicitly packaged or priced.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.968
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_quality
+    ground_truth_used: Concrete benchmarks, metrics, or outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.867
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.658
+  - kpi_id: people_ai_team_org
+    ground_truth_used: Clear AI org structure or lab with leadership.
+    ragas_faithfulness: 0.167
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.011
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.994
+    factual_correctness: 0.0
+    noise_sensitivity: 0.167
+    semantic_similarity: 0.5
+  - kpi_id: people_ai_training
+    ground_truth_used: Specific AI training programs or certifications.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.947
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: ops_data_infra
+    ground_truth_used: Clear data platform or infrastructure described.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.008
+    ragas_context_recall: 0.2
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.951
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: ops_ai_compliance
+    ground_truth_used: Clear compliance frameworks or commitments.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.984
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.579
+  - kpi_id: prod_ai_support
+    ground_truth_used: Clear AI support capabilities and outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.019
+    ragas_context_recall: 0.5
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.973
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5

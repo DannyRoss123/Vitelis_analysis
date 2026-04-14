@@ -54,6 +54,37 @@ class KPIDriverResult(BaseModel):
     citations: List[Citation] = Field(default_factory=list)
     details: Optional[Dict[str, object]] = None
 
+    # ── Feature 1: Score splitting ────────────────────────────────────────
+    # baseline_score: scored from primary-tier (tier=1) chunks only.
+    # live_score:     scored from all retrieved chunks.
+    # score_split_delta: live_score − baseline_score.
+    baseline_score: Optional[float] = None
+    live_score: Optional[float] = None
+    score_split_delta: Optional[float] = None
+
+    # ── Feature 2: Scoring distribution (N=5 runs) ───────────────────────
+    # Stored under key "scoring_distribution" for LangFuse metadata parity.
+    scoring_distribution: Optional[Dict[str, object]] = None
+
+    # ── Feature 3: Quality gate outcomes ─────────────────────────────────
+    quality_gates: Optional[Dict[str, object]] = None
+
+    # ── Feature 4: Score change attribution ──────────────────────────────
+    score_attribution: Optional[Dict[str, object]] = None
+
+    # ── Feature 7: BERTScore F1 ───────────────────────────────────────────
+    bertscore_f1: Optional[float] = None
+    low_semantic_grounding: Optional[bool] = None
+
+    # ── Feature 8: Chain-of-thought evaluation ────────────────────────────
+    cot_eval: Optional[Dict[str, object]] = None
+
+    # ── Feature 9 & 10: Traceability IDs ─────────────────────────────────
+    chromadb_snapshot_id: Optional[str] = None
+    prompt_hash: Optional[str] = None
+    mlflow_run_id: Optional[str] = None
+    langfuse_trace_id: Optional[str] = None
+
 
 class AggregatedKPIResult(BaseModel):
     pillar: str
@@ -102,6 +133,14 @@ class RagKpiEval(BaseModel):
     noise_sensitivity: Optional[float] = None     # Impact of low-quality sources (lower = better)
     semantic_similarity: Optional[float] = None   # Meaning-level match to ideal answer
 
+    # Golden-chunk retrieval metrics (eval_rag + YAML and/or DB via retrieval_metrics)
+    retrieval_hit_rate: Optional[float] = None
+    retrieval_mrr: Optional[float] = None
+    retrieval_ndcg: Optional[float] = None
+    bertscore_f1: Optional[float] = None
+    low_semantic_grounding: Optional[bool] = None
+    cot_eval: Optional[Dict[str, object]] = None
+
 
 class RagEvaluationReport(BaseModel):
     """
@@ -135,7 +174,12 @@ class ReportArtifact(BaseModel):
     overall_score: float
     missing_evidence: List[str]
     debug_log: Optional[List[str]] = None
+    # KPI definitions (question = column N) so dashboard can show "KPI Driver" text
+    kpi_definitions: Optional[List[Dict]] = None
     # code change for RAG Eval by SN
     # Optional RAG evaluation section — populated when eval_rag node runs
     rag_evaluation: Optional[RagEvaluationReport] = None
     # code change end for RAG Eval by SN
+    # Feature 9: collection fingerprint at report time — makes report traceable
+    # to exact source data ingested into ChromaDB.
+    chromadb_snapshot_id: Optional[str] = None

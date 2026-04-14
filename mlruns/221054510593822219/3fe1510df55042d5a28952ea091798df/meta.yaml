@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/som/Desktop/CourseSemII/Capstone/Team/0326/RAG-Evaluation/mlruns/221054510593822219/3fe1510df55042d5a28952ea091798df/artifacts
+end_time: 1775507123394
+entry_point_name: ''
+experiment_id: '221054510593822219'
+lifecycle_stage: active
+run_id: 3fe1510df55042d5a28952ea091798df
+run_name: ck_hutchison_group_telecom_holdings_limited__pipeline__cb5b46e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775507123240
+status: 3
+tags: []
+user_id: som

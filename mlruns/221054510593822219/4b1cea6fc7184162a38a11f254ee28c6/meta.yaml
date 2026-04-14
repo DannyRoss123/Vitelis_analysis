@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/som/Desktop/CourseSemII/Capstone/Team/0326/RAG-Evaluation/mlruns/221054510593822219/4b1cea6fc7184162a38a11f254ee28c6/artifacts
+end_time: 1774581107259
+entry_point_name: ''
+experiment_id: '221054510593822219'
+lifecycle_stage: active
+run_id: 4b1cea6fc7184162a38a11f254ee28c6
+run_name: orange.com__21__db517edb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774581106955
+status: 3
+tags: []
+user_id: som

@@ -1,0 +1,74 @@
+{
+  "orange.com::1": {
+    "mean_score": 4.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "660ab92bdf51b1982302106c929626d2052a4d23a56b56182d491269ab351573",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::2": {
+    "mean_score": 4.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "1bd1f901c42729403981933d1f471a0447c11a6e1889dda97cbde480c04bdfe1",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::3": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "0cfda042dd5f0dd4f2e9858fdb417730de84eb78b1530b574fdfaad289fc5c65",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::19": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "bf44c2011d169bd5a0618b794de999bb6f26d6b40164fcc0240e29e4df771bf8",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::5": {
+    "mean_score": 2.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "044eb75f10fab095f4ca1cf07c7dabd4d50bab3ddbd2106222d47a31834a656b",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::5_28": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "60ec7de59a75385d3443ba8d90730370608daec29ba2b5c1e80ba8ba6ff4910e",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::1_17": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "6c59671765cca590ccb505f2bbf975b8f9557f85366769c9bd8571b04c5b8979",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::5_6_7_28": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "1a0f8279d7cb8885ff4df4c74f1427cd2d54b7d4596068269e823a06fabdf72e",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::14": {
+    "mean_score": 5.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "276b8510bdb60721fcaf492718959938a89821bfbf27c766e6b80af525fa0efd",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::21": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "e73561ba46b61005b3b4c118bd7275101390220c6a74d4a329d476629f2a0b66",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::16": {
+    "mean_score": 1.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "17e39a9e382f29239cf4db5aab379043d148fce947d5197405666abeb4b80892",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  },
+  "orange.com::22": {
+    "mean_score": 3.0,
+    "model_version": "gpt-4o-mini",
+    "prompt_hash": "f540b249ec1a508e549bae9d59c08a0dbc3277465649087ccad9a8b074b51d5c",
+    "source_fingerprint": "bb3b2b659e52dbd27d825bd96f908f2582cf22e470c748a5fc56ca7153bfd1e4"
+  }
+}

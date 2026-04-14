@@ -16,6 +16,7 @@ Pipeline position:
 
 from __future__ import annotations
 
+import os
 from typing import Dict, List
 
 from app.models import (
@@ -28,6 +29,33 @@ from app.models import (
 
 # Import the standalone evaluation module — no changes needed there
 from eval_rag import run_all_evaluations
+
+
+def _merge_eval_into_kpi_dicts(
+    kpi_results_dicts: List[Dict],
+    raw_results: Dict[str, Dict],
+) -> List[Dict]:
+    """Attach retrieval_metrics, BERTScore, CoT from eval_rag into kpi_results for the YAML/report."""
+    out: List[Dict] = []
+    for kd in kpi_results_dicts:
+        kid = kd.get("kpi_id")
+        res = raw_results.get(kid) if kid else None
+        if not res:
+            out.append(kd)
+            continue
+        det = dict(kd.get("details") or {})
+        rm = res.get("retrieval_metrics")
+        if rm:
+            det["retrieval_metrics"] = rm
+        new_kd = {**kd, "details": det}
+        if res.get("bertscore_f1") is not None:
+            new_kd["bertscore_f1"] = res["bertscore_f1"]
+        if res.get("low_semantic_grounding") is not None:
+            new_kd["low_semantic_grounding"] = res["low_semantic_grounding"]
+        if res.get("cot_eval"):
+            new_kd["cot_eval"] = res["cot_eval"]
+        out.append(new_kd)
+    return out
 
 
 def evaluate_rag_node(state: Dict) -> Dict:
@@ -77,14 +105,21 @@ def evaluate_rag_node(state: Dict) -> Dict:
     # --- Step 3: Run all 9 RAG evaluation checks ---
     # run_all_evaluations() returns a dict: {kpi_id -> {check_name -> result_dict}}
     # It prints a human-readable summary to stdout as it runs.
+    run_llm_judge = os.getenv("RAG_EVAL_LLM_JUDGE", "true").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+    )
     raw_results: Dict[str, Dict] = run_all_evaluations(
         kpi_results=kpi_results,
         sources=sources,
         kpi_definitions=kpi_definitions,
-        run_llm_judge=True,
+        run_llm_judge=run_llm_judge,
         hallucination_threshold=0.4,
         verbose=False,  # Suppress per-KPI print output; results go into YAML only
     )
+
+    merged_kpi_dicts = _merge_eval_into_kpi_dicts(kpi_results_dicts, raw_results)
 
     # --- Step 4: Flatten nested results into RagKpiEval objects ---
     # Each key in raw_results is a kpi_id; the value is the full evaluation dict.
@@ -100,6 +135,10 @@ def evaluate_rag_node(state: Dict) -> Dict:
         hall = res.get("hallucination", {})
         mmr = res.get("mmr", {})
         gt = res.get("ground_truth_checks", {})
+        retm = res.get("retrieval_metrics") or {}
+        bs = res.get("bertscore_f1")
+        lsg = res.get("low_semantic_grounding")
+        cot = res.get("cot_eval")
 
         # Track which KPIs were flagged for hallucination
         is_flagged = hall.get("is_flagged", False)
@@ -139,9 +178,16 @@ def evaluate_rag_node(state: Dict) -> Dict:
             factual_correctness=gt.get("factual_correctness"),
             noise_sensitivity=gt.get("noise_sensitivity"),
             semantic_similarity=gt.get("semantic_similarity"),
+            retrieval_hit_rate=retm.get("hit_rate"),
+            retrieval_mrr=retm.get("mrr"),
+            retrieval_ndcg=retm.get("ndcg"),
+            bertscore_f1=bs,
+            low_semantic_grounding=lsg,
+            cot_eval=cot if isinstance(cot, dict) else None,
         ))
 
     # --- Step 5: Build the batch-level summary and overall verdict ---
+    # Counts derived from actual lists (no hardcoding)
     total = len(per_kpi)
     num_flagged = len(flagged_kpi_ids)
 
@@ -185,7 +231,7 @@ def evaluate_rag_node(state: Dict) -> Dict:
     )
     summary = " ".join(filter(None, [f1_line, sem_line, flag_line]))
 
-    # Assemble the full RagEvaluationReport object
+    # Assemble the full RagEvaluationReport object (evaluated_kpi_count = actual list length)
     rag_report = RagEvaluationReport(
         evaluated_kpi_count=total,
         flagged_kpi_count=num_flagged,
@@ -199,6 +245,7 @@ def evaluate_rag_node(state: Dict) -> Dict:
     # aggregate_report_node will pick this up and write it into the YAML report.
     return {
         "rag_evaluation": rag_report.model_dump(),
+        "kpi_results": merged_kpi_dicts,
     }
 
 # code change end for RAG Eval by SN

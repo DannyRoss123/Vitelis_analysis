@@ -1,0 +1,598 @@
+run_id: 27dbb285
+company_name: Orange S.A
+company_domain: orange.com
+timestamp: '2026-03-27T01:26:17.333434+00:00'
+url_count: 10
+kpi_results:
+- kpi_id: '1'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.45
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "In 2024, the laboratories focused on use cases designed to create tangible\
+      \ value for the company. \u201CPrediction is at the heart of this strategy.\
+      \ The second pillar is the deployment of generative AI for employees.\u201D\
+      \ Since its launch more than "
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "However, it also observed that sellers do not always provide accurate\
+      \ product categories. As Aur\xE9lie Gon\xE7alves, Strategy & Innovation Manager\
+      \ at Orange Business, points out: \u201CA miscategorized product can mean 20\
+      \ to 30% fewer sales.\u201D\n\nBy imp"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "\u201COur first use case was about transforming the relationship with\
+      \ citizens. Generative AI allows us to completely rethink this relationship.\
+      \ We are no longer just a catalogue of public services,\u201D explains Antoine\
+      \ Carette. The technology enab"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    source_reuse:
+      penalty: -0.1
+      overused_sources:
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      overused_fraction: 1.0
+      overuse_limit: 2
+  baseline_score: null
+  live_score: null
+  score_split_delta: null
+  scoring_distribution: null
+  quality_gates: null
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: null
+  prompt_hash: null
+  mlflow_run_id: null
+- kpi_id: '2'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.45
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "\u201COur first use case was about transforming the relationship with\
+      \ citizens. Generative AI allows us to completely rethink this relationship.\
+      \ We are no longer just a catalogue of public services,\u201D explains Antoine\
+      \ Carette. The technology enab"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "This maturity is largely due to BPCE\u2019s rich data assets and its experience\
+      \ with Big Data. As Luc Barnaud, Group Chief Data & AI Officer, explains, the\
+      \ bank processes 11 billion transactions per year. Its websites and mobile applications\
+      \ rec"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "Before rushing in, make sure you\u2019re not building on sand. In this\
+      \ article, we\u2019ll show you how to lay the groundwork for success\u2014by\
+      \ aligning AI with your strategic goals, unlocking the right data, establishing\
+      \ strong governance, and fosterin"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    source_reuse:
+      penalty: -0.1
+      overused_sources:
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      overused_fraction: 1.0
+      overuse_limit: 2
+  baseline_score: null
+  live_score: null
+  score_split_delta: null
+  scoring_distribution: null
+  quality_gates: null
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: null
+  prompt_hash: null
+  mlflow_run_id: null
+- kpi_id: '3'
+  pillar: Strategy
+  type: rubric
+  score: 3.0
+  confidence: 0.36
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "This ebook from Orange Business explores how organizations can turn AI\
+      \ potential into measurable value at scale. Unlock the real-world lessons behind\
+      \ AI at scale Featuring in-depth case studies from Banque Populaire \u2013 Caisse\
+      \ d\u2019\xC9pargne (BPCE"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "It also generates a \u201Cclear and intelligible\u201D summary of the\
+      \ operations carried out, producing a standardized report that fully meets the\
+      \ company\u2019s quality requirements. Predictive, perceptive, generative: AI\
+      \ in business takes many forms, of"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "Let\u2019s take a closer look at what it means and explore the best enterprise\
+      \ approaches to make a real impact, interview-style \U0001F609 What does RAG\
+      \ mean, and when is it used? Mick Levy: RAG\u2026](\n- [![Sovereign AI: The\
+      \ Smart Hybrid Approach For Speed "
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    source_reuse:
+      penalty: -0.1
+      overused_sources:
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      overused_fraction: 1.0
+      overuse_limit: 2
+  baseline_score: null
+  live_score: null
+  score_split_delta: null
+  scoring_distribution: null
+  quality_gates: null
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: null
+  prompt_hash: null
+  mlflow_run_id: null
+- kpi_id: '19'
+  pillar: Strategy
+  type: rubric
+  score: 3.0
+  confidence: 0.4
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "# Established AI practices and new promises ahead\n\n21 August 2024 \\\
+      - Updated at\_21 August 2025\n\n![Orange Business]( Business\n\nData Trends\n\
+      \nShare by emailShare on LinkedInShare on XShare on Facebook\n\nCompanies are\
+      \ investing heavily to unlock"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "But while the public sector is often seen as lagging behind in technology,\
+      \ the \xCEle-de-France Region offers a different perspective. Its journey with\
+      \ AI only began recently, in 2022, acknowledges Antoine Carette, the region\u2019\
+      s Chief Data Offi"
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "In 2024, the laboratories focused on use cases designed to create tangible\
+      \ value for the company. \u201CPrediction is at the heart of this strategy.\
+      \ The second pillar is the deployment of generative AI for employees.\u201D\
+      \ Since its launch more than "
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 3
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 1
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    source_reuse:
+      penalty: -0.1
+      overused_sources:
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      overused_fraction: 1.0
+      overuse_limit: 2
+  baseline_score: null
+  live_score: null
+  score_split_delta: null
+  scoring_distribution: null
+  quality_gates: null
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: null
+  prompt_hash: null
+  mlflow_run_id: null
+- kpi_id: '5'
+  pillar: Strategy
+  type: rubric
+  score: 2.0
+  confidence: 0.323
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "Among them are the creation of sectoral data spaces in 15 key areas\u2014\
+      such as TEMS for media or CEADS for agriculture\u2014the establishment of norms\
+      \ and standards with Gaia-X, as well as the\u2026](\n- [![Identit\xE9s num\xE9\
+      riques : tout comprendre sur ce d"
+  - source_id: eb80d364
+    url: https://www.lightreading.com/finance/ai-and-bots-aid-orange-s-transformation-drive
+    quote: '- [Finance](
+
+      - [AI & Machine Learning](
+
+      - [News](
+
+
+      # AI and bots aid Orange''s transformation drive
+
+
+      France-based group reports improving trends in 2023 despite inflationary pressures,
+      and awaits imminent closure of proposed merger in Spain.'
+  - source_id: 2564949a
+    url: https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+    quote: "This maturity is largely due to BPCE\u2019s rich data assets and its experience\
+      \ with Big Data. As Luc Barnaud, Group Chief Data & AI Officer, explains, the\
+      \ bank processes 11 billion transactions per year. Its websites and mobile applications\
+      \ rec"
+  details:
+    llm_used: false
+    retrieval_pipeline: "openai-embed \u2192 top-10 \u2192 cross-encoder-rerank \u2192\
+      \ top-3"
+    tier_distribution:
+      tier1: 2
+      tier2: 1
+      tier3: 0
+      avg: 1.33
+    corroboration_score: 0.2
+    unique_sources: 2
+    k_used: 10
+    top_n_reranked: 3
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.2
+        corroborated_claims: []
+        claim_counts:
+          2564949a: 30
+          eb80d364: 23
+        unique_sources: 2
+      source_independence:
+        duplicate_pairs: []
+        duplicate_source_count: 0
+        total_sources: 2
+        independence_score: 1.0
+        corroboration_penalty: -0.0
+      freshness:
+        boost: 0.0
+        per_source:
+          2564949a:
+            freshness_score: 0.571
+            newest_date: '2025-08-21T00:00:00+00:00'
+            dates_found: 4
+            age_days: 218
+          eb80d364:
+            freshness_score: 0.651
+            newest_date: '2025-10-15T14:32:46+00:00'
+            dates_found: 1
+            age_days: 162
+      authority:
+        boost: 0.105
+        per_source:
+          2564949a:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          eb80d364:
+            authority_type: third_party_analyst
+            authority_score: 0.7
+            authority_reason: Analyst content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+        detection_method: regex
+    source_reuse:
+      penalty: -0.067
+      overused_sources:
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      - https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/
+      overused_fraction: 0.667
+      overuse_limit: 2
+  baseline_score: null
+  live_score: null
+  score_split_delta: null
+  scoring_distribution: null
+  quality_gates: null
+  score_attribution: null
+  bertscore_f1: null
+  cot_eval: null
+  chromadb_snapshot_id: null
+  prompt_hash: null
+  mlflow_run_id: null
+pillar_scores:
+- pillar: Strategy
+  score: 3.29
+  confidence: 0.4
+  kpis:
+  - '1'
+  - '2'
+  - '3'
+  - '19'
+  - '5'
+overall_score: 3.29
+missing_evidence: []
+debug_log: null
+kpi_definitions: null
+rag_evaluation:
+  evaluated_kpi_count: 5
+  flagged_kpi_count: 4
+  flagged_kpi_ids:
+  - '1'
+  - '2'
+  - '19'
+  - '5'
+  overall_verdict: 5 KPIs evaluated. 4 of 5 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 49%. 4 of 5 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: '1'
+    ground_truth_used: AI is core to business model, continuous optimization, differentiated
+      innovation, automated governance, and measurable impact.
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.022
+    ragas_context_recall: 0.182
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.832
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.5
+  - kpi_id: '2'
+    ground_truth_used: Multiple initiatives with clearly quantified and recurring
+      impact across business lines
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.01
+    ragas_context_recall: 0.222
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.83
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.5
+  - kpi_id: '3'
+    ground_truth_used: "Board\u2011level oversight (committee/charter), public change\
+      \ KPIs (e.g., % workforce trained, adoption rates), union/regulator agreements\
+      \ where relevant, "
+    ragas_faithfulness: 0.286
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 0.0
+    hallucination_flagged: false
+    mmr_diversity_score: 0.863
+    factual_correctness: 0.0
+    noise_sensitivity: 0.286
+    semantic_similarity: 0.626
+  - kpi_id: '19'
+    ground_truth_used: "\u22653 directors with AI/ML track records AND an active board\
+      \ committee overseeing AI strategy/risk/ethics; regular AI reporting in the\
+      \ annual report and "
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.056
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.754
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.375
+  - kpi_id: '5'
+    ground_truth_used: ">20 items; sustained multi\u2011channel presence; bold, target\u2011\
+      backed claims (e.g., care deflection \u226520%, RAN energy \u2193 \u226510%),\
+      \ multiple reference customers,"
+    ragas_faithfulness: 0.143
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.007
+    ragas_context_recall: 0.043
+    llm_judge_overall: null
+    llm_judge_feedback: Skipped.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.824
+    factual_correctness: 0.0
+    noise_sensitivity: 0.143
+    semantic_similarity: 0.436
+chromadb_snapshot_id: null

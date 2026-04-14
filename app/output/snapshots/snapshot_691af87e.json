@@ -1,0 +1,156 @@
+{
+  "snapshot_version": 1,
+  "run_id": "691af87e",
+  "timestamp": "2026-03-06T01:37:42.134646+00:00",
+  "company_name": "Orange S.A.",
+  "company_domain": "orange.com",
+  "url_count": 30,
+  "overall_score": 3.86,
+  "pillar_scores": {
+    "Strategy": {
+      "score": 3.86,
+      "confidence": 0.51,
+      "kpis": [
+        "1",
+        "2",
+        "3",
+        "19",
+        "5",
+        "5_28",
+        "20",
+        "8"
+      ]
+    }
+  },
+  "kpis": {
+    "1": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.55,
+      "citation_urls": [
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "hellofuture.orange.com-6ceabedf96",
+        "www.orange-business.com-14bf498fac",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "2": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 5.0,
+      "confidence": 0.56,
+      "citation_urls": [
+        "https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "www.orange-business.com-14bf498fac",
+        "www.orange-business.com-d7145ed2a0"
+      ],
+      "evidence_gate": null
+    },
+    "3": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.53,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "perspective.orange-business.com-d38ea29ff2"
+      ],
+      "evidence_gate": null
+    },
+    "19": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.55,
+      "citation_urls": [
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.orange-business.com-14bf498fac",
+        "www.orange-business.com-d7145ed2a0"
+      ],
+      "evidence_gate": null
+    },
+    "5": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.42,
+      "citation_urls": [
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "www.orange-business.com-14bf498fac",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "5_28": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.55,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "hellofuture.orange.com-6ceabedf96",
+        "www.orange-business.com-d7145ed2a0"
+      ],
+      "evidence_gate": null
+    },
+    "20": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 2.0,
+      "confidence": 0.35,
+      "citation_urls": [
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "www.orange-business.com-14bf498fac",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "8": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.56,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "hellofuture.orange.com-6ceabedf96",
+        "perspective.orange-business.com-d38ea29ff2"
+      ],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_691af87e.yaml"
+}

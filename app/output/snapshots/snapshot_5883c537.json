@@ -1,0 +1,62 @@
+{
+  "snapshot_version": 1,
+  "run_id": "5883c537",
+  "timestamp": "2026-03-05T15:10:44.279244+00:00",
+  "company_name": "Telecom Italia",
+  "company_domain": "telecomitalia.com",
+  "url_count": 3,
+  "overall_score": 4.0,
+  "pillar_scores": {
+    "Strategy": {
+      "score": 4.0,
+      "confidence": 0.44,
+      "kpis": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "kpis": {
+    "1": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.46,
+      "citation_urls": [
+        "https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/"
+      ],
+      "distinct_sources": [
+        "www.mobileeurope.co.uk-cb2739d77c"
+      ],
+      "evidence_gate": null
+    },
+    "2": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.39,
+      "citation_urls": [
+        "https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/"
+      ],
+      "distinct_sources": [
+        "www.mobileeurope.co.uk-cb2739d77c"
+      ],
+      "evidence_gate": null
+    },
+    "3": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.46,
+      "citation_urls": [
+        "https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/"
+      ],
+      "distinct_sources": [
+        "www.mobileeurope.co.uk-cb2739d77c"
+      ],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_5883c537.yaml"
+}

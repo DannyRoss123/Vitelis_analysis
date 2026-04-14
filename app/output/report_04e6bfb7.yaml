@@ -1,0 +1,144 @@
+run_id: 04e6bfb7
+company_name: Orange S.A
+company_domain: orange.com
+timestamp: '2026-03-06T01:12:36.890417+00:00'
+url_count: 30
+kpi_results:
+- kpi_id: '1'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.55
+  rationale: 'Heuristic fallback: evidence overlap with Quality Criteria (5=High).'
+  citations:
+  - source_id: www.orange-business.com-14bf498fac
+    url: https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action
+    quote: ct. This expert multidisciplinary authority classifies AI systems based
+      on their potential impact on individuals, society and critical sectors to ensure
+      the ethical and safe use of the technology. We also have a centralized Responsible
+      AI C
+  - source_id: www.sofrecom.com-44d73afd72
+    url: https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html
+    quote: Orange employees have integrated generative AI tools into their professional
+      routines shortly after their emergence. Through acculturation and hands-on training
+      for all, coupled with proactive communication, the adoption of generative AI
+      is
+  - source_id: hellofuture.orange.com-6ceabedf96
+    url: https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/
+    quote: al resources, the resolution of which does not require advanced technical
+      expertise. Automating interventions with the help of Artificial Intelligence
+      (AI) seems to be an obvious solution. However, while AI is widely used in IT
+      and software
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.3
+    unique_sources: 3
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.3
+        corroborated_claims: []
+        claim_counts:
+          www.orange-business.com-14bf498fac: 30
+          www.sofrecom.com-44d73afd72: 30
+          hellofuture.orange.com-6ceabedf96: 29
+        unique_sources: 3
+      freshness:
+        boost: 0.05
+        per_source:
+          www.orange-business.com-14bf498fac:
+            freshness_score: 1.0
+            newest_date: '2026-08-15T00:00:00+00:00'
+            dates_found: 4
+            age_days: 0
+          www.sofrecom.com-44d73afd72:
+            freshness_score: 1.0
+            newest_date: '2026-03-06T01:10:31.136249+00:00'
+            dates_found: 1
+            age_days: 0
+          hellofuture.orange.com-6ceabedf96:
+            freshness_score: 0.549
+            newest_date: '2025-07-15T00:00:00+00:00'
+            dates_found: 1
+            age_days: 234
+      authority:
+        boost: 0.15
+        per_source:
+          www.orange-business.com-14bf498fac:
+            authority_type: regulatory
+            authority_score: 0.75
+            authority_reason: Regulatory content signals detected in text
+            is_third_party: true
+          www.sofrecom.com-44d73afd72:
+            authority_type: third_party_news
+            authority_score: 0.65
+            authority_reason: News content signals detected in text
+            is_third_party: true
+          hellofuture.orange.com-6ceabedf96:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (hellofuture.orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 3
+        contradictions:
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: www.sofrecom.com-44d73afd72
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        - source_a: www.orange-business.com-14bf498fac
+          source_b: hellofuture.orange.com-6ceabedf96
+          claim_a: established
+          claim_b: proof of concept
+          type: opposing_claims
+        - source_a: hellofuture.orange.com-6ceabedf96
+          source_b: www.sofrecom.com-44d73afd72
+          claim_a: established
+          claim_b: pilot
+          type: opposing_claims
+        confidence_penalty: -0.2
+pillar_scores:
+- pillar: Strategy
+  score: 4.0
+  confidence: 0.55
+  kpis:
+  - '1'
+overall_score: 4.0
+missing_evidence: []
+debug_log: null
+rag_evaluation:
+  evaluated_kpi_count: 1
+  flagged_kpi_count: 1
+  flagged_kpi_ids:
+  - '1'
+  overall_verdict: 1 KPIs evaluated. 1 of 1 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 40%. 1 of 1 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: '1'
+    ground_truth_used: AI is core to business model, continuous optimization, differentiated
+      innovation, automated governance, and measurable impact.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.008
+    ragas_context_recall: 0.455
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.97
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.399

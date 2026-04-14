@@ -1,0 +1,298 @@
+run_id: 5883c537
+company_name: Telecom Italia
+company_domain: telecomitalia.com
+timestamp: '2026-03-05T15:10:44.279244+00:00'
+url_count: 3
+kpi_results:
+- kpi_id: '1'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.46
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: "The two have launched a new technology hub, at the OGR Tech, is dedicated\
+      \ to developing and experimenting with the Cloud and AI Long-term partners TIM\
+      \ and Google Cloud have built their first customer innovation centre at the\
+      \ OGR Tech \u2013 OGR "
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: ing, retail and finance. It joins the existing centre, where TIM Enterprise
+      and Google Cloud continue to operate at the Opening Future Hub in collaboration
+      with Intesa Sanpaolo. The move comes as Italy positions itself to lead the AI
+      debate
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: ". From 2022 to 2026, the cumulative contribution of AI to Italy\u2019\
+      s GDP could reach up to \u20AC195bn, corresponding to an average annual value\
+      \ of almost 40 billion euros, or about 2% of GDP. The market is beginning to\
+      \ show increasing demand for a"
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 6
+      tier2: 0
+      tier3: 0
+      avg: 1.0
+    corroboration_score: 0.0
+    unique_sources: 1
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.0
+        corroborated_claims: []
+        claim_counts: {}
+        unique_sources: 1
+      freshness:
+        boost: 0.1
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            freshness_score: 1.0
+            newest_date: '2026-03-05T15:09:04.092413+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.105
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            authority_type: third_party_analyst
+            authority_score: 0.7
+            authority_reason: Analyst content signals detected in text
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: '2'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.39
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: ". From 2022 to 2026, the cumulative contribution of AI to Italy\u2019\
+      s GDP could reach up to \u20AC195bn, corresponding to an average annual value\
+      \ of almost 40 billion euros, or about 2% of GDP. The market is beginning to\
+      \ show increasing demand for a"
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: "We want to simplify the technology choices of companies and public bodies\
+      \ that are now operating in an increasingly fast-paced market where the Cloud\
+      \ and AI are among the main accelerators of digital transformation,\u201D said\
+      \ TIM chief enterpri"
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: ing, retail and finance. It joins the existing centre, where TIM Enterprise
+      and Google Cloud continue to operate at the Opening Future Hub in collaboration
+      with Intesa Sanpaolo. The move comes as Italy positions itself to lead the AI
+      debate
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 5
+      tier2: 0
+      tier3: 1
+      avg: 1.33
+    corroboration_score: 0.2
+    unique_sources: 2
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.2
+        corroborated_claims: []
+        claim_counts:
+          www.mobileeurope.co.uk-cb2739d77c: 15
+          www.gruppotim.it-e6ec62c406: 6
+        unique_sources: 2
+      freshness:
+        boost: 0.1
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            freshness_score: 1.0
+            newest_date: '2026-03-05T15:09:04.092413+00:00'
+            dates_found: 1
+            age_days: 0
+          www.gruppotim.it-e6ec62c406:
+            freshness_score: 1.0
+            newest_date: '2026-03-05T15:08:57.595822+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.105
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            authority_type: third_party_analyst
+            authority_score: 0.7
+            authority_reason: Analyst content signals detected in text
+            is_third_party: true
+          www.gruppotim.it-e6ec62c406:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (gruppotim.it), no authority signals
+            is_third_party: true
+      contradictions:
+        has_contradictions: true
+        contradiction_count: 1
+        contradictions:
+        - source_a: www.mobileeurope.co.uk-cb2739d77c
+          source_b: www.gruppotim.it-e6ec62c406
+          claim_a: dedicated
+          claim_b: exploring
+          type: opposing_claims
+        confidence_penalty: -0.07
+- kpi_id: '3'
+  pillar: Strategy
+  type: rubric
+  score: 4.0
+  confidence: 0.46
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: ing, retail and finance. It joins the existing centre, where TIM Enterprise
+      and Google Cloud continue to operate at the Opening Future Hub in collaboration
+      with Intesa Sanpaolo. The move comes as Italy positions itself to lead the AI
+      debate
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: "ch way the wind is blowing Recent research carried out by the TIM Study\
+      \ Centre in collaboration with Intesa Sanpaolo Innovation Center shows that\
+      \ the AI market is developing strongly in Italy, as elsewhere, with an estimated\
+      \ value of \u20AC1.9bn"
+  - source_id: www.mobileeurope.co.uk-cb2739d77c
+    url: https://www.mobileeurope.co.uk/tim-enterprise-and-google-cloud-boost-cloud-and-ai-ties/
+    quote: "ovation Center strengthens our relationship with companies, the public\
+      \ administration and our partners, such as Google Cloud, making us increasingly\
+      \ a standard bearer for innovation,\u201D he added. \u201CThrough collaboration\
+      \ and hands-on learning, "
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 5
+      tier2: 0
+      tier3: 1
+      avg: 1.33
+    corroboration_score: 0.2
+    unique_sources: 2
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 0.2
+        corroborated_claims: []
+        claim_counts:
+          www.mobileeurope.co.uk-cb2739d77c: 15
+          opentools.ai-ef645c45a2: 3
+        unique_sources: 2
+      freshness:
+        boost: 0.1
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            freshness_score: 1.0
+            newest_date: '2026-03-05T15:09:04.092413+00:00'
+            dates_found: 1
+            age_days: 0
+          opentools.ai-ef645c45a2:
+            freshness_score: 1.0
+            newest_date: '2026-03-05T15:08:59.734533+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.105
+        per_source:
+          www.mobileeurope.co.uk-cb2739d77c:
+            authority_type: third_party_analyst
+            authority_score: 0.7
+            authority_reason: Analyst content signals detected in text
+            is_third_party: true
+          opentools.ai-ef645c45a2:
+            authority_type: unknown
+            authority_score: 0.4
+            authority_reason: Unknown domain (opentools.ai), no authority signals
+            is_third_party: true
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+pillar_scores:
+- pillar: Strategy
+  score: 4.0
+  confidence: 0.44
+  kpis:
+  - '1'
+  - '2'
+  - '3'
+overall_score: 4.0
+missing_evidence: []
+debug_log: null
+rag_evaluation:
+  evaluated_kpi_count: 3
+  flagged_kpi_count: 3
+  flagged_kpi_ids:
+  - '1'
+  - '2'
+  - '3'
+  overall_verdict: 3 KPIs evaluated. 3 of 3 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 49%. 3 of 3 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: '1'
+    ground_truth_used: AI is core to business model, continuous optimization, differentiated
+      innovation, automated governance, and measurable impact.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.091
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.683
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.432
+  - kpi_id: '2'
+    ground_truth_used: Multiple initiatives with clearly quantified and recurring
+      impact across business lines
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.871
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '3'
+    ground_truth_used: "Board\u2011level oversight (committee/charter), public change\
+      \ KPIs (e.g., % workforce trained, adoption rates), union/regulator agreements\
+      \ where relevant, "
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.083
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.823
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.536

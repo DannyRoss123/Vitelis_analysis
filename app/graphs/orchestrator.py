@@ -18,6 +18,7 @@ class OrchestratorState(TypedDict, total=False):
     run_id: str
     company_name: str
     company_domain: str
+    max_urls: int  # 0 = no limit (use all from export); default 30
     target_urls: List[str]
     url_count: int
     sources: List[Dict]

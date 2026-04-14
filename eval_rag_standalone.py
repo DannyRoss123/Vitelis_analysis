@@ -164,6 +164,10 @@ def main():
         help="Evaluate all rubric KPIs (ignores --kpi)"
     )
     parser.add_argument(
+        "--limit", type=int, default=None, metavar="N",
+        help="Evaluate only the first N rubric KPIs (e.g. --limit 10)"
+    )
+    parser.add_argument(
         "--no-llm-judge", action="store_true",
         help="Skip LLM-as-judge calls (faster, no API cost)"
     )
@@ -188,11 +192,15 @@ def main():
 
     # Determine which KPIs to evaluate
     kpi_ids_to_evaluate: Optional[List[str]] = None
-    if not args.all:
+    if args.all:
+        print(f"Evaluating all {len(rubric_kpis)} rubric KPIs")
+    elif args.limit is not None:
+        n = min(args.limit, len(rubric_kpis))
+        kpi_ids_to_evaluate = [r.kpi_id for r in rubric_kpis[:n]]
+        print(f"Evaluating first {n} rubric KPIs (--limit {args.limit})")
+    else:
         kpi_ids_to_evaluate = [args.kpi]
         print(f"Evaluating 1 KPI: {args.kpi}")
-    else:
-        print(f"Evaluating all {len(rubric_kpis)} rubric KPIs")
 
     # No sources in the YAML — rebuild context from citation quotes only
     # (the full source text is not stored in report.yaml)

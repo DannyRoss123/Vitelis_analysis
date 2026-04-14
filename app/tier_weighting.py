@@ -1,86 +1,16 @@
 """
-Tier-based source weighting for enhanced retrieval quality.
+Tier-based source quality assessment for confidence scoring.
 
-Applies post-retrieval boosting based on source tier metadata to prioritize
-high-credibility sources (investor reports, press releases) over lower-tier content.
+In the v2 pipeline, tier is NO LONGER used at retrieval time.
+Retrieval is purely semantic (OpenAI embeddings + cross-encoder reranking).
+
+Tier is now used exclusively at CONFIDENCE time to assess evidence quality:
+- Tier 1 sources (investor reports, whitepapers) boost confidence
+- Tier 3 sources (thin content) provide no boost
+- This is applied via calculate_tier_quality() in the confidence calculation
 """
 import os
 from typing import List, Tuple, Dict, Any
-
-
-def get_tier_boost_config() -> Dict[str, float]:
-    """Get tier boost configuration from environment variables."""
-    return {
-        "tier1": float(os.getenv("VITELIS_TIER1_BOOST", "1.5")),
-        "tier2": float(os.getenv("VITELIS_TIER2_BOOST", "1.2")),
-        "tier3": 1.0,  # Baseline
-        "oversampling_factor": float(os.getenv("VITELIS_TIER_OVERSAMPLING_FACTOR", "2")),
-    }
-
-
-def retrieve_evidence_weighted(
-    collection,
-    query: str,
-    k: int = 6,
-    apply_tier_boost: bool = True
-) -> List[Tuple[dict, str, float]]:
-    """
-    Retrieve evidence chunks with tier-based relevance boosting.
-
-    Args:
-        collection: ChromaDB collection
-        query: Search query string
-        k: Number of results to return
-        apply_tier_boost: Whether to apply tier-based boosting
-
-    Returns:
-        List of (metadata, document, weighted_score) tuples
-    """
-    if not query.strip():
-        return []
-
-    config = get_tier_boost_config()
-
-    # Over-fetch to allow for re-ranking
-    fetch_k = int(k * config["oversampling_factor"]) if apply_tier_boost else k
-
-    # Query ChromaDB
-    results = collection.query(query_texts=[query], n_results=fetch_k)
-
-    metadatas = results.get("metadatas", [[]])[0]
-    documents = results.get("documents", [[]])[0]
-    distances = results.get("distances", [[]])[0]
-
-    if not metadatas:
-        return []
-
-    # Apply tier boosting to scores
-    weighted_results = []
-    for metadata, document, distance in zip(metadatas, documents, distances):
-        tier = metadata.get("tier", 3)
-
-        # Convert distance to similarity score (lower distance = higher similarity)
-        # Normalize to [0, 1] range assuming max distance ~2.0 for normalized vectors
-        similarity = max(0.0, 1.0 - (distance / 2.0))
-
-        if apply_tier_boost:
-            # Apply tier boost
-            if tier == 1:
-                boost = config["tier1"]
-            elif tier == 2:
-                boost = config["tier2"]
-            else:
-                boost = config["tier3"]
-
-            weighted_score = similarity * boost
-        else:
-            weighted_score = similarity
-
-        weighted_results.append((metadata, document, weighted_score))
-
-    # Sort by weighted score (descending) and return top k
-    weighted_results.sort(key=lambda x: x[2], reverse=True)
-    return weighted_results[:k]
 
 
 def calculate_tier_quality(evidences: List[Tuple[dict, str, float]]) -> float:

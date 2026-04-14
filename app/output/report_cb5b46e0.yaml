@@ -1,0 +1,20 @@
+run_id: cb5b46e0
+company_name: CK Hutchison Group Telecom Holdings Limited
+company_domain: ck_hutchison_group_telecom_holdings_limited
+timestamp: '2026-04-06T20:25:16.648749+00:00'
+url_count: 1284
+kpi_results: []
+pillar_scores: []
+overall_score: 0.0
+missing_evidence: []
+debug_log: null
+kpi_definitions: null
+rag_evaluation:
+  evaluated_kpi_count: 0
+  flagged_kpi_count: 0
+  flagged_kpi_ids: []
+  overall_verdict: No rubric KPIs were available for RAG evaluation. Only quantitative
+    KPIs were present, which do not generate LLM answers.
+  summary: All 0 evaluated KPI answers appear grounded in the retrieved evidence.
+  per_kpi: []
+chromadb_snapshot_id: null

@@ -1,0 +1,85 @@
+# golden_chunks.yaml  (LEGACY — not loaded unless GOLDEN_CHUNKS_PATH + GOLDEN_CHUNKS_SOURCE=yaml)
+# -------------------------------------------------------------------------------------------
+# Canonical golden labels live in Postgres: table golden_chunks (see app/retrieval_metrics.py).
+#
+# HOW TO USE THIS FILE (optional only)
+# ------------------------------------
+# 1. Set the environment variable:
+#        GOLDEN_CHUNKS_PATH=/path/to/golden_chunks.yaml
+#    and GOLDEN_CHUNKS_SOURCE=yaml  (or both)
+# 2. Chunk IDs follow the pattern:  {source_id}::chunk_{idx}
+#    where source_id = MD5(url)[:8] from the scraper at time of that run.
+# 3. Populate this file with 5-10 manually verified examples per KPI pillar.
+#    The Hit Rate, MRR, and nDCG metrics will be meaningful immediately.
+# 4. relevance values:
+#        1 = relevant  (chunk contains useful signal for this KPI)
+#        2 = highly relevant  (chunk is a primary, direct source of evidence)
+#        3 = essential  (chunk is the definitive source — ideal top-1 result)
+#
+# FORMAT
+# ------
+# <kpi_id>:                     # must match KPIDefinition.kpi_id exactly
+#   - chunk_id: "<source_id>::chunk_<idx>"
+#     relevance: <1|2|3>        # optional; defaults to 1
+#
+# NOTE: chunk_0 is used as best estimate. To get exact chunk indices run:
+#     collection.get(include=["metadatas"])["ids"]
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── KPIs 11-17: AI Maturity / 47-KPI framework ───────────────────────────────
+# Seeded from Orange S.A. run (report_e210a974).
+
+# kpi_11: Is AI development mainly in-house or partnership-based?
+kpi_11:
+  - chunk_id: "3c4c2245::chunk_0"
+    relevance: 3
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 2
+
+# kpi_12: Are AI use cases integrated into core business processes?
+kpi_12:
+  - chunk_id: "2564949a::chunk_0"
+    relevance: 3
+  - chunk_id: "7f9ec11e::chunk_0"
+    relevance: 2
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 1
+
+# kpi_13: Total number of documented AI use cases
+kpi_13:
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 3
+  - chunk_id: "8cb0e6b0::chunk_0"
+    relevance: 2
+
+# kpi_14: AI use cases with measurable financial impact
+kpi_14:
+  - chunk_id: "e0932528::chunk_0"
+    relevance: 3
+  - chunk_id: "27522d90::chunk_0"
+    relevance: 2
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 1
+
+# kpi_15: Measurable workforce efficiency through AI / GenAI
+kpi_15:
+  - chunk_id: "e0932528::chunk_0"
+    relevance: 3
+  - chunk_id: "8cb0e6b0::chunk_0"
+    relevance: 2
+  - chunk_id: "27522d90::chunk_0"
+    relevance: 1
+
+# kpi_16: Proportion of AI use cases that are ROI-positive
+kpi_16:
+  - chunk_id: "1cad9eea::chunk_0"
+    relevance: 3
+  - chunk_id: "5640514e::chunk_0"
+    relevance: 2
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 1
+
+# kpi_17: Frequency of new AI-based functionality or model releases
+kpi_17:
+  - chunk_id: "7949e905::chunk_0"
+    relevance: 3

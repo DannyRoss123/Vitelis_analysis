@@ -1,0 +1,41 @@
+{
+  "company_name": "Orange S.A",
+  "run_id": "110ee2db",
+  "timestamp": "2026-03-27T02:57:48.600109+00:00",
+  "comparisons": [],
+  "unmatched_kpis": [
+    "Strategic alignment- aligning growth and margin strategy to needs.",
+    "Strategic alignment- aligning growth and margin strategy to needs.",
+    "Strategic alignment- aligning growth and margin strategy to needs",
+    "Strategic alignment- aligning growth and margin strategy to needs",
+    "Trust and change management- secure stakeholder buy-in to drive change"
+  ],
+  "unmatched_data_points": [
+    "Number of partnerships",
+    "AI Talent broken down into type of AI Talent (1. AI & ML Engineering 2. Data & Analytics, 3. NLP & Generative AI, 4. AI Product & Strategy)",
+    "Formal governance structure",
+    "AI Ethics documentation",
+    "CAPEX & of Total Revenue",
+    "2 year revenue growth CAGR for latest fiscal year",
+    "Free Cash Flow Margin for latest fiscal year",
+    "Share Price",
+    "Name of partnerships",
+    "Number of publicly advertised in HR/job postings?",
+    "Number of Board members with AI experience",
+    "Number of patents since 2020",
+    "First year of AI deployment",
+    "workplace reduction in FTEs",
+    "Release schedule",
+    "Number of data breaches in past 5 years",
+    "AI ethics governance model yes or no",
+    "Use cases names v2",
+    "Number of research papers (2023-2025)",
+    "Number of AI related acquisitions since 2023",
+    "Number of AI use cases since 2023",
+    "Chief Data Officer (CDO) recognition",
+    "Number of AI use cases with quantitative impact since 2023",
+    "Number of AI use cases with financial impact since 2023",
+    "Number of AI investments since 2023",
+    "Number of AI talents"
+  ]
+}

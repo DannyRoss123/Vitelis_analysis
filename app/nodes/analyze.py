@@ -19,7 +19,8 @@ def _stable_random(run_seed: str, kpi_id: str) -> random.Random:
 def _score_from_evidence(kpi: KPIDriver, evidences: List[tuple], run_seed: str) -> KPIDriverResult:
     rng = _stable_random(run_seed, kpi.kpi_id)
     base_score = 60.0
-    text_blob = " ".join(doc for _, doc in evidences).lower()
+    # retrieve_evidence now returns 3-tuples: (metadata, document, score)
+    text_blob = " ".join(doc for _, doc, *_ in evidences).lower()
 
     positives = ["strong", "improve", "growth", "quality", "efficient", "optimized"]
     negatives = ["risk", "decline", "issue", "problem", "weak"]
@@ -43,7 +44,7 @@ def _score_from_evidence(kpi: KPIDriver, evidences: List[tuple], run_seed: str) 
 
     citations = [
         Citation(source_id=metadata["source_id"], quote=doc[:200])
-        for metadata, doc in evidences[:2]
+        for metadata, doc, *_ in evidences[:2]
     ]
 
     return KPIDriverResult(

@@ -1,0 +1,1349 @@
+- kpi_id: kpi_1
+  name: Does the company have an AI strategy?
+  pillar: Strategy
+  type: rubric
+  question: What is the maturity of the Companies AI Strategy?
+  rubric:
+  - '1: AI used sporadically, no formal strategy, limited business alignment.'
+  - '2: Standalone AI projects, emerging roadmap, early data efforts but not integrated
+    organization-wide.'
+  - '3: Defined AI strategy aligned to business, cross-functional teams, enterprise
+    data management, basic governance.'
+  - '4: AI scaled across functions, mature data and ML platforms, KPIs tracked, workforce
+    skilled, formal ethics.'
+  - '5: AI is core to business model, continuous optimization, differentiated innovation,
+    automated governance, and measurable impact.'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs.
+- kpi_id: kpi_2
+  name: Percentage of AI initiatives with outcomes tied to measurable business KPIs.
+  pillar: Strategy
+  type: rubric
+  question: Evidence of AI initiatives with reported impact on key metrics (efficiency,
+    CX, cost, or revenue)
+  rubric:
+  - '1: No public evidence of AI impact'
+  - '2: Only vague qualitative mentions (e.g. “AI improves customer experience”)'
+  - '3: 1–2 specific examples with some evidence of business benefit'
+  - '4: Several initiatives with partial quantification (efficiency, cost, or CX impact)'
+  - '5: Multiple initiatives with clearly quantified and recurring impact across business
+    lines'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs.
+- kpi_id: kpi_3
+  name: C-level statements about AI Strategy
+  pillar: Strategy
+  type: rubric
+  question: Does the company’s C-level publicly communicate a defined AI strategy?
+  rubric:
+  - '1: No public signals of stakeholder commitment to AI‑driven change.'
+  - '2: High‑level intent (e.g., upskilling plans) without governance, budget, or
+    operating‑model changes.'
+  - '3: Formal governance (e.g., AI council) or CAIO appointment; initial budget lines
+    or hiring push; launch of training program and partner MoUs.'
+  - '4: Cross‑functional operating model with clear RACI; disclosed reskilling targets
+    (e.g., ≥1,000 employees), regulatory/ethics engagement, and signed multi‑year
+    partner agreements to support rollout.'
+  - '5: Board‑level oversight (committee/charter), public change KPIs (e.g., % workforce
+    trained, adoption rates), union/regulator agreements where relevant, and multi‑year
+    funding commitments with progress updates in filings.'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs
+- kpi_id: kpi_4
+  name: Presence of AI talent/experience on the Board
+  pillar: Strategy
+  type: rubric
+  question: Are there board members with proven AI expertise?
+  rubric:
+  - '1: Zero directors with AI/ML/data expertise.'
+  - '2: One director with general tech/IT background; limited direct AI experience.'
+  - '3: ≥1 director with substantive AI/ML/data leadership (e.g., led DS/ML at major
+    tech) or recognized academic AI credentials; sporadic mention of board AI oversight.'
+  - '4: ≥2 directors with strong AI/ML credentials OR a formal board committee with
+    AI in its remit (e.g., Technology & Innovation/Risk) and disclosed oversight responsibilities.'
+  - '5: ≥3 directors with AI/ML track records AND an active board committee overseeing
+    AI strategy/risk/ethics; regular AI reporting in the annual report and participation
+    in external AI governance forums.'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs
+- kpi_id: kpi_5
+  name: AI communications in social media, white papers (volume and boldness of messaging),
+    limit to G7 or primary markets
+  pillar: Strategy
+  type: rubric
+  question: How proactive and impactful is the company’s public AI messaging (social,
+    white papers) in core markets?
+  rubric:
+  - '1: ≤2 items in last 12 months; generic messaging; no metrics or named partners/customers.'
+  - '2: 3–5 items; mostly marketing; limited telecom specificity; few quantified claims.'
+  - '3: 6–10 items; includes ≥1 white paper or major conference talk (e.g., MWC, TM
+    Forum) with telecom use‑case detail; at least one piece with quantified impact.'
+  - '4: 11–20 items; steady multi‑channel cadence; several case studies with metrics
+    (e.g., AHT↓, energy↓), named partners/customers, and earned‑media pickup.'
+  - '5: >20 items; sustained multi‑channel presence; bold, target‑backed claims (e.g.,
+    care deflection ≥20%, RAN energy ↓ ≥10%), multiple reference customers, open‑sourced
+    assets/benchmarks, and third‑party awards.'
+  evidence_requirements: Trust and change management- secure stakeholder buy-in to
+    drive change
+- kpi_id: kpi_6
+  name: Number of use cases  and alignment with strategic priorities
+  pillar: Strategy
+  type: rubric
+  question: What is the number of documented AI use cases, and how well are they aligned
+    with business strategy?
+  rubric:
+  - '1: 0 disclosed AI use cases.'
+  - '2: 1–2 isolated pilots (e.g., basic chatbot or RPA) with no explicit link to
+    telecom strategy.'
+  - '3: 3–5 disclosed use cases (e.g., churn prediction, network anomaly alerts, SIM‑fraud
+    detection) with limited/implicit strategic linkage; mixed pilot/production status.'
+  - '4: 6–10 use cases spanning ≥3 domains (customer care, network/SRAN, field ops,
+    B2B) with explicit ties to 5G rollout, CX/NPS, OPEX/energy; several in production
+    with metrics.'
+  - '5: >10 use cases across portfolio (care automation/FCR/AHT, proactive outage
+    prevention/MTTR, SON/RAN energy optimization, predictive maintenance, enterprise
+    SLA assurance, sales NBA) with strong strategic linkage and analyst‑recognized
+    business impact.'
+  evidence_requirements: Use Case Selection- Target high impact use cases
+- kpi_id: kpi_7
+  name: When were the first AI solutions executed?
+  pillar: Strategy
+  type: rubric
+  question: How long has the company had operational AI solutions in place?
+  rubric:
+  - '1: No public evidence of executed AI solutions as of today; only roadmap language
+    or experiments without dates/results.'
+  - '2: First externally evidenced execution 2023–2025 (late adopter).'
+  - '3: First externally evidenced execution 2020–2022 (follower).'
+  - '4: First externally evidenced execution 2017–2019 (early adopter within telco).'
+  - '5: First externally evidenced execution ≤2016 (pioneer), and evidence of continuity
+    (at least one AI project referenced in external sources in ≥3 different years
+    since 2018).'
+  evidence_requirements: Adoption speed of AI solutions
+- kpi_id: kpi_8
+  name: Presence and clarity of a publicly communicated AI roadmap outlining long-term
+    objectives, milestones, and investment priorities.
+  pillar: Strategy
+  type: rubric
+  question: Presence and clarity of a publicly communicated AI roadmap outlining long-term
+    objectives, milestones, and investment priorities.
+  rubric:
+  - '1: No roadmap or only vague statements.'
+  - '2: Draft or internal roadmap; limited scope.'
+  - '3: Public roadmap with some milestones but unclear ownership or KPIs.'
+  - '4: Comprehensive roadmap with defined goals, milestones, and periodic updates.'
+  - '5: Enterprise-wide, integrated AI roadmap with measurable milestones, funding
+    alignment, and executive accountability.'
+  evidence_requirements: Long term AI Roadmap
+- kpi_id: kpi_9
+  name: To what extent does the organization allocate and scale financial, human,
+    and technological resources to AI initiatives in a way that delivers measurable
+    business outcomes?
+  pillar: Execution
+  type: rubric
+  question: To what extent does the organization allocate and scale financial, human,
+    and technological resources to AI initiatives in a way that delivers measurable
+    business outcomes?
+  rubric:
+  - '1: Minimal or ad-hoc resource allocation.'
+  - '2: Small budgets/pilots; inconsistent tracking.'
+  - '3: Dedicated AI funding and teams in select areas; some business outcomes measured.'
+  - '4: Sustained resource scaling across functions; measurable ROI for major initiatives.'
+  - '5: Systematic enterprise allocation tied to KPIs, ROI dashboards, and continuous
+    reprioritization.'
+  evidence_requirements: AI Funding
+- kpi_id: kpi_10
+  name: Type of technology, AI model (include agentic AI) point in time implementation
+    or agents Maturity of agentic workforce within the operating model.
+  pillar: Execution
+  type: rubric
+  question: What AI technologies/models are used, and what is the maturity of agent-based
+    AI integrations in business operations?
+  rubric:
+  - '1: Only generic analytics/RPA publicly visible; no LLM/agent pilots; 0 job postings
+    citing LLM/RAG/agent frameworks.'
+  - '2: One‑off ML/LLM pilot disclosed; vendor‑led POC; 1–2 job postings mention LLM/RAG;
+    no agentic workforce evidence.'
+  - '3: Classical ML plus ≥1 LLM/RAG pilot in CX or knowledge search; early assistive
+    “copilot” for employees; 3–5 job postings cite LLM/RAG; one public case study.'
+  - '4: Production LLM/RAG in ≥2 domains (e.g., care deflection + field ops) and initial
+    agentic automations (e.g., ticket triage); ≥2 case studies and ≥6 job postings
+    referencing agents/LLM ops; mentions of MLOps/tooling.'
+  - '5: Agentic architecture embedded in operating model (multi‑agent workflows in
+    care, network assurance, field ops) with governance; >3 public references and
+    ≥10 job postings citing agent frameworks; analyst/award recognition and reported
+    KPI gains.'
+  evidence_requirements: AI building- build tailored, practical AI models
+- kpi_id: kpi_11
+  name: Has implementation been primarily an in-house development or partnership model?
+    In-house or outsource some risk, external expertise
+  pillar: Execution
+  type: rubric
+  question: Is AI development mainly in-house or partnership-based, and how does this
+    affect risk and expertise?
+  rubric:
+  - '1: Single‑vendor POCs; no internal AI platform/team publicly evident; no multi‑year
+    alliances.'
+  - '2: Vendor‑led pilots with staff augmentation; 1–2 named partners; limited internal
+    ownership.'
+  - '3: Hybrid approach with internal product owner and partner build; ≥2 named partners
+    (e.g., hyperscaler + OSS/BSS); initial internal ML/data hires visible.'
+  - '4: Clear build‑buy‑partner strategy: public internal AI platform, ≥3 strategic
+    partners, joint case studies, early co‑development/IP sharing.'
+  - '5: Balanced model: robust in‑house platform/CoE plus ≥4 strategic partners (hyperscaler,
+    network vendors, SI); multiple co‑developed assets, open‑source/patents, and long‑term
+    funding disclosed.'
+  evidence_requirements: AI building- build tailored, practical AI models
+- kpi_id: kpi_12
+  name: Nature of AI use cases- Does the model integrate into business processes or
+    is it a stand-alone?
+  pillar: Execution
+  type: rubric
+  question: Are AI use cases integrated into core business processes, or do they operate
+    as standalone projects?
+  rubric:
+  - '1: Stand‑alone tools/demos; no links to OSS/BSS/CRM or operational workflows.'
+  - '2: Partial integration in a single function (e.g., basic chatbot) without process
+    KPIs.'
+  - '3: Integrated into ≥2 processes (e.g., CRM next‑best‑offer, NOC anomaly triage)
+    with published process KPIs; limited automation.'
+  - '4: Deep integration across ≥3 processes with closed‑loop actions (e.g., auto‑ticketing/dispatch);
+    case studies cite AHT/FCR/MTTR improvements; visible change‑management.'
+  - '5: Enterprise‑wide integration across customer, network, and field ops with policy/guardrails;
+    external reports show sustained KPI gains and automated rollback/approval workflows.'
+  evidence_requirements: Business deployment- integration into on-going operations
+- kpi_id: kpi_13
+  name: Number Use case with ROI stated, and what ROI was, how long it took to be
+    achieved
+  pillar: Execution
+  type: rubric
+  question: Total number of documented AI use cases implemented by the company
+  rubric:
+  - '1: 1–5 use cases'
+  - '2: 6–15 use cases'
+  - '3: 16–30 use cases'
+  - '4: 31–60 use cases'
+  - '5: More than 60 use cases (broad enterprise-wide deployment)'
+  evidence_requirements: Performance and ROI tracking
+- kpi_id: kpi_14
+  name: Use cases- Number of disclosed AI use cases
+  pillar: Execution
+  type: rubric
+  question: Number of AI use cases demonstrating measurable financial impact (e.g.,
+    revenue, cost, or efficiency gains)
+  rubric:
+  - '1: <10% of use cases show measurable impact'
+  - '2: 10–25% of use cases show measurable impact'
+  - '3: 26–50% of use cases show measurable impact'
+  - '4: 51–75% of use cases show measurable impact'
+  - '5: >75% of use cases show measurable impact'
+  evidence_requirements: Performance and ROI tracking
+- kpi_id: kpi_15
+  name: To what extent has the company achieved measurable workforce efficiency through
+    AI or GenAI — such as automation, task augmentation, or optimized hiring — resulting
+    in stable or increased output with equal or fewer FTEs?
+  pillar: Execution
+  type: rubric
+  question: To what extent has the company achieved measurable workforce efficiency
+    through AI or GenAI — such as automation, task augmentation, or optimized hiring
+    — resulting in stable or increased output with equal or fewer FTEs?
+  rubric:
+  - '1: Limited impact: <10% improvement in a defined function or <5% automation of
+    interactions; no measurable productivity gain.'
+  - '2: Localized impact: 10–20% productivity improvement OR 5–15% automation/deflection
+    in specific workflows (e.g., care, networks, IT).'
+  - '3: Functional impact: 20–30% improvement in one major function OR 15–25% automation
+    across multiple workflows.'
+  - '4: Multi-function impact: documented efficiency gains in 2–3 major functions,
+    with 20–40% automation/augmentation and measurable throughput increase.'
+  - '5: Enterprise impact: >40% automation or augmentation in several functions; measurable
+    enterprise-wide productivity uplift; hiring avoided at scale (>5–10% workforce
+    equivalent).'
+  evidence_requirements: Performance and ROI tracking
+- kpi_id: kpi_16
+  name: Number of use cases with financial value
+  pillar: Execution
+  type: rubric
+  question: Proportion of AI use cases that are ROI-positive (benefits exceed total
+    costs)
+  rubric:
+  - '1: <5% ROI-positive'
+  - '2: 5–15% ROI-positive'
+  - '3: 16–30% ROI-positive'
+  - '4: 31–50% ROI-positive'
+  - '5: >50% ROI-positive'
+  evidence_requirements: Performance and ROI tracking
+- kpi_id: kpi_17
+  name: New functionality releases, build on from foundational model
+  pillar: Execution
+  type: rubric
+  question: How frequently does the company release new AI-based functionalities or
+    model improvements?
+  rubric:
+  - '1: No new AI functionality released publicly in the last 12 months.'
+  - '2: 1 minor feature release (pilot scale) not clearly built on a foundation model.'
+  - '3: 2–3 releases enhancing a foundation/LLM (e.g., RAG, prompt library, new telco
+    intents); ≥1 in production.'
+  - '4: 3–4 releases/year building on the same foundation (versioned upgrades) across
+    ≥2 domains; integration/API extensions noted.'
+  - '5: ≥5 releases/year with roadmap transparency; multi‑language/country rollout;
+    extensions (tools/agents) on a stable foundation model; external references and
+    adoption metrics.'
+  evidence_requirements: Continuous learning and improvement. Refine models with new
+    attributes and data
+- kpi_id: kpi_18
+  name: To what extent has the company operationalized AI — demonstrating tangible
+    rollout and active usage of AI or GenAI in core business operations, workflows,
+    or decision processes at scale?
+  pillar: Execution
+  type: rubric
+  question: To what extent has the company operationalized AI — demonstrating tangible
+    rollout and active usage of AI or GenAI in core business operations, workflows,
+    or decision processes at scale?
+  rubric:
+  - '1: Up to 4 pilots and 1 scaled use cases; <5% of processes or workforce uses
+    artificial intelligence; no monitoring, no service levels, and no centralized
+    governance.'
+  - '2: 2–8 scaled use cases in 1 function; 15–25% of processes or workforce uses
+    artificial intelligence; basic and inconsistent operational procedures with limited
+    documentation.'
+  - '3: 8–15 scaled use cases across 2–3 functions; 25–50% of processes or workforce
+    uses artificial intelligence; core operations in place including model registry,
+    monitoring, retraining triggers, and documented incidents.'
+  - '4: 15–25 scaled use cases across 4–7 functions and multiple regions; 50–80% of
+    processes or workforce uses artificial intelligence; standardized operations including
+    automated testing, drift detection, formal approvals, and regular leadership reporting.'
+  - '5: >25 scaled use cases across ≥8 functions and several countries; >80% of processes
+    or workforce uses artificial intelligence; enterprise-grade operations with high
+    reliability, strict quality controls, independent audits, and finance-confirmed
+    business impact.'
+  evidence_requirements: Rollout and Usage
+- kpi_id: kpi_19
+  name: Appointment of a Chief Data Officer (or Data Leadership title equivalent)
+  pillar: Technical
+  type: rubric
+  question: Has the company appointed a dedicated Chief Data Officer or equivalent
+    position - exclusivly related to Governance?
+  rubric:
+  - '1: No named CDO/data leadership role; no public data‑governance or AI/data policy
+    references.'
+  - '2: Senior data leader exists (e.g., VP/Head) but not enterprise‑wide; reports
+    under IT; limited public mandate; ≤2 relevant data/ML governance job postings
+    in last 12 months.'
+  - '3: Named CDO/CDO‑equivalent appointed (≤36 months) with enterprise data‑governance
+    scope; data policy/standards mentioned in filings or website; 3–5 related postings.'
+  - '4: Enterprise CDO with board/exec oversight, data council, and published governance
+    (catalog, quality, privacy); ≥6 postings for data/ML platform/governance; references
+    to a standardized data platform.'
+  - '5: Mature model: CDO reporting to CEO/CFO/CTO; board or committee oversight;
+    periodic public reporting on data/AI governance; evidence of standardized data
+    platform across markets/brands.'
+  evidence_requirements: Data- secure and expand data
+- kpi_id: kpi_20
+  name: To what extent has the company maintained data security and confidentiality
+    in its AI operations — including the presence or absence of data breaches, leaks,
+    or other security incidents over the past five years?
+  pillar: Technical
+  type: rubric
+  question: To what extent has the company maintained data security and confidentiality
+    in its AI operations — including the presence or absence of data breaches, leaks,
+    or other security incidents over the past five years?
+  rubric:
+  - '1: Repeated or major data breaches; weak controls.'
+  - '2: One or more incidents with partial remediation.'
+  - '3: Managed risk; isolated incidents handled effectively.'
+  - '4: No incidents in past five years; strong controls and certifications.'
+  - '5: Proactive AI-specific security, independent audits, real-time monitoring;
+    spotless record.'
+  evidence_requirements: Data- secure and expand data
+- kpi_id: kpi_21
+  name: To what extent has the company established a mature, enterprise-wide data
+    strategy and foundational architecture that effectively supports AI development
+    and deployment?
+  pillar: Technical
+  type: rubric
+  question: To what extent has the company established a mature, enterprise-wide data
+    strategy and foundational architecture that effectively supports AI development
+    and deployment?
+  rubric:
+  - '1: No coherent data strategy or architecture.'
+  - '2: Fragmented data initiatives; limited AI readiness.'
+  - '3: Central data architecture under development; partial AI enablement.'
+  - '4: Established enterprise data strategy enabling scalable AI.'
+  - '5: Fully integrated, adaptive data architecture governed enterprise-wide with
+    AI readiness by design.'
+  evidence_requirements: Data Strategy and Architecture
+- kpi_id: kpi_22
+  name: To what extent does the company integrate and harmonize data from diverse
+    internal and external sources to make it efficiently usable for AI and analytics
+    applications?
+  pillar: Technical
+  type: rubric
+  question: To what extent does the company integrate and harmonize data from diverse
+    internal and external sources to make it efficiently usable for AI and analytics
+    applications?
+  rubric:
+  - '1: Data silos; no integration.'
+  - '2: Basic ETL or manual data joins.'
+  - '3: Integration across key systems; moderate usability for AI.'
+  - '4: Automated pipelines; unified data lake/mesh; strong usability.'
+  - '5: Near-real-time data integration, governed metadata, external + internal harmonization.'
+  evidence_requirements: Data integration and interoperability
+- kpi_id: kpi_23
+  name: To what extent is the company’s hardware and cloud infrastructure capable
+    of handling expanding AI workloads with high responsiveness, scalability, and
+    cost-efficiency?
+  pillar: Technical
+  type: rubric
+  question: To what extent is the company’s hardware and cloud infrastructure capable
+    of handling expanding AI workloads with high responsiveness, scalability, and
+    cost-efficiency?
+  rubric:
+  - '1: Infrastructure outdated or on-prem only.'
+  - '2: Partial cloud use; scalability limits.'
+  - '3: Modern infrastructure but cost/latency issues.'
+  - '4: Scalable hybrid/cloud infra optimized for AI loads.'
+  - '5: Elastic, cost-optimized AI infrastructure with auto-scaling and performance
+    monitoring.'
+  evidence_requirements: Infrastructure Scalability and Performance
+- kpi_id: kpi_24
+  name: To what extent has the company adopted modern, enterprise-grade analytics
+    and AI platforms that streamline model development, deployment, monitoring, and
+    lifecycle management?
+  pillar: Technical
+  type: rubric
+  question: To what extent has the company adopted modern, enterprise-grade analytics
+    and AI platforms that streamline model development, deployment, monitoring, and
+    lifecycle management?
+  rubric:
+  - '1: No standard AI/analytics platform.'
+  - '2: Tools exist but fragmented; manual processes.'
+  - '3: Unified platform adopted by some teams.'
+  - '4: Enterprise-wide standardized AI platform with MLOps tooling.'
+  - '5: Fully integrated AI ecosystem with governance, automation, and continuous
+    model ops.'
+  evidence_requirements: Technology & Analytics platforms
+- kpi_id: kpi_25
+  name: To what extent are the company’s processes and tools for developing, deploying,
+    monitoring, and improving ML models mature, automated, and aligned with production
+    standards?
+  pillar: Technical
+  type: rubric
+  question: To what extent are the company’s processes and tools for developing, deploying,
+    monitoring, and improving ML models mature, automated, and aligned with production
+    standards?
+  rubric:
+  - '1: Manual, experimental workflows.'
+  - '2: Basic CI/CD; inconsistent monitoring.'
+  - '3: Defined MLOps pipeline in select teams.'
+  - '4: Automated, monitored ML lifecycle with versioning and QA.'
+  - '5: Enterprise-grade continuous ML ops with feedback loops and A/B governance.'
+  evidence_requirements: MLOps and Model Management
+- kpi_id: kpi_26
+  name: To what extent has the company implemented robust mechanisms that safeguard
+    data against unauthorized access or misuse, ensuring compliance with privacy and
+    security regulations (e.g., GDPR, CCPA)?
+  pillar: Technical
+  type: rubric
+  question: To what extent has the company implemented robust mechanisms that safeguard
+    data against unauthorized access or misuse, ensuring compliance with privacy and
+    security regulations (e.g., GDPR, CCPA)?
+  rubric:
+  - '1: No compliance controls; violations reported.'
+  - '2: Basic policies; partial compliance.'
+  - '3: Formal compliance framework with periodic audits.'
+  - '4: Certified, organization-wide compliance with privacy laws.'
+  - '5: Continuous monitoring, privacy-by-design, AI-specific compliance automation.'
+  evidence_requirements: Data security & Privacy
+- kpi_id: kpi_27
+  name: To what extent is the company modernizing or integrating legacy systems into
+    its current data and AI architecture to eliminate bottlenecks and data silos?
+  pillar: Technical
+  type: rubric
+  question: To what extent is the company modernizing or integrating legacy systems
+    into its current data and AI architecture to eliminate bottlenecks and data silos?
+  rubric:
+  - '1: Legacy systems dominate; no integration plan.'
+  - '2: Partial modernization projects.'
+  - '3: System upgrades underway; partial AI connectivity.'
+  - '4: Majority modernized; API-based interoperability.'
+  - '5: Fully integrated, API-driven, cloud-native environment; no functional silos.'
+  evidence_requirements: Legacy System modernization and integration
+- kpi_id: kpi_28
+  name: To what extent does the company explore and adopt complementary frontier technologies
+    (e.g., IoT, blockchain, edge computing, AR/VR, quantum computing) that enhance
+    or expand AI capabilities?
+  pillar: Technical
+  type: rubric
+  question: To what extent does the company explore and adopt complementary frontier
+    technologies (e.g., IoT, blockchain, edge computing, AR/VR, quantum computing)
+    that enhance or expand AI capabilities?
+  rubric:
+  - '1: No exploration of emerging tech.'
+  - '2: Ad-hoc R&D pilots.'
+  - '3: Regular experimentation in some areas.'
+  - '4: Active multi-tech adoption supporting AI value creation.'
+  - '5: Strategic, scaled integration of frontier tech with measurable AI synergies.'
+  evidence_requirements: Emerging Tech Adoption (AI-adjacent)
+- kpi_id: kpi_29
+  name: Investments in AI-focused companies
+  pillar: Technical
+  type: rubric
+  question: Has the company invested in AI-focused startups or technology companies?
+  rubric:
+  - '1: 0 publicly disclosed AI investments or CVC activity in last 36 months.'
+  - '2: 1 small AI investment or accelerator participation disclosed; limited detail
+    on use-case fit.'
+  - '3: 2–3 AI investments disclosed (last 36 months) with at least one telco-relevant
+    use case (e.g., network AI, CX GenAI); basic integration pilots mentioned.'
+  - '4: 4–6 AI investments; portfolio spans multiple telco domains (OSS/BSS, RAN,
+    CX); co-development or joint GTM announcements with milestones.'
+  - '5: >6 AI investments and an active CVC program; follow-on rounds or exits; portfolio
+    companies referenced in deployments/case studies with measurable impact.'
+  evidence_requirements: Technology- build or buy scalable AI infrastructure
+- kpi_id: kpi_30
+  name: Acquisitions of AI-focused companies
+  pillar: Technical
+  type: rubric
+  question: Has the company acquired any AI-focused firms in recent years?
+  rubric:
+  - '1: No AI-focused acquisitions disclosed in last 36 months.'
+  - '2: 1 acquihire or minor AI acquisition disclosed; limited integration evidence.'
+  - '3: 1–2 AI acquisitions with clear telco applicability (e.g., model monitoring,
+    network analytics) and initial post-merger integration milestones.'
+  - '4: ≥2 AI acquisitions integrated into platforms/processes within 12–18 months;
+    public case studies/benefits (e.g., MTTR↓, energy↓).'
+  - '5: ≥3 AI acquisitions with demonstrable integration across markets/domains (OSS/BSS,
+    network, CX) and disclosed synergy metrics or analyst recognition.'
+  evidence_requirements: Technology- build scalable AI infrastructure
+- kpi_id: kpi_31
+  name: Acquisitions of AI-focused tools
+  pillar: Technical
+  type: rubric
+  question: Has the company acquired AI-specific tools, platforms, or software assets?
+  rubric:
+  - '1: 0–1 named AI tools/platforms publicly referenced; activity limited to trials/POCs.'
+  - '2: 2–3 named tools adopted (e.g., model serving or vector DB) but limited integration;
+    no reference architecture; vendor-led pilots.'
+  - '3: 3–5 named tools in production across ≥3 categories (e.g., feature store, MLOps,
+    monitoring, vector DB, orchestration); at least one vendor case study.'
+  - '4: 6–8 tools rationalized under a reference architecture with APIs/SSO/RBAC;
+    multi-domain usage (CX, network, field) and ≥2 public case studies.'
+  - '5: >8 tools integrated as a coherent platform with centralized governance and
+    observability; multi-country rollout and recurring third-party references/benchmarks.'
+  evidence_requirements: Technology- build scalable AI infrastructure
+- kpi_id: kpi_32
+  name: Partnerships with AI companies
+  pillar: Technical
+  type: rubric
+  question: How extensive are the company’s partnerships with external AI vendors
+    or startups?
+  rubric:
+  - '1: 0–1 active partnerships in last 24 months with verifiable activity; 0 strategic
+    partners of material scale; no published use cases or technical outputs.'
+  - '2: 2–10 active partnerships with limited depth; 0–1 strategic partners; activity
+    limited to pilots or proofs of concept without published results or customer adoption.'
+  - '3: 11–20 active partnerships across 2–3 business areas; includes ≥1 strategic
+    partner beyond standard cloud providers; at least 1 publicly demonstrated technical
+    output (e.g., working prototype, documented architecture).'
+  - '4: 21–30 active partnerships across multiple functions and ≥2 countries; ≥2 strategic
+    partners with deep engagement; ≥2 co-developed solutions with published technical
+    milestones or early customer usage.'
+  - '5: >30 active partnerships across global operations; ≥3 deep strategic partners
+    with multi-year agreements; ≥3 commercially deployed solutions co-developed with
+    partners, with measurable customer or financial outcomes, plus jointly developed
+    intellectual property or patents.'
+  evidence_requirements: Operations- set structure and automation
+- kpi_id: kpi_33
+  name: Job postings- number of open positions advertised in the public domain
+  pillar: Organizational
+  type: rubric
+  question: How many AI-related roles are publicly advertised in HR/job postings?
+  rubric:
+  - '1: 0–2 AI/ML/data roles posted in last 12 months; roles generic or contractor;
+    little/no telco-domain language.'
+  - '2: 3–10 postings; mainly one function; junior roles; sparse telco use‑case keywords
+    (e.g., churn, NOC).'
+  - '3: 11–30 postings across DS/DE/MLE/AI PM; multi‑market; ads reference telco use
+    cases (RAN, churn, CX bots).'
+  - '4: 31–75 postings incl. senior hires and MLOps; steady cadence; explicit OSS/BSS/RAN/NOC
+    requirements.'
+  - '5: >75 postings across multiple markets and job families (incl. Responsible AI,
+    RAG, vector DB); sustained cadence and leadership roles.'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_34
+  name: Training- disclosed training efforts and breadth of the activity (public disclosure)
+  pillar: Organizational
+  type: rubric
+  question: Communication of AI skill-building, academies, or employee enablement
+  rubric:
+  - '1: No mention of AI training or skills initiatives'
+  - '2: Generic training reference (non-AI-specific)'
+  - '3: Named AI upskilling initiative (e.g., “AI Academy”)'
+  - '4: Structured multi-level training for multiple roles or functions'
+  - '5: Published metrics on AI skill programs (participation, certifications, or
+    results)'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_35
+  name: AI Team Leadership structure- number of leaders (percentage of Job Titles)
+  pillar: Organizational
+  type: rubric
+  question: AI Team Leadership structure- number of leaders (percentage of Job Titles)
+  rubric:
+  - '1: <1% of AI/Data job titles; no evidence of a central AI owner or governance.'
+  - '2: 1.0–2.0% of AI/Data job titles; roles are fragmented (e.g., only in IT or
+    only in CX) with unclear cross‑network/product coverage.'
+  - '3: 2.0–3.5%; coverage across core functions (Data Science, Data Engineering,
+    MLOps) and at least one domain leader (e.g., Network AI or AI Product). Evidence
+    of a central accountable role (e.g., Head of AI/CDO).'
+  - '4: 3.5–5.0%; clearly defined AI governance/CoE and domain leads for network,
+    IT, and commercial; external references to steering committees or operating models.'
+  - '5: >5.0%; multi‑regional or BU‑embedded leadership (network, enterprise, consumer,
+    platform) plus platform/ethics/security leads; external recognition of structure
+    (analyst notes, org announcements).'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_36
+  name: AI Team Leadership structure- number of leaders (in number)
+  pillar: Organizational
+  type: rubric
+  question: AI Team Leadership structure- number of leaders (in number)
+  rubric:
+  - '1: No named AI/ML leaders beyond manager level; ad‑hoc reporting lines.'
+  - '2: Single functional leader (e.g., Head of Data Science) with limited enterprise
+    scope.'
+  - '3: 2–3 leaders (e.g., Data Eng, DS, AI Product) with a visible CoE and BU liaisons.'
+  - '4: 4–5 leaders covering DS, DE, MLOps/Platform, AI Product, Responsible AI; cross‑functional
+    governance (RACI) disclosed.'
+  - '5: >5 leaders incl. group‑level and in‑country leads; formal AI operating model
+    with enterprise CoE and federated pods.'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_37
+  name: Appointment of Chief AI Officer
+  pillar: Organizational
+  type: rubric
+  question: Has a formal Chief AI Officer role been established?
+  rubric:
+  - '1: No CAIO (or equivalent) appointed; AI responsibilities fragmented.'
+  - '2: CAIO or equivalent referenced but scope/seniority unclear; limited public
+    updates.'
+  - '3: CAIO appointed ≤24 months with defined remit; initial roadmap, budget or hiring
+    plans mentioned.'
+  - '4: CAIO with direct line to CEO/CTO/CDO; AI council in place; regular external
+    updates on milestones.'
+  - '5: CAIO with board‑level oversight; enterprise KPIs tied to AI published; external
+    recognition (awards/analyst notes).'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_38
+  name: Job titles- number of employees in AI Development, Data Engineering, AI Software
+    implementation, AI product management (other roles to be discussed) - Experience
+    description demonstrates AI skill base or focus (percentage of total employees)
+  pillar: Organizational
+  type: rubric
+  question: What percentage and number of staff work in AI development, data engineering,
+    AI product management, etc.?
+  rubric:
+  - '1: <0.10% of employees in these roles; many titles lack AI‑specific skills in
+    descriptions.'
+  - '2: 0.10–0.30%; pockets of capability, limited standardization of AI skill requirements
+    in job ads/profiles.'
+  - '3: 0.30–0.70%; balanced coverage across AI Dev, Data Eng, AI SW implementation,
+    AI Product; recurring skills (ML pipelines, MLOps, model monitoring) visible externally.'
+  - '4: 0.70–1.50%; roles distributed across network, IT, and commercial; consistent
+    senior/principal postings; visible internal communities or platform teams.'
+  - '5: >1.50%; mature talent pyramid (principal scientists, staff engineers, product
+    leads); sustained hiring velocity; clear external branding around AI careers.'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_39
+  name: Job titles- number of employees in AI Development, Data Engineering, AI Software
+    implementation, AI product management (other roles to be discussed) - Experience
+    description demonstrates AI skill base or focus (in number)
+  pillar: Organizational
+  type: rubric
+  question: Job titles- number of employees in  (1. AI & ML Engineering 2. Data &
+    Analytics, 3. NLP & Generative AI, 4. AI Product & Strategy)
+  rubric:
+  - '1: <20 employees on public LinkedIn profiles with AI/DS/ML/Data Eng titles.'
+  - '2: 20–99 employees with AI/DS/ML/Data Eng titles; limited seniority/market coverage.'
+  - '3: 100–249 employees across DS, DE, MLE, AI PM; some senior/principal roles.'
+  - '4: 250–499 employees incl. MLOps/Platform and Responsible AI roles; multi‑market
+    presence.'
+  - '5: ≥500 employees across mature job families (DS, DE, MLE, MLOps, AI PM, Responsible
+    AI); broad geographic coverage.'
+  evidence_requirements: AI Team- hire, retain, engage AI talent
+- kpi_id: kpi_40
+  name: Research- size of the AI research team (percentage of Job Titles)
+  pillar: Organizational
+  type: rubric
+  question: What percentage and count of AI-specific researchers are at the company?
+  rubric:
+  - '1: <0.02% of employees in AI research; minimal/no publications, open‑source,
+    or patent activity.'
+  - '2: 0.02–0.05%; sporadic outputs (e.g., occasional preprints, limited patent filings),
+    few telecom‑specific topics.'
+  - '3: 0.05–0.10%; formal research group announced; steady output (e.g., ≥2 peer‑reviewed
+    items/year or ≥5–20 AI‑related patents) with at least one telecom domain.'
+  - '4: 0.10–0.20%; multi‑site lab or university partnerships; sustained output (e.g.,
+    ≥5 peer‑reviewed items/year or ≥20–50 AI patents), OSS/tooling releases, conference
+    presence.'
+  - '5: >0.20%; recognized research lab with regular top‑venue publications (≥10/yr)
+    and >50 AI patents; visible telecom collaborations (e.g., O‑RAN, ETSI, TIP) and
+    joint projects with vendors/academia.'
+  evidence_requirements: Org Structure- Structure AI organization
+- kpi_id: kpi_41
+  name: Research- size of the AI research team (in number)
+  pillar: Organizational
+  type: rubric
+  question: Research- size of the AI research team (in number)
+  rubric:
+  - '1: 0–2 researchers publicly identifiable; no publications/patents.'
+  - '2: 3–5 researchers; minimal public output (posters/blogs).'
+  - '3: 6–10 researchers; ≥1 patent or peer‑reviewed/conference paper; collaboration
+    with vendor/university.'
+  - '4: 11–25 researchers; multiple publications/patents; contributions to TM Forum/ETSI/3GPP/ITU
+    or open‑source.'
+  - '5: >25 researchers; dedicated lab(s); sustained publications/patents and leadership
+    in industry/academic forums.'
+  evidence_requirements: Org Structure- Structure AI organization
+- kpi_id: kpi_42
+  name: What department “owns” AI strategy? Do they have a tech department that has
+    its own Board member?
+  pillar: Organizational
+  type: rubric
+  question: Presence of clear governance or accountability for AI strategy
+  rubric:
+  - '1: No visible governance or accountability'
+  - '2: AI ownership implied under IT/Digital'
+  - '3: Defined AI ownership (e.g., under CTO/CDO)'
+  - '4: Formal AI strategy function or Responsible AI framework published'
+  - '5: Board-level AI committee or executive oversight of AI risk and ethics disclosed'
+  evidence_requirements: Org Structure- Structure AI organization
+- kpi_id: kpi_43
+  name: AI Ethics role appointed at company, AI risk and management
+  pillar: Organizational
+  type: rubric
+  question: Has the company appointed an executive or function dedicated to AI ethics
+    and risk?
+  rubric:
+  - '1: No public AI ethics role, policy, or process.'
+  - '2: Ethics responsibilities assigned part‑time; generic principles statement only.'
+  - '3: Dedicated Responsible AI lead or committee; published policy and high‑level
+    risk process (e.g., DPIA templates).'
+  - '4: Central RAI function with review gates (bias/privacy/robustness), model register,
+    and staff training; regulator engagement noted.'
+  - '5: Independent oversight with periodic transparency reports; measurable risk
+    KPIs; participation in external standards bodies.'
+  evidence_requirements: Compliance- Uphold standards, ensure compliance
+- kpi_id: kpi_44
+  name: Compliance with AI regulations
+  pillar: Organizational
+  type: rubric
+  question: How well does the company report compliance with AI-related regulations?
+  rubric:
+  - '1: No public mention of AI regulatory compliance/readiness.'
+  - '2: General commitment to comply; no frameworks or controls described.'
+  - '3: Public mapping to a framework (e.g., NIST AI RMF) and readiness plan for applicable
+    laws (e.g., EU AI Act); DPO/legal involvement stated.'
+  - '4: Documented processes for high‑risk AI, supplier requirements, and internal
+    audits; cross‑border compliance addressed.'
+  - '5: Independent assessments/certifications (e.g., ISO/IEC 42001 when applicable);
+    regulator engagement and annual compliance reporting.'
+  evidence_requirements: Compliance- Uphold standards, ensure compliance
+- kpi_id: kpi_45
+  name: Partnership with AI Ethics organizations like IAPP
+  pillar: Organizational
+  type: rubric
+  question: Does the company collaborate with leading AI ethics organizations?
+  rubric:
+  - '1: No memberships or partnerships with AI ethics/privacy organizations.'
+  - '2: Membership in one association (e.g., IAPP/IEEE/PAI); limited activity.'
+  - '3: Memberships in multiple bodies with event participation or training programs.'
+  - '4: Active roles in working groups; co‑authored guidance or case studies; recurring
+    conference talks.'
+  - '5: Leadership roles (chairs/board), pilots/benchmarks with partners, and external
+    recognition/awards.'
+  evidence_requirements: Compliance- Uphold standards, ensure compliance
+- kpi_id: kpi_46
+  name: Governance documents published on AI deployment
+  pillar: Organizational
+  type: rubric
+  question: Does the company publish clear governance documents outlining AI and Data
+    use, deployment, and controls?
+  rubric:
+  - '1: No AI governance documentation published.'
+  - '2: Brief policy mention in a code of conduct; no operational detail.'
+  - '3: Dedicated Responsible AI page with policies covering HIL, testing, and escalation
+    at high level.'
+  - '4: Detailed governance covering risk tiers, bias/privacy metrics, human oversight,
+    vendor requirements, and model inventory; periodic updates.'
+  - '5: Comprehensive manual plus dashboards/audit summaries and incident learnings;
+    public updates at least annually.'
+  evidence_requirements: Compliance- Uphold standards, ensure compliance
+- kpi_id: kpi_47
+  name: To what extent does the company actively support employee well-being and engagement
+    throughout its AI transformation journey?
+  pillar: Organizational
+  type: rubric
+  question: To what extent does the company actively support employee well-being and
+    engagement throughout its AI transformation journey?
+  rubric:
+  - '1: Employees experience stress or resistance; no well-being initiatives in AI
+    programs.'
+  - '2: Ad-hoc well-being actions during AI rollouts.'
+  - '3: Well-being mentioned in transformation plans; limited measurement.'
+  - '4: Structured well-being and engagement initiatives linked to AI change programs.'
+  - '5: Continuous monitoring of engagement and well-being; embedded into AI governance.'
+  evidence_requirements: Employee well-being and engagement in AI Transformation
+- kpi_id: kpi_48
+  name: How effectively does the organization foster international and multicultural
+    collaboration in AI development and deployment?
+  pillar: Organizational
+  type: rubric
+  question: How effectively does the organization foster international and multicultural
+    collaboration in AI development and deployment?
+  rubric:
+  - '1: No global collaboration or diverse representation.'
+  - '2: Occasional international collaboration in isolated projects.'
+  - '3: Some cross-country teams or regional exchanges.'
+  - '4: Regular multinational AI collaboration with cultural inclusion policies.'
+  - '5: Deeply multicultural AI teams; global co-development and inclusive design
+    embedded.'
+  evidence_requirements: International & Multicultural Collaboration
+- kpi_id: kpi_49
+  name: How strongly is an AI-driven and innovation-oriented mindset embedded in the
+    company’s organizational culture?
+  pillar: Organizational
+  type: rubric
+  question: How strongly is an AI-driven and innovation-oriented mindset embedded
+    in the company’s organizational culture?
+  rubric:
+  - '1: AI seen as IT tool; low awareness and cultural alignment.'
+  - '2: Growing interest but mindset limited to tech teams.'
+  - '3: Broader cultural awareness and experimentation encouraged.'
+  - '4: AI mindset integrated into values and management principles.'
+  - '5: Company-wide AI-first mindset with continuous innovation culture.'
+  evidence_requirements: Organizational Culture and AI Mindset
+- kpi_id: kpi_50
+  name: How mature and effective are the company’s change management and communication
+    practices in enabling AI adoption?
+  pillar: Organizational
+  type: rubric
+  question: How mature and effective are the company’s change management and communication
+    practices in enabling AI adoption?
+  rubric:
+  - '1: No structured change communication or leadership alignment.'
+  - '2: Reactive communication; limited stakeholder buy-in.'
+  - '3: Defined change processes for some AI projects.'
+  - '4: Company-wide change management framework supporting AI adoption.'
+  - '5: Fully institutionalized change management with transparent, ongoing communication.'
+  evidence_requirements: Change Management and Communication
+- kpi_id: kpi_51
+  name: How well are cross-functional collaboration and governance structures established
+    to coordinate AI initiatives across departments?
+  pillar: Organizational
+  type: rubric
+  question: How well are cross-functional collaboration and governance structures
+    established to coordinate AI initiatives across departments?
+  rubric:
+  - '1: Siloed initiatives, no AI governance.'
+  - '2: Informal collaboration, unclear ownership.'
+  - '3: Some shared governance committees and cross-functional pilots.'
+  - '4: Defined governance model and collaborative workflows.'
+  - '5: Fully integrated cross-functional AI governance with clear accountability
+    and shared KPIs.'
+  evidence_requirements: Cross-Functional Collaboration and Governance
+- kpi_id: kpi_52
+  name: To what degree has the company built AI literacy and encouraged knowledge
+    sharing across the workforce?
+  pillar: Organizational
+  type: rubric
+  question: To what degree has the company built AI literacy and encouraged knowledge
+    sharing across the workforce?
+  rubric:
+  - '1: No AI training or awareness.'
+  - '2: Basic introductory learning for limited staff.'
+  - '3: Regular training for key roles; informal sharing.'
+  - '4: Structured AI learning and internal communities of practice.'
+  - '5: Enterprise-wide AI literacy programs, knowledge platforms, and culture of
+    peer sharing.'
+  evidence_requirements: AI Literacy and Knowledge Sharing
+- kpi_id: kpi_53
+  name: How ready is the company’s culture to embrace data-driven decision-making
+    and continuous AI-enabled improvement?
+  pillar: Organizational
+  type: rubric
+  question: How ready is the company’s culture to embrace data-driven decision-making
+    and continuous AI-enabled improvement?
+  rubric:
+  - '1: Decisions made by intuition; resistance to data use.'
+  - '2: Some leadership support for data use.'
+  - '3: Increasing reliance on data in specific functions.'
+  - '4: Data-driven culture promoted through leadership and tools.'
+  - '5: Organization-wide belief and behavior rooted in data-driven and AI-enhanced
+    decisions.'
+  evidence_requirements: Cultural Readiness for Data-Driven Transformation
+- kpi_id: kpi_54
+  name: How does the company integrate community engagement and social responsibility
+    into its AI initiatives?
+  pillar: Organizational
+  type: rubric
+  question: How does the company integrate community engagement and social responsibility
+    into its AI initiatives?
+  rubric:
+  - '1: No awareness of social or community impact.'
+  - '2: Minimal CSR efforts loosely connected to AI.'
+  - '3: Defined social responsibility principles for AI.'
+  - '4: Regular community engagement and ethical impact assessments.'
+  - '5: Transparent, measurable social responsibility embedded in AI lifecycle.'
+  evidence_requirements: Community and Social Responsibility
+- kpi_id: kpi_55
+  name: To what extent does the company promote an ethical culture and mechanisms
+    for continuous improvement in AI practices?
+  pillar: Organizational
+  type: rubric
+  question: To what extent does the company promote an ethical culture and mechanisms
+    for continuous improvement in AI practices?
+  rubric:
+  - '1: No ethics framework or oversight.'
+  - '2: Awareness of AI ethics but no formal policy.'
+  - '3: Defined AI ethics policy; limited enforcement.'
+  - '4: Active ethics committee and continuous review process.'
+  - '5: Ethics-by-design embedded across lifecycle; continuous learning and audits
+    applied.'
+  evidence_requirements: Ethical Culture and Continuous Improvement
+- kpi_id: kpi_56
+  name: Academic relationships- sponsorship and participation at conferences
+  pillar: Innovation
+  type: rubric
+  question: Does the company sponsor or actively participate in AI research conferences
+    and academic partnerships?
+  rubric:
+  - '1: No public academic partnerships; no sponsorships; 0 co‑authored papers or
+    joint labs.'
+  - '2: 1–2 ad‑hoc sponsorships/guest talks; 0–1 co‑authored paper; no formal MoU
+    or joint lab; limited internships.'
+  - '3: 3–5 active collaborations or recurring sponsorships; ≥1 co‑authored paper
+    or joint project; speaker/panel slots at recognized AI/telco events; 2–5 internships.'
+  - '4: 6–10 collaborations including ≥1 joint lab/MoU; ≥3 co‑authored papers in the
+    last 24 months; repeated presence at NeurIPS/ICLR/KDD/AAAI or MWC/TM Forum/IEEE;
+    scholarship programs.'
+  - '5: >10 collaborations incl. multi‑year joint research labs; ≥6 co‑authored papers
+    in the last 24 months; conference committee/organizing roles; joint IP/patents
+    and a publicly announced research agenda.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_57
+  name: Number of AI patents (5 years)
+  pillar: Innovation
+  type: rubric
+  question: How many AI-related patents has the company filed or granted in the past
+    5 years?
+  rubric:
+  - '1: 0–2 AI patent families.'
+  - '2: 3–9 families.'
+  - '3: 10–24 families.'
+  - '4: 25–49 families.'
+  - '5: ≥50 families.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_60
+  name: Number of AI specific research papers published in the public domain (5 years)
+  pillar: Innovation
+  type: rubric
+  question: How many AI-related research publications has the company released in
+    5 years?
+  rubric:
+  - '1: 0–4 papers.'
+  - '2: 5–14 papers.'
+  - '3: 15–34 papers.'
+  - '4: 35–74 papers.'
+  - '5: ≥75 papers.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_61
+  name: Open source- overall engagement with open source development ecosystem, code
+    repositories, open source projects (i.e. GitHub)
+  pillar: Innovation
+  type: rubric
+  question: To what extent does the company contribute to or lead open source AI projects
+    and repositories?
+  rubric:
+  - '1: Internal artificial intelligence code exists only in private repositories;
+    no public repositories; no external visibility or publication process.'
+  - '2: At least 1 public artificial intelligence repository, even if small; irregular
+    updates; basic documentation; no external contributors.'
+  - '3: 2–3 public repositories with occasional updates (1 per year or more); at least
+    one external signal such as a star, issue, comment, or fork.'
+  - '4: 3–4 public repositories with periodic updates (at least once a year); at least
+    one project referenced or used by an external developer, partner, or university;
+    cumulative stars ≥5 across all repositories.'
+  - '5: More than 4 public repositories with consistent updates; at least two repositories
+    referenced, forked, or used externally; cumulative stars ≥15 across all repositories.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_62
+  name: How explicitly does AI enhance the customer value proposition (e.g., personalization,
+    NPS, retention) and tie to growth/margin outcomes?
+  pillar: Strategy
+  type: rubric
+  question: How explicitly does AI enhance the customer value proposition (e.g., personalization,
+    NPS, retention) and tie to growth/margin outcomes?
+  rubric:
+  - '1: No explicit linkage between AI initiatives and customer value; no owned metrics;
+    impact anecdotes only.'
+  - '2: Some qualitative links to CX (e.g., personalization pilots); limited metrics
+    on NPS/retention; isolated case studies.'
+  - '3: Defined hypotheses and KPIs (e.g., NPS, churn, ARPU); initial A/B tests show
+    localized gains in ≥1 segment/market.'
+  - '4: Programmatic measurement across ≥3 segments/markets; uplift targets embedded
+    in product/CRM plans; ≥2 validated metrics (e.g., +NPS, −churn).'
+  - '5: AI‑driven value creation is a core strategy lever; multi‑segment, multi‑market
+    gains sustained (e.g., NPS +10, churn −15% YoY); outcomes drive roadmap & pricing.'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs
+- kpi_id: kpi_63
+  name: Evidence that AI strategy targets disruptive differentiation (new AI‑native
+    offerings, pricing models, or channels) beyond efficiency.
+  pillar: Strategy
+  type: rubric
+  question: Evidence that AI strategy targets disruptive differentiation (new AI‑native
+    offerings, pricing models, or channels) beyond efficiency.
+  rubric:
+  - '1: Efficiency‑only narrative; no AI‑native business lines, products, or services
+    or monetization ideas.'
+  - '2: One‑off ideation sessions; early concepts exist but no validation pipeline.'
+  - '3: Disruption opportunities captured in a living backlog; discovery experiments
+    run quarterly; ≥1 concept with customer validation.'
+  - '4: Dedicated AI venture/innovation track; staged funding and gates; ≥2 AI‑native
+    offerings in pilot with unit economics tracked. (products/services/business lines)'
+  - '5: AI‑native businesses, products, business lines operating at scale; cannibalization
+    managed; disruptive revenue ≥10% of digital revenue with clear growth trajectory.'
+  evidence_requirements: Strategic alignment- aligning growth and margin strategy
+    to needs
+- kpi_id: kpi_64
+  name: How clear are cross‑functional roles and responsibilities for AI (business,
+    product, data, risk, legal) from idea to run?
+  pillar: Strategy
+  type: rubric
+  question: How clear are cross‑functional roles and responsibilities for AI (business,
+    product, data, risk, legal) from idea to run?
+  rubric:
+  - '1: Unclear ownership; hand‑offs ad hoc; decisions centralized or opaque.'
+  - '2: Some role definitions exist (e.g., product/data); risk/legal engaged late.'
+  - '3: RACI defined for build/deploy/run; governance touchpoints scheduled; risk/legal
+    involved pre‑deployment on sensitive use cases.'
+  - '4: End‑to‑end operating model codified; stage gates with accountable owners;
+    coverage ≥80% of AI use cases.'
+  - '5: Operating model measured and improved; role clarity audited; >95% of use cases
+    follow defined RACI with SLA adherence.'
+  evidence_requirements: Trust and change management- secure stakeholder buy-in to
+    drive change
+- kpi_id: kpi_66
+  name: How systematically are external benchmarks used to drive AI delivery performance
+    (speed, quality, cost) and improvement targets?
+  pillar: Execution
+  type: rubric
+  question: How systematically are external benchmarks used to drive AI delivery performance
+    (speed, quality, cost) and improvement targets?
+  rubric:
+  - '1: No external benchmarking; delivery metrics not defined or inconsistent.'
+  - '2: Occasional peer comparisons; limited metric scope (e.g., only cycle time).'
+  - '3: Benchmark set defined (e.g., lead time, failure rate, cost); baseline vs top‑quartile
+    gap analyzed annually.'
+  - '4: Targets set vs top‑quartile peers; OKRs tied to gap closure; retrospectives
+    drive actions; measurable YoY improvement.'
+  - '5: Continuous benchmarking with automated data feeds; OKRs auto‑updated; sustained
+    top‑quartile performance across ≥4 core metrics.'
+  evidence_requirements: Continuous learning and improvement. Refine models with new
+    attributes and data
+- kpi_id: kpi_67
+  name: What business‑visible monitoring exists for models in production (performance,
+    drift, data quality, incidents) and who sees it?
+  pillar: Execution
+  type: rubric
+  question: What business‑visible monitoring exists for models in production (performance,
+    drift, data quality, incidents) and who sees it?
+  rubric:
+  - '1: Black‑box models; no dashboards; issues discovered by users.'
+  - '2: Basic tech dashboards; business metrics absent; manual checks.'
+  - '3: Unified model health views incl. business KPIs; drift/data quality alerts;
+    owners assigned.'
+  - '4: Role‑based real‑time dashboards for business, risk, and ops; coverage ≥80%
+    of prod models; alert‑to‑action workflows with SLA.'
+  - '5: Enterprise telemetry embedded; 100% critical models covered; explainability,
+    audit trails, and rollback integrated; exec reviews monthly.'
+  evidence_requirements: Business deployment- integration into on-going operations
+- kpi_id: kpi_68
+  name: Is there a standardized, auditable methodology to estimate and realize ROI
+    for AI (ex‑ante and ex‑post)?
+  pillar: Execution
+  type: rubric
+  question: Is there a standardized, auditable methodology to estimate and realize
+    ROI for AI (ex‑ante and ex‑post)?
+  rubric:
+  - '1: No consistent ROI method; impact claimed anecdotally.'
+  - '2: Excel‑based TCO/benefit estimates; weak counterfactuals; ex‑post rarely measured.'
+  - '3: Standard ROI templates incl. counterfactuals and confidence ranges; ex‑post
+    review required for ≥50% launches.'
+  - '4: ROI approach audited; causal methods (e.g., A/B, diff‑in‑diff); ≥75% launches
+    with verified ex‑post impact; benefits booked in finance.'
+  - '5: Portfolio‑level ROI tracked quarterly; forecast vs actual variance ≤10%; ROI
+    learnings feed selection and funding decisions.'
+  evidence_requirements: Performance and ROI tracking
+- kpi_id: kpi_69
+  name: How well is delivery aligned with applicable AI/sector regulations during
+    rollout and operation (e.g., DPIA, model cards, DSARs)?
+  pillar: Execution
+  type: rubric
+  question: How well is delivery aligned with applicable AI/sector regulations during
+    rollout and operation (e.g., DPIA, model cards, DSARs)?
+  rubric:
+  - '1: Regulatory obligations unknown; no process or documentation.'
+  - '2: Basic policies exist; compliance checks after build; limited evidence.'
+  - '3: Rollout checklist includes DPIA/record of processing; model cards for sensitive
+    use cases; DSAR process defined.'
+  - '4: Multi‑region obligations mapped; evidence collected in tooling; ≥80% use cases
+    with complete artifacts before go‑live.'
+  - '5: Compliance‑by‑design; obligations monitored continuously; audits passed; evidence
+    generated automatically; zero major findings in last 12 months.'
+  evidence_requirements: Rollout and Usage
+- kpi_id: kpi_70
+  name: Is the AI use‑case portfolio actively balanced by impact, feasibility, risk,
+    and time‑to‑value with stage‑gates?
+  pillar: Execution
+  type: rubric
+  question: Is the AI use‑case portfolio actively balanced by impact, feasibility,
+    risk, and time‑to‑value with stage‑gates?
+  rubric:
+  - '1: Opportunistic backlog; no formal prioritization; frequent pivots.'
+  - '2: Simple scoring matrix used sporadically; risk dimension implicit.'
+  - '3: Multi‑criteria scoring incl. risk and data readiness; quarterly portfolio
+    reviews; clear exit criteria for pilots.'
+  - '4: Targeted portfolio balance (e.g., 60/30/10 horizon mix); capacity allocated
+    by tier; >70% of investments meet stage‑gate thresholds.'
+  - '5: Dynamic rebalancing on signal changes; consistent horizon mix achieved; kill
+    rates transparent; value/throughput steadily improves.'
+  evidence_requirements: Business deployment- integration into on-going operations
+- kpi_id: kpi_71
+  name: How mature and reproducible is the model development workflow (from experimentation
+    to CI/CD and release)?
+  pillar: Technical
+  type: rubric
+  question: How mature and reproducible is the model development workflow (from experimentation
+    to CI/CD and release)?
+  rubric:
+  - '1: Ad hoc notebooks; environments unmanaged; manual releases.'
+  - '2: Partial versioning; some scripted training; basic code review.'
+  - '3: Standardized pipelines for train/eval/serve; artifact versioning; reproducible
+    builds.'
+  - '4: Full CI/CD for models and data; automated tests (data/robustness); canary
+    releases and rollbacks; ≥80% of models use the workflow.'
+  - '5: End‑to‑end automation incl. feature store, lineage, governance gates; blue‑green/Shadow
+    deploy at scale; 95%+ coverage.'
+  evidence_requirements: MLOps and Model Management
+- kpi_id: kpi_72
+  name: Do users have a governed self‑service data & AI portal/marketplace (catalog,
+    access control, usage analytics)?
+  pillar: Technical
+  type: rubric
+  question: Do users have a governed self‑service data & AI portal/marketplace (catalog,
+    access control, usage analytics)?
+  rubric:
+  - '1: No catalog; access via tickets; tribal knowledge.'
+  - '2: Basic catalog; manual access approvals; stale metadata.'
+  - '3: Curated catalog with ownership, quality SLAs; role‑based access; usage tracking
+    for popular assets.'
+  - '4: Unified portal for data/models/features; approvals automated; lineage visible;
+    >70% requests fulfilled via self‑service.'
+  - '5: Marketplace drives network effects; recommendations/rating; policy‑as‑code;
+    >90% requests self‑served with median wait <1h.'
+  evidence_requirements: Technology & Analytics platforms
+- kpi_id: kpi_73
+  name: Is there an enterprise‑wide canonical data model that underpins AI/analytics
+    across domains?
+  pillar: Technical
+  type: rubric
+  question: Is there an enterprise‑wide canonical data model that underpins AI/analytics
+    across domains?
+  rubric:
+  - '1: No common model; each team crafts its own definitions.'
+  - '2: Initial conventions in 1–2 domains; collisions frequent.'
+  - '3: Canonical model defined for priority domains; change process exists; mappings
+    to sources documented.'
+  - '4: Enterprise model adopted across ≥4 domains; governed extensions; model health
+    KPIs tracked; breaking changes rare.'
+  - '5: Canonical model is productized; downstream systems auto‑validated; cross‑company
+    interoperability achieved.'
+  evidence_requirements: Data Strategy and Architecture
+- kpi_id: kpi_74
+  name: How complete and enforced are data & model and policies/standards (quality,
+    lineage, privacy, retention, access)?
+  pillar: Technical
+  type: rubric
+  question: How complete and enforced are data & model and policies/standards (quality,
+    lineage, privacy, retention, access)?
+  rubric:
+  - '1: Policies informal or outdated; violations unmanaged.'
+  - '2: Core policies drafted; manual enforcement; training optional.'
+  - '3: Approved policies for quality/lineage/privacy/retention/access; owners named;
+    periodic attestation.'
+  - '4: Automated policy checks in pipelines; exceptions tracked; ≥80% assets covered;
+    staff trained annually.'
+  - '5: Policy‑as‑code across stack; continuous monitoring; >95% coverage; zero critical
+    violations in last 12 months.'
+  evidence_requirements: Data security & Privacy
+- kpi_id: kpi_75
+  name: To what extent is metadata (technical + business) captured and used to improve
+    discovery, lineage, and MDM?
+  pillar: Technical
+  type: rubric
+  question: To what extent is metadata (technical + business) captured and used to
+    improve discovery, lineage, and MDM?
+  rubric:
+  - '1: Scattered spreadsheets; minimal metadata captured.'
+  - '2: Partial technical metadata; business glossary missing.'
+  - '3: Central metadata repository; lineage for critical flows; initial business
+    glossary with owners.'
+  - '4: End‑to‑end lineage incl. ML features; glossary linked to KPIs; metadata drives
+    impact analysis; ≥80% critical assets covered.'
+  - '5: Active metadata; automated enrichment; MDM synchronized; discovery time reduced
+    ≥50%; audit queries answered on demand.'
+  evidence_requirements: Data integration and interoperability
+- kpi_id: kpi_76
+  name: Is risk appetite for AI explicitly defined (by domain/use case) and used for
+    approvals and guardrails?
+  pillar: Organizational
+  type: rubric
+  question: Is risk appetite for AI explicitly defined (by domain/use case) and used
+    for approvals and guardrails?
+  rubric:
+  - '1: No stated risk appetite; decisions case‑by‑case.'
+  - '2: Generic statement exists; not applied in approvals.'
+  - '3: Risk thresholds defined for sensitive areas (e.g., privacy, safety); approvals
+    reference them.'
+  - '4: Risk appetite quantified by domain; thresholds tied to controls; exceptions
+    tracked with owner and timeline.'
+  - '5: Risk appetite operationalized enterprise‑wide; auto‑checks in workflows; risk
+    profile reported to exec/board.'
+  evidence_requirements: Cultural Readiness for Data-Driven Transformation
+- kpi_id: kpi_77
+  name: How visible and concrete is the company’s public advocacy and action on responsible
+    AI (AI‑for‑Good)?
+  pillar: Organizational
+  type: rubric
+  question: How visible and concrete is the company’s public advocacy and action on
+    responsible AI (AI‑for‑Good)?
+  rubric:
+  - '1: No public position; no initiatives.'
+  - '2: High‑level statement on website; isolated volunteer efforts.'
+  - '3: Published commitments and KPIs; ≥1 active program; periodic updates.'
+  - '4: Multi‑year portfolio with partners; impact metrics reported; external assurance
+    for claims.'
+  - '5: Recognized leader; sustained, measurable social impact; open resources/tools
+    widely used.'
+  evidence_requirements: Community and Social Responsibility
+- kpi_id: kpi_78
+  name: Are role‑based learning paths and curricula established for AI (from execs
+    to engineers) with certification?
+  pillar: Organizational
+  type: rubric
+  question: Are role‑based learning paths and curricula established for AI (from execs
+    to engineers) with certification?
+  rubric:
+  - '1: Ad hoc trainings; no curriculum; low participation.'
+  - '2: Basic courses offered; attendance tracked; no proficiency targets.'
+  - '3: Role‑based curricula (e.g., exec, PM, DS, ops); assessments required; completion
+    targets set.'
+  - '4: Certifications recognized; on‑the‑job practice integrated; ≥80% of target
+    roles certified; skills mapped to roles.'
+  - '5: Continuous upskilling; paths tied to career progression and performance; skills
+    inventory drives staffing.'
+  evidence_requirements: AI Literacy and Knowledge Sharing
+- kpi_id: kpi_79
+  name: How structured and scalable is experimentation (PoCs/pilots) with clear success
+    metrics and governance?
+  pillar: Innovation
+  type: rubric
+  question: How structured and scalable is experimentation (PoCs/pilots) with clear
+    success metrics and governance?
+  rubric:
+  - '1: Ad hoc PoCs; success undefined; learnings lost.'
+  - '2: Basic pilot template; limited metrics; sporadic reviews.'
+  - '3: Standard experiment design; predefined success/fail metrics; quarterly review
+    board; ≥50% pilots evaluated.'
+  - '4: Scaled pipeline with budgets and gates; ≥75% pilots evaluated; learnings codified
+    and reused.'
+  - '5: Experimentation is a core engine; hit rate improving YoY; time‑to‑pilot and
+    time‑to‑production continuously shortened.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_80
+  name: Are there structured alliances/JVs to accelerate AI value with shared IP,
+    data, or distribution?
+  pillar: Innovation
+  type: rubric
+  question: Are there structured alliances/JVs to accelerate AI value with shared
+    IP, data, or distribution?
+  rubric:
+  - '1: 0 alliances or joint ventures related to artificial intelligence; only basic
+    vendor or cloud relationships; no shared intellectual property, no shared data,
+    no shared infrastructure.'
+  - '2: 1–3 non-binding collaboration agreements (memoranda, letters of intent) without
+    financial commitments; no shared assets; no technical output, pilots, or governance
+    structures in the last 24 months.'
+  - '3: ≥4 binding alliance with formal shared intellectual property terms and financial
+    contribution from both parties; 1 early technical output (prototype or co-developed
+    model) but no customer deployment and limited to one business area or one country.'
+  - '4: 5–10 alliances or joint ventures with shared financial risk, joint ownership
+    of intellectual property, and shared data or shared infrastructure; at least 1
+    joint solution deployed to customers with audited value contribution; execution
+    spans multiple functions or multiple countries.'
+  - '5: More than 3 multi-year alliances or joint ventures operating across several
+    countries with co-investment, joint roadmaps, and shared commercial accountability;
+    at least 2 customer-facing joint products that generate material profit-and-loss
+    impact; governed through joint boards, contractual performance reviews, and renewal
+    based on measurable outcomes.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_81
+  name: Do standardized, privacy‑preserving data‑sharing mechanisms exist across the
+    ecosystem?
+  pillar: Innovation
+  type: rubric
+  question: Do standardized, privacy‑preserving data‑sharing mechanisms exist across
+    the ecosystem?
+  rubric:
+  - '1: No frameworks; bilateral ad hoc exchanges.'
+  - '2: Templates exist but not enforced; legal review each time.'
+  - '3: Frameworks defined (e.g., clean rooms, FL); templates for DPA/DSA; ≥1 partner
+    live.'
+  - '4: Multiple partners live; technical & legal controls measured; breaches/incidents
+    monitored with SLA.'
+  - '5: Ecosystem‑wide frameworks scaled; automated compliance checks; data‑sharing
+    materially improves model performance and time‑to‑value.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_82
+  name: Is the firm actively shaping AI standards and regulation via consortia, position
+    papers, and pilots?
+  pillar: Innovation
+  type: rubric
+  question: Is the firm actively shaping AI standards and regulation via consortia,
+    position papers, and pilots?
+  rubric:
+  - '1: No participation; passive observer.'
+  - '2: Membership in 1–2 bodies; limited engagement.'
+  - '3: Active contributions (papers/working groups); participation in ≥1 standards
+    pilot.'
+  - '4: Leadership roles or chair positions; citations; pilots inform internal policies.'
+  - '5: Recognized thought leader; influences regulation; measurable advantages from
+    early alignment.'
+  evidence_requirements: Not specifically called out in AI Playbook
+- kpi_id: kpi_83
+  name: How rigorous is partner/vendor capability assessment (security, compliance,
+    quality, delivery, integration)?
+  pillar: Innovation
+  type: rubric
+  question: How rigorous is partner/vendor capability assessment (security, compliance,
+    quality, delivery, integration)?
+  rubric:
+  - '1: Informal selection; references only.'
+  - '2: Checklist exists; limited validation; no scoring.'
+  - '3: Structured scoring with weightings; evidence required; ≥1 vendor audit/year.'
+  - '4: Risk‑based assessments per use case; red teaming; ≥3 critical vendors audited/year;
+    corrective actions tracked.'
+  - '5: Integrated, continuous assessment; performance‑based contracts; consistent
+    vendor improvements YoY.'
+  evidence_requirements: Not specifically called out in AI Playbook

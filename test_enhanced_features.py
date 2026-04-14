@@ -9,7 +9,6 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 
 from app.tier_weighting import (
-    get_tier_boost_config,
     calculate_tier_quality,
     get_tier_distribution,
 )
@@ -25,14 +24,6 @@ from app.models import KPIDefinition
 def test_tier_weighting():
     """Test tier weighting functionality."""
     print("\n=== Testing Tier Weighting ===")
-
-    # Test config loading
-    config = get_tier_boost_config()
-    print(f"Tier boost config: {config}")
-    assert config["tier1"] == 1.5
-    assert config["tier2"] == 1.2
-    assert config["tier3"] == 1.0
-    print("[OK] Config loaded correctly")
 
     # Test tier quality calculation
     evidences_with_score = [

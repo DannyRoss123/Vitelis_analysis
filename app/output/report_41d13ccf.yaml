@@ -1,0 +1,2010 @@
+run_id: 41d13ccf
+company_name: Vodafone
+company_domain: vodafone.com
+timestamp: '2026-03-06T02:26:16.064455+00:00'
+url_count: 30
+kpi_results:
+- kpi_id: '1'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '2'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '3'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '19'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '5'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '5_28'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '20'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '8'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '9'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '10'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '1_17'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '5_6_7_28'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '5_28'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '14'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '21'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '16'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '22'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '18'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '19'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '20'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '21'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '22'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '23'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '24'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '25'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '26'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '27'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '28'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '8'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '4'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '4'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '1_17'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '18'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '34'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '35'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '36'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '37'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '38'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '10'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '3'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '3'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '11'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '12_26'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '44'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '12_26'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '11'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '47'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '48'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '49'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '50'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '11'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '52'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '53'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '54'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '12_26'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '1_3_17'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '2'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '3'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '61'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '62'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '63'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '64'
+  pillar: Strategy
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '66'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '67'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '68'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '69'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '70'
+  pillar: Execution
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '71'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '72'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '73'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '74'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '75'
+  pillar: Technical
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '5_6_7_28'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '77'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '78'
+  pillar: Organizational
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '79'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '80'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '81'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '82'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+- kpi_id: '1'
+  pillar: Innovation
+  type: rubric
+  score: 1.0
+  confidence: 0.2
+  rationale: No evidence retrieved for this KPI.
+  citations: []
+  details:
+    llm_used: false
+pillar_scores:
+- pillar: Strategy
+  score: 1.0
+  confidence: 0.2
+  kpis:
+  - '1'
+  - '2'
+  - '3'
+  - '19'
+  - '5'
+  - '5_28'
+  - '20'
+  - '8'
+  - '62'
+  - '63'
+  - '64'
+- pillar: Execution
+  score: 1.0
+  confidence: 0.2
+  kpis:
+  - '9'
+  - '10'
+  - '1_17'
+  - '5_6_7_28'
+  - '5_28'
+  - '14'
+  - '21'
+  - '16'
+  - '22'
+  - '18'
+  - '66'
+  - '67'
+  - '68'
+  - '69'
+  - '70'
+- pillar: Technical
+  score: 1.0
+  confidence: 0.2
+  kpis:
+  - '19'
+  - '20'
+  - '21'
+  - '22'
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - '27'
+  - '28'
+  - '8'
+  - '4'
+  - '4'
+  - '1_17'
+  - '71'
+  - '72'
+  - '73'
+  - '74'
+  - '75'
+- pillar: Organizational
+  score: 1.0
+  confidence: 0.2
+  kpis:
+  - '18'
+  - '34'
+  - '35'
+  - '36'
+  - '37'
+  - '38'
+  - '10'
+  - '3'
+  - '3'
+  - '11'
+  - '12_26'
+  - '44'
+  - '12_26'
+  - '11'
+  - '47'
+  - '48'
+  - '49'
+  - '50'
+  - '11'
+  - '52'
+  - '53'
+  - '54'
+  - '12_26'
+  - '5_6_7_28'
+  - '77'
+  - '78'
+- pillar: Innovation
+  score: 1.0
+  confidence: 0.2
+  kpis:
+  - '1_3_17'
+  - '2'
+  - '3'
+  - '61'
+  - '79'
+  - '80'
+  - '81'
+  - '82'
+  - '1'
+overall_score: 1.0
+missing_evidence:
+- '1'
+- '2'
+- '3'
+- '19'
+- '5'
+- '5_28'
+- '20'
+- '8'
+- '9'
+- '10'
+- '1_17'
+- '5_6_7_28'
+- '5_28'
+- '14'
+- '21'
+- '16'
+- '22'
+- '18'
+- '19'
+- '20'
+- '21'
+- '22'
+- '23'
+- '24'
+- '25'
+- '26'
+- '27'
+- '28'
+- '8'
+- '4'
+- '4'
+- '1_17'
+- '18'
+- '34'
+- '35'
+- '36'
+- '37'
+- '38'
+- '10'
+- '3'
+- '3'
+- '11'
+- '12_26'
+- '44'
+- '12_26'
+- '11'
+- '47'
+- '48'
+- '49'
+- '50'
+- '11'
+- '52'
+- '53'
+- '54'
+- '12_26'
+- '1_3_17'
+- '2'
+- '3'
+- '61'
+- '62'
+- '63'
+- '64'
+- '66'
+- '67'
+- '68'
+- '69'
+- '70'
+- '71'
+- '72'
+- '73'
+- '74'
+- '75'
+- '5_6_7_28'
+- '77'
+- '78'
+- '79'
+- '80'
+- '81'
+- '82'
+- '1'
+debug_log: null
+rag_evaluation:
+  evaluated_kpi_count: 60
+  flagged_kpi_count: 60
+  flagged_kpi_ids:
+  - '1'
+  - '2'
+  - '3'
+  - '19'
+  - '5'
+  - '5_28'
+  - '20'
+  - '8'
+  - '9'
+  - '10'
+  - '1_17'
+  - '5_6_7_28'
+  - '14'
+  - '21'
+  - '16'
+  - '22'
+  - '18'
+  - '23'
+  - '24'
+  - '25'
+  - '26'
+  - '27'
+  - '28'
+  - '4'
+  - '34'
+  - '35'
+  - '36'
+  - '37'
+  - '38'
+  - '11'
+  - '12_26'
+  - '44'
+  - '47'
+  - '48'
+  - '49'
+  - '50'
+  - '52'
+  - '53'
+  - '54'
+  - '1_3_17'
+  - '61'
+  - '62'
+  - '63'
+  - '64'
+  - '66'
+  - '67'
+  - '68'
+  - '69'
+  - '70'
+  - '71'
+  - '72'
+  - '73'
+  - '74'
+  - '75'
+  - '77'
+  - '78'
+  - '79'
+  - '80'
+  - '81'
+  - '82'
+  overall_verdict: 60 KPIs evaluated. 60 of 60 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 49%. 60 of 60 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: '1'
+    ground_truth_used: "Integrated, continuous assessment; performance\u2011based\
+      \ contracts; consistent vendor improvements YoY."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '2'
+    ground_truth_used: "\u226550 families."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '3'
+    ground_truth_used: "\u226575 papers."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '19'
+    ground_truth_used: 'Mature model: CDO reporting to CEO/CFO/CTO; board or committee
+      oversight; periodic public reporting on data/AI governance; evidence of standardized
+      da'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.08
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 1.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.565
+  - kpi_id: '5'
+    ground_truth_used: ">20 items; sustained multi\u2011channel presence; bold, target\u2011\
+      backed claims (e.g., care deflection \u226520%, RAN energy \u2193 \u226510%),\
+      \ multiple reference customers,"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.374
+  - kpi_id: '5_28'
+    ground_truth_used: More than 60 use cases (broad enterprise-wide deployment)
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.398
+  - kpi_id: '20'
+    ground_truth_used: Proactive AI-specific security, independent audits, real-time
+      monitoring; spotless record.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '8'
+    ground_truth_used: '>6 AI investments and an active CVC program; follow-on rounds
+      or exits; portfolio companies referenced in deployments/case studies with measurable
+      imp'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '9'
+    ground_truth_used: Systematic enterprise allocation tied to KPIs, ROI dashboards,
+      and continuous reprioritization.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '10'
+    ground_truth_used: "\u2265500 employees across mature job families (DS, DE, MLE,\
+      \ MLOps, AI PM, Responsible AI); broad geographic coverage."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '1_17'
+    ground_truth_used: ">30 active partnerships across global operations; \u22653\
+      \ deep strategic partners with multi-year agreements; \u22653 commercially deployed\
+      \ solutions co-develop"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '5_6_7_28'
+    ground_truth_used: "Risk appetite operationalized enterprise\u2011wide; auto\u2011\
+      checks in workflows; risk profile reported to exec/board."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '14'
+    ground_truth_used: '>75% of use cases show measurable impact'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.371
+  - kpi_id: '21'
+    ground_truth_used: Fully integrated, adaptive data architecture governed enterprise-wide
+      with AI readiness by design.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.591
+  - kpi_id: '16'
+    ground_truth_used: '>50% ROI-positive'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '22'
+    ground_truth_used: Near-real-time data integration, governed metadata, external
+      + internal harmonization.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '18'
+    ground_truth_used: '>75 postings across multiple markets and job families (incl.
+      Responsible AI, RAG, vector DB); sustained cadence and leadership roles.'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.417
+  - kpi_id: '23'
+    ground_truth_used: Elastic, cost-optimized AI infrastructure with auto-scaling
+      and performance monitoring.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '24'
+    ground_truth_used: Fully integrated AI ecosystem with governance, automation,
+      and continuous model ops.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '25'
+    ground_truth_used: Enterprise-grade continuous ML ops with feedback loops and
+      A/B governance.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '26'
+    ground_truth_used: Continuous monitoring, privacy-by-design, AI-specific compliance
+      automation.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '27'
+    ground_truth_used: Fully integrated, API-driven, cloud-native environment; no
+      functional silos.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.404
+  - kpi_id: '28'
+    ground_truth_used: Strategic, scaled integration of frontier tech with measurable
+      AI synergies.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '4'
+    ground_truth_used: '>8 tools integrated as a coherent platform with centralized
+      governance and observability; multi-country rollout and recurring third-party
+      references/b'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '34'
+    ground_truth_used: Published metrics on AI skill programs (participation, certifications,
+      or results)
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '35'
+    ground_truth_used: ">5.0%; multi\u2011regional or BU\u2011embedded leadership\
+      \ (network, enterprise, consumer, platform) plus platform/ethics/security leads;\
+      \ external recognition of"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.447
+  - kpi_id: '36'
+    ground_truth_used: ">5 leaders incl. group\u2011level and in\u2011country leads;\
+      \ formal AI operating model with enterprise CoE and federated pods."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '37'
+    ground_truth_used: "CAIO with board\u2011level oversight; enterprise KPIs tied\
+      \ to AI published; external recognition (awards/analyst notes)."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '38'
+    ground_truth_used: '>1.50%; mature talent pyramid (principal scientists, staff
+      engineers, product leads); sustained hiring velocity; clear external branding
+      around AI car'
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '11'
+    ground_truth_used: Fully integrated cross-functional AI governance with clear
+      accountability and shared KPIs.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '12_26'
+    ground_truth_used: Ethics-by-design embedded across lifecycle; continuous learning
+      and audits applied.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.404
+  - kpi_id: '44'
+    ground_truth_used: Independent assessments/certifications (e.g., ISO/IEC 42001
+      when applicable); regulator engagement and annual compliance reporting.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '47'
+    ground_truth_used: Continuous monitoring of engagement and well-being; embedded
+      into AI governance.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '48'
+    ground_truth_used: Deeply multicultural AI teams; global co-development and inclusive
+      design embedded.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '49'
+    ground_truth_used: Company-wide AI-first mindset with continuous innovation culture.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '50'
+    ground_truth_used: Fully institutionalized change management with transparent,
+      ongoing communication.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '52'
+    ground_truth_used: Enterprise-wide AI literacy programs, knowledge platforms,
+      and culture of peer sharing.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '53'
+    ground_truth_used: Organization-wide belief and behavior rooted in data-driven
+      and AI-enhanced decisions.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.587
+  - kpi_id: '54'
+    ground_truth_used: Transparent, measurable social responsibility embedded in AI
+      lifecycle.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '1_3_17'
+    ground_truth_used: ">10 collaborations incl. multi\u2011year joint research labs;\
+      \ \u22656 co\u2011authored papers in the last 24 months; conference committee/organizing\
+      \ roles; joint IP/"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '61'
+    ground_truth_used: "More than 4 public repositories with consistent updates; at\
+      \ least two repositories referenced, forked, or used externally; cumulative\
+      \ stars \u226515 across"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.382
+  - kpi_id: '62'
+    ground_truth_used: "AI\u2011driven value creation is a core strategy lever; multi\u2011\
+      segment, multi\u2011market gains sustained (e.g., NPS +10, churn \u221215% YoY);\
+      \ outcomes drive roadmap"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '63'
+    ground_truth_used: "AI\u2011native businesses, products, business lines operating\
+      \ at scale; cannibalization managed; disruptive revenue \u226510% of digital\
+      \ revenue with clear grow"
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.077
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.438
+  - kpi_id: '64'
+    ground_truth_used: Operating model measured and improved; role clarity audited;
+      >95% of use cases follow defined RACI with SLA adherence.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.572
+  - kpi_id: '66'
+    ground_truth_used: "Continuous benchmarking with automated data feeds; OKRs auto\u2011\
+      updated; sustained top\u2011quartile performance across \u22654 core metrics."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '67'
+    ground_truth_used: Enterprise telemetry embedded; 100% critical models covered;
+      explainability, audit trails, and rollback integrated; exec reviews monthly.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.437
+  - kpi_id: '68'
+    ground_truth_used: "Portfolio\u2011level ROI tracked quarterly; forecast vs actual\
+      \ variance \u226410%; ROI learnings feed selection and funding decisions."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.636
+  - kpi_id: '69'
+    ground_truth_used: "Compliance\u2011by\u2011design; obligations monitored continuously;\
+      \ audits passed; evidence generated automatically; zero major findings in last\
+      \ 12 months."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.111
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 1.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.58
+  - kpi_id: '70'
+    ground_truth_used: Dynamic rebalancing on signal changes; consistent horizon mix
+      achieved; kill rates transparent; value/throughput steadily improves.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '71'
+    ground_truth_used: "End\u2011to\u2011end automation incl. feature store, lineage,\
+      \ governance gates; blue\u2011green/Shadow deploy at scale; 95%+ coverage."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.434
+  - kpi_id: '72'
+    ground_truth_used: "Marketplace drives network effects; recommendations/rating;\
+      \ policy\u2011as\u2011code; >90% requests self\u2011served with median wait\
+      \ <1h."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '73'
+    ground_truth_used: "Canonical model is productized; downstream systems auto\u2011\
+      validated; cross\u2011company interoperability achieved."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '74'
+    ground_truth_used: "Policy\u2011as\u2011code across stack; continuous monitoring;\
+      \ >95% coverage; zero critical violations in last 12 months."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '75'
+    ground_truth_used: "Active metadata; automated enrichment; MDM synchronized; discovery\
+      \ time reduced \u226550%; audit queries answered on demand."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '77'
+    ground_truth_used: Recognized leader; sustained, measurable social impact; open
+      resources/tools widely used.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '78'
+    ground_truth_used: Continuous upskilling; paths tied to career progression and
+      performance; skills inventory drives staffing.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '79'
+    ground_truth_used: "Experimentation is a core engine; hit rate improving YoY;\
+      \ time\u2011to\u2011pilot and time\u2011to\u2011production continuously shortened."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '80'
+    ground_truth_used: More than 3 multi-year alliances or joint ventures operating
+      across several countries with co-investment, joint roadmaps, and shared commercial
+      accoun
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.378
+  - kpi_id: '81'
+    ground_truth_used: "Ecosystem\u2011wide frameworks scaled; automated compliance\
+      \ checks; data\u2011sharing materially improves model performance and time\u2011\
+      to\u2011value."
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: '82'
+    ground_truth_used: Recognized thought leader; influences regulation; measurable
+      advantages from early alignment.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.0
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.596

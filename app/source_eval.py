@@ -37,12 +37,16 @@ Five major upgrades to source quality assessment:
 
 from __future__ import annotations
 
+import json
 import os
 import re
+import time
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Set, Tuple
 from urllib.parse import urlparse
+
+import requests
 
 
 # ============================================================================
@@ -748,7 +752,142 @@ def calculate_authority_boost(
 # 5. CONTRADICTION DETECTION
 # ============================================================================
 
-# Contradiction signal patterns — pairs of opposing concepts
+# ── LLM-based semantic contradiction detection ─────────────────────────────
+
+_CONTRA_LAST_CALL_AT: Optional[float] = None
+
+
+def _llm_contradiction_check(source_claims: Dict[str, Dict[str, Any]]) -> Optional[List[Dict]]:
+    """
+    Use an LLM to detect genuine semantic contradictions across sources.
+
+    source_claims: { source_id: {"url": str, "claims": List[str]} }
+
+    Returns a list of contradiction dicts, or None on failure (triggers regex fallback).
+    """
+    global _CONTRA_LAST_CALL_AT
+
+    provider = (os.getenv("VITELIS_LLM_PROVIDER") or "").strip().lower()
+    if provider in {"gemini", "google"}:
+        # In Gemini mode, skip OpenAI-only contradiction checker and use regex fallback.
+        return None
+
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return None
+
+    # Need at least 2 sources with claims
+    sources_with_claims = {
+        sid: data for sid, data in source_claims.items() if data.get("claims")
+    }
+    if len(sources_with_claims) < 2:
+        return None
+
+    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    min_delay = float(os.getenv("VITELIS_CONTRA_MIN_DELAY", "1.0"))
+
+    if _CONTRA_LAST_CALL_AT is not None:
+        elapsed = time.time() - _CONTRA_LAST_CALL_AT
+        if elapsed < min_delay:
+            time.sleep(min_delay - elapsed)
+
+    # Build source blocks (cap at 8 claims per source to keep prompt small)
+    source_blocks = []
+    for sid, data in sources_with_claims.items():
+        url = data.get("url", sid)
+        claims = data["claims"][:8]
+        claims_text = "\n".join(f"  - {c}" for c in claims)
+        source_blocks.append(f"Source [{sid}] ({url}):\n{claims_text}")
+
+    sources_text = "\n\n".join(source_blocks)
+
+    prompt = f"""You are reviewing evidence about a company from multiple sources.
+Identify any pairs of claims from DIFFERENT sources that directly contradict each other in factual meaning.
+
+{sources_text}
+
+Return a JSON array where each item is:
+{{"source_a": "<source_id>", "claim_a": "<exact claim>", "source_b": "<source_id>", "claim_b": "<exact claim>", "type": "opposing_claims"}}
+
+Rules:
+- Only flag DIRECT factual contradictions (one claim explicitly negates the other).
+- Do NOT flag different emphasis, partial information, or time-based differences.
+- Return [] if no genuine contradictions exist.
+- Return only the JSON array, no other text."""
+
+    try:
+        response = requests.post(
+            "https://api.openai.com/v1/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": "You are a strict JSON generator. Return only valid JSON arrays."},
+                    {"role": "user", "content": prompt},
+                ],
+                "temperature": 0.1,
+                "max_tokens": 600,
+            },
+            timeout=15,
+        )
+        _CONTRA_LAST_CALL_AT = time.time()
+
+        if response.status_code != 200:
+            return None
+
+        content = response.json()["choices"][0]["message"]["content"].strip()
+        start = content.find("[")
+        end = content.rfind("]")
+        if start == -1 or end == -1:
+            return None
+        return json.loads(content[start : end + 1])
+    except Exception:
+        return None
+
+
+def _detect_contradictions_regex(
+    source_texts: Dict[str, str],
+) -> List[Dict[str, Any]]:
+    """
+    Regex-based contradiction detection (original approach, used as fallback).
+    Checks hardcoded pattern pairs across source text pairs.
+    """
+    source_ids = list(source_texts.keys())
+    contradictions: List[Dict[str, Any]] = []
+
+    for i in range(len(source_ids)):
+        for j in range(i + 1, len(source_ids)):
+            sid_a, sid_b = source_ids[i], source_ids[j]
+            text_a = source_texts[sid_a].lower()
+            text_b = source_texts[sid_b].lower()
+
+            for pos_pattern, neg_pattern in _CONTRADICTION_PAIRS:
+                pos_match_a = re.search(pos_pattern, text_a, re.IGNORECASE)
+                neg_match_b = re.search(neg_pattern, text_b, re.IGNORECASE)
+                if pos_match_a and neg_match_b:
+                    contradictions.append({
+                        "source_a": sid_a,
+                        "source_b": sid_b,
+                        "claim_a": pos_match_a.group(0)[:150],
+                        "claim_b": neg_match_b.group(0)[:150],
+                        "type": "opposing_claims",
+                    })
+
+                pos_match_b = re.search(pos_pattern, text_b, re.IGNORECASE)
+                neg_match_a = re.search(neg_pattern, text_a, re.IGNORECASE)
+                if pos_match_b and neg_match_a:
+                    contradictions.append({
+                        "source_a": sid_b,
+                        "source_b": sid_a,
+                        "claim_a": pos_match_b.group(0)[:150],
+                        "claim_b": neg_match_a.group(0)[:150],
+                        "type": "opposing_claims",
+                    })
+
+    return contradictions
+
+
+# Contradiction signal patterns — pairs of opposing concepts (used by regex fallback)
 _CONTRADICTION_PAIRS = [
     # Scale contradictions
     (r"(large|extensive|significant|major|massive)\s+(team|workforce|department|investment|budget)",
@@ -774,71 +913,70 @@ def detect_contradictions(
     """
     Detect contradictions between evidence from different sources.
 
-    Process:
-    1. Group evidence by source
-    2. For each pair of sources, check if one matches the "positive" pattern
-       while the other matches the "negative" pattern
-    3. Flag contradictions with details
+    Uses LLM-based semantic detection when an API key is available — the LLM
+    understands full meaning, not just pattern matches. Falls back to regex
+    keyword-pair matching when no API key is present.
 
     Returns:
         - has_contradictions: bool
         - contradiction_count: int
         - contradictions: list of dicts with details
         - confidence_penalty: float (0 to -0.20)
+        - detection_method: "llm" or "regex"
     """
-    # Group by source
+    # Group by source, collecting text and URLs
     source_texts: Dict[str, str] = {}
+    source_urls: Dict[str, str] = {}
     for meta, doc, _ in evidences:
         sid = meta.get("source_id", "")
         if not sid:
             continue
         source_texts.setdefault(sid, "")
         source_texts[sid] += " " + doc
+        if sid not in source_urls:
+            source_urls[sid] = meta.get("url", sid)
 
-    source_ids = list(source_texts.keys())
-    contradictions: List[Dict[str, Any]] = []
-
-    for i in range(len(source_ids)):
-        for j in range(i + 1, len(source_ids)):
-            sid_a, sid_b = source_ids[i], source_ids[j]
-            text_a = source_texts[sid_a].lower()
-            text_b = source_texts[sid_b].lower()
-
-            for pos_pattern, neg_pattern in _CONTRADICTION_PAIRS:
-                # Check A=positive, B=negative
-                pos_match_a = re.search(pos_pattern, text_a, re.IGNORECASE)
-                neg_match_b = re.search(neg_pattern, text_b, re.IGNORECASE)
-
-                if pos_match_a and neg_match_b:
-                    contradictions.append({
-                        "source_a": sid_a,
-                        "source_b": sid_b,
-                        "claim_a": pos_match_a.group(0)[:150],
-                        "claim_b": neg_match_b.group(0)[:150],
-                        "type": "opposing_claims",
-                    })
-
-                # Check B=positive, A=negative
-                pos_match_b = re.search(pos_pattern, text_b, re.IGNORECASE)
-                neg_match_a = re.search(neg_pattern, text_a, re.IGNORECASE)
-
-                if pos_match_b and neg_match_a:
-                    contradictions.append({
-                        "source_a": sid_b,
-                        "source_b": sid_a,
-                        "claim_a": pos_match_b.group(0)[:150],
-                        "claim_b": neg_match_a.group(0)[:150],
-                        "type": "opposing_claims",
-                    })
-
-    # Deduplicate (same source pair, same pattern)
-    seen: Set[str] = set()
     unique_contradictions: List[Dict] = []
-    for c in contradictions:
-        key = f"{c['source_a']}|{c['source_b']}|{c['claim_a'][:50]}"
-        if key not in seen:
-            seen.add(key)
-            unique_contradictions.append(c)
+    detection_method = "regex"
+
+    # ── Try LLM-based semantic detection first ───────────────────────────────
+    if len(source_texts) >= 2:
+        # Extract claims per source for the LLM prompt
+        source_claims: Dict[str, Dict[str, Any]] = {}
+        for sid, text in source_texts.items():
+            source_claims[sid] = {
+                "url": source_urls.get(sid, sid),
+                "claims": extract_claims(text, max_claims=8),
+            }
+
+        llm_result = _llm_contradiction_check(source_claims)
+
+        if llm_result is not None:
+            detection_method = "llm"
+            seen: Set[str] = set()
+            for c in llm_result:
+                if not isinstance(c, dict):
+                    continue
+                key = f"{c.get('source_a', '')}|{c.get('source_b', '')}|{str(c.get('claim_a', ''))[:50]}"
+                if key not in seen:
+                    seen.add(key)
+                    unique_contradictions.append({
+                        "source_a": c.get("source_a", ""),
+                        "source_b": c.get("source_b", ""),
+                        "claim_a": str(c.get("claim_a", ""))[:150],
+                        "claim_b": str(c.get("claim_b", ""))[:150],
+                        "type": c.get("type", "opposing_claims"),
+                    })
+
+    # ── Regex fallback ───────────────────────────────────────────────────────
+    if detection_method == "regex":
+        raw = _detect_contradictions_regex(source_texts)
+        seen_r: Set[str] = set()
+        for c in raw:
+            key = f"{c['source_a']}|{c['source_b']}|{c['claim_a'][:50]}"
+            if key not in seen_r:
+                seen_r.add(key)
+                unique_contradictions.append(c)
 
     # Penalty: each contradiction reduces confidence
     penalty = min(0.20, len(unique_contradictions) * 0.07)
@@ -848,7 +986,158 @@ def detect_contradictions(
         "contradiction_count": len(unique_contradictions),
         "contradictions": unique_contradictions[:10],
         "confidence_penalty": round(-penalty, 3),
+        "detection_method": detection_method,
     }
+
+
+# ============================================================================
+# 6. SOURCE INDEPENDENCE CHECK
+# ============================================================================
+
+def detect_source_independence(
+    evidences: List[Tuple[dict, str, float]],
+    similarity_threshold: float = 0.75,
+) -> Dict[str, Any]:
+    """
+    Detect near-duplicate sources (e.g. the same press release syndicated across
+    multiple sites) that would artificially inflate the corroboration score.
+
+    Uses token-level Jaccard similarity between source texts. Two sources with
+    Jaccard >= similarity_threshold are considered near-duplicates.
+
+    Returns:
+        - duplicate_pairs: list of {source_a, source_b, similarity}
+        - duplicate_source_count: int
+        - total_sources: int
+        - independence_score: float (1.0 = all independent, lower = more duplicates)
+        - corroboration_penalty: float (0 to -0.15) to reduce inflated corroboration
+    """
+    _stop = {
+        "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for",
+        "of", "with", "by", "from", "is", "are", "was", "were", "be", "been",
+        "has", "have", "had", "will", "would", "could", "should", "this",
+        "that", "these", "those", "it", "its", "we", "our", "us", "their",
+    }
+
+    # Build token sets per source (min 4-char tokens, no stop words)
+    source_tokens: Dict[str, Set[str]] = {}
+    for meta, doc, _ in evidences:
+        sid = meta.get("source_id", "")
+        if not sid:
+            continue
+        tokens = set(re.findall(r"\b\w{4,}\b", doc.lower())) - _stop
+        source_tokens.setdefault(sid, set()).update(tokens)
+
+    source_ids = list(source_tokens.keys())
+    duplicate_pairs: List[Dict[str, Any]] = []
+    duplicate_sids: Set[str] = set()
+
+    for i in range(len(source_ids)):
+        for j in range(i + 1, len(source_ids)):
+            sid_a, sid_b = source_ids[i], source_ids[j]
+            tok_a = source_tokens[sid_a]
+            tok_b = source_tokens[sid_b]
+            if not tok_a or not tok_b:
+                continue
+            intersection = len(tok_a & tok_b)
+            union = len(tok_a | tok_b)
+            jaccard = intersection / union if union > 0 else 0.0
+            if jaccard >= similarity_threshold:
+                duplicate_pairs.append({
+                    "source_a": sid_a,
+                    "source_b": sid_b,
+                    "similarity": round(jaccard, 3),
+                })
+                duplicate_sids.add(sid_a)
+                duplicate_sids.add(sid_b)
+
+    n_sources = len(source_ids)
+    n_duplicates = len(duplicate_sids)
+    independence_score = round(1.0 - (n_duplicates / n_sources), 3) if n_sources > 0 else 1.0
+
+    # Penalty on corroboration: scale by duplicate fraction, max -0.15
+    max_penalty = float(os.getenv("VITELIS_INDEPENDENCE_PENALTY_MAX", "0.15"))
+    duplicate_fraction = n_duplicates / n_sources if n_sources > 0 else 0.0
+    corroboration_penalty = round(-min(max_penalty, duplicate_fraction * max_penalty), 3)
+
+    return {
+        "duplicate_pairs": duplicate_pairs,
+        "duplicate_source_count": n_duplicates,
+        "total_sources": n_sources,
+        "independence_score": independence_score,
+        "corroboration_penalty": corroboration_penalty,
+    }
+
+
+# ============================================================================
+# 7. CROSS-KPI SOURCE REUSE PENALTY
+# ============================================================================
+
+def calculate_source_reuse_penalty(
+    kpi_results: List[Dict],
+    overuse_threshold: float = 0.25,
+) -> Dict[str, Dict]:
+    """
+    Detect sources that are cited across too many KPIs, indicating a thin or
+    narrow evidence base. A source appearing in >25% of all KPIs is flagged
+    as overused.
+
+    For each KPI where the majority of its cited sources are overused, a
+    confidence penalty is returned.
+
+    Args:
+        kpi_results: list of KPI result dicts (each has 'kpi_id' and 'citations')
+        overuse_threshold: fraction of total KPIs above which a source is overused
+
+    Returns:
+        Dict keyed by kpi_id → {penalty, overused_sources, overused_fraction, overuse_limit}
+        Only KPIs that warrant a penalty are included.
+    """
+    total_kpis = len(kpi_results)
+    if total_kpis == 0:
+        return {}
+
+    overuse_limit = max(2, int(total_kpis * overuse_threshold))
+
+    # Count how many KPIs each source URL appears in (once per KPI)
+    url_kpi_count: Counter = Counter()
+    kpi_to_urls: Dict[str, List[str]] = {}
+
+    for result in kpi_results:
+        kpi_id = result.get("kpi_id", "")
+        citations = result.get("citations", [])
+        # citations may be dicts or Citation objects
+        urls = []
+        for c in citations:
+            url = c.get("url", "") if isinstance(c, dict) else getattr(c, "url", "")
+            if url:
+                urls.append(url)
+        kpi_to_urls[kpi_id] = urls
+        for url in set(urls):
+            url_kpi_count[url] += 1
+
+    overused_urls = {url for url, count in url_kpi_count.items() if count > overuse_limit}
+
+    max_penalty = float(os.getenv("VITELIS_REUSE_PENALTY_MAX", "0.10"))
+    penalties: Dict[str, Dict] = {}
+
+    for kpi_id, urls in kpi_to_urls.items():
+        if not urls:
+            continue
+        overused = [u for u in urls if u in overused_urls]
+        overused_fraction = len(overused) / len(urls)
+
+        # Only penalise if majority of the KPI's sources are overused
+        if overused_fraction > 0.5:
+            penalty = round(-min(max_penalty, overused_fraction * max_penalty), 3)
+            penalties[kpi_id] = {
+                "penalty": penalty,
+                "overused_sources": overused,
+                "overused_fraction": round(overused_fraction, 3),
+                "overuse_limit": overuse_limit,
+            }
+
+    return penalties
 
 
 # ============================================================================

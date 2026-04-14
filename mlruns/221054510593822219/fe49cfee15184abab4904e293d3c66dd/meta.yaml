@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/som/Desktop/CourseSemII/Capstone/Team/0326/RAG-Evaluation/mlruns/221054510593822219/fe49cfee15184abab4904e293d3c66dd/artifacts
+end_time: 1775509454797
+entry_point_name: ''
+experiment_id: '221054510593822219'
+lifecycle_stage: active
+run_id: fe49cfee15184abab4904e293d3c66dd
+run_name: telecom_italia_s_p_a__pipeline__e106925e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775509454661
+status: 3
+tags: []
+user_id: som

@@ -1,0 +1,2468 @@
+run_id: 5faf1cef
+company_name: Orange S.A
+company_domain: orange.com
+timestamp: '2026-03-04T20:41:59.591497+00:00'
+url_count: 20
+kpi_results:
+- kpi_id: strat_ai_vision
+  pillar: Strategy & Governance
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: strat_ai_governance
+  pillar: Strategy & Governance
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: strat_responsible_ai_mentions
+  pillar: Strategy & Governance
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - responsible ai
+    - ai ethics
+    - ai governance
+    - ai safety
+    - responsible use
+- kpi_id: strat_ai_case_studies
+  pillar: Strategy & Governance
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - case study
+    - customer story
+    - success story
+    - AI deployment
+- kpi_id: strat_ai_announcement_recency
+  pillar: Strategy & Governance
+  type: quant
+  score: 1.0
+  confidence: 0.2
+  rationale: No dated AI announcement found.
+  citations: []
+  details:
+    days_since: null
+- kpi_id: prod_ai_product_depth
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: prod_ai_use_cases
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: prod_ai_features_count
+  pillar: Product & Delivery
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - ai feature
+    - predictive
+    - recommendation
+    - automation
+    - ml model
+- kpi_id: prod_ai_pricing_signal
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: prod_ai_quality
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: people_ai_hiring_volume
+  pillar: People & Operations
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - machine learning
+    - ml engineer
+    - data scientist
+    - ai engineer
+    - mlops
+- kpi_id: people_ai_team_org
+  pillar: People & Operations
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: people_ai_training
+  pillar: People & Operations
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: ops_data_infra
+  pillar: People & Operations
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: ops_ai_partnerships
+  pillar: People & Operations
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - partner
+    - partnership
+    - collaboration
+    - aws
+    - azure
+    - google cloud
+    - openai
+- kpi_id: ops_ai_compliance
+  pillar: Strategy & Governance
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: prod_ai_support
+  pillar: Product & Delivery
+  type: rubric
+  score: 3.0
+  confidence: 0.47
+  rationale: Heuristic fallback scoring based on evidence text.
+  citations:
+  - source_id: orange.com-79526f9cb5
+    url: https://orange.com/press
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-9e203ae516
+    url: https://orange.com/investors
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  - source_id: orange.com-69aba02582
+    url: https://orange.com/investor-relations
+    quote: JavaScript Disabled This website is using a security service to protect
+      itself from online attacks. The service requires full JavaScript support in
+      order to view the website. Please enable Javascript on your browser and try
+      again. Reference
+  details:
+    llm_used: false
+    tier_distribution:
+      tier1: 0
+      tier2: 3
+      tier3: 3
+      avg: 2.5
+    corroboration_score: 1.0
+    unique_sources: 6
+    k_used: 6
+    source_evaluation:
+      semantic_corroboration:
+        corroboration_score: 1.0
+        corroborated_claims:
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-9e203ae516
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-79526f9cb5
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-69aba02582
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-9e203ae516
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-cfff9fcb28
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-69aba02582
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-c5d20b12d8
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-cfff9fcb28
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        - claim_a: Please enable Javascript on your browser and try again.
+          claim_b: Please enable Javascript on your browser and try again.
+          source_a: orange.com-c5d20b12d8
+          source_b: orange.com-82388f7798
+          similarity: 1.0
+        claim_counts:
+          orange.com-79526f9cb5: 1
+          orange.com-9e203ae516: 1
+          orange.com-69aba02582: 1
+          orange.com-cfff9fcb28: 1
+          orange.com-c5d20b12d8: 1
+          orange.com-82388f7798: 1
+        unique_sources: 6
+      freshness:
+        boost: 0.1
+        per_source:
+          orange.com-79526f9cb5:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:23.100798+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-9e203ae516:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:27.426456+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-69aba02582:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:28.895052+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-cfff9fcb28:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:13.662296+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-c5d20b12d8:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:20.342355+00:00'
+            dates_found: 1
+            age_days: 0
+          orange.com-82388f7798:
+            freshness_score: 1.0
+            newest_date: '2026-03-04T20:41:21.762204+00:00'
+            dates_found: 1
+            age_days: 0
+      authority:
+        boost: 0.03
+        per_source:
+          orange.com-79526f9cb5:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-9e203ae516:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-69aba02582:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-cfff9fcb28:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-c5d20b12d8:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+          orange.com-82388f7798:
+            authority_type: first_party
+            authority_score: 0.5
+            authority_reason: Company's own domain (orange.com)
+            is_third_party: false
+      contradictions:
+        has_contradictions: false
+        contradiction_count: 0
+        contradictions: []
+        confidence_penalty: -0.0
+- kpi_id: ops_ai_publications
+  pillar: People & Operations
+  type: quant
+  score: 1.0
+  confidence: 0.3
+  rationale: Matched 0 keyword mentions.
+  citations: []
+  details:
+    count: 0
+    keywords:
+    - research
+    - paper
+    - publication
+    - conference
+    - arxiv
+pillar_scores:
+- pillar: Strategy & Governance
+  score: 2.28
+  confidence: 0.37
+  kpis:
+  - strat_ai_vision
+  - strat_ai_governance
+  - strat_responsible_ai_mentions
+  - strat_ai_case_studies
+  - strat_ai_announcement_recency
+  - ops_ai_compliance
+- pillar: Product & Delivery
+  score: 2.77
+  confidence: 0.44
+  kpis:
+  - prod_ai_product_depth
+  - prod_ai_use_cases
+  - prod_ai_features_count
+  - prod_ai_pricing_signal
+  - prod_ai_quality
+  - prod_ai_support
+- pillar: People & Operations
+  score: 2.22
+  confidence: 0.38
+  kpis:
+  - people_ai_hiring_volume
+  - people_ai_team_org
+  - people_ai_training
+  - ops_data_infra
+  - ops_ai_partnerships
+  - ops_ai_publications
+overall_score: 2.44
+missing_evidence:
+- strat_responsible_ai_mentions
+- strat_ai_case_studies
+- strat_ai_announcement_recency
+- prod_ai_features_count
+- people_ai_hiring_volume
+- ops_ai_partnerships
+- ops_ai_publications
+debug_log: null
+rag_evaluation:
+  evaluated_kpi_count: 11
+  flagged_kpi_count: 11
+  flagged_kpi_ids:
+  - strat_ai_vision
+  - strat_ai_governance
+  - prod_ai_product_depth
+  - prod_ai_use_cases
+  - prod_ai_pricing_signal
+  - prod_ai_quality
+  - people_ai_team_org
+  - people_ai_training
+  - ops_data_infra
+  - ops_ai_compliance
+  - prod_ai_support
+  overall_verdict: 11 KPIs evaluated. 11 of 11 KPIs were flagged. A significant portion
+    of answers may go beyond what the evidence supports. A thorough manual review
+    is recommended before presenting results externally.
+  summary: "Average answer accuracy (F1) across evaluated KPIs: 0%. Average meaning\
+    \ similarity to ideal answers: 49%. 11 of 11 KPI answers were flagged as potentially\
+    \ unsupported by evidence \u2014 manual review recommended."
+  per_kpi:
+  - kpi_id: strat_ai_vision
+    ground_truth_used: Clear, coherent AI strategy with priorities and outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: strat_ai_governance
+    ground_truth_used: Formal governance structure, committees, or policies referenced.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_product_depth
+    ground_truth_used: AI is central to products with multiple concrete features.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_use_cases
+    ground_truth_used: Multiple specific use cases with outcomes or metrics.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.583
+  - kpi_id: prod_ai_pricing_signal
+    ground_truth_used: AI explicitly packaged or priced.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: prod_ai_quality
+    ground_truth_used: Concrete benchmarks, metrics, or outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.398
+  - kpi_id: people_ai_team_org
+    ground_truth_used: Clear AI org structure or lab with leadership.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.409
+  - kpi_id: people_ai_training
+    ground_truth_used: Specific AI training programs or certifications.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5
+  - kpi_id: ops_data_infra
+    ground_truth_used: Clear data platform or infrastructure described.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.045
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.409
+  - kpi_id: ops_ai_compliance
+    ground_truth_used: Clear compliance frameworks or commitments.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.0
+    ragas_context_recall: 0.0
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.602
+  - kpi_id: prod_ai_support
+    ground_truth_used: Clear AI support capabilities and outcomes.
+    ragas_faithfulness: 0.0
+    ragas_answer_relevancy: 0.0
+    ragas_context_precision: 0.09
+    ragas_context_recall: 0.25
+    llm_judge_overall: null
+    llm_judge_feedback: LLM judge unavailable.
+    recall_at_3: 0.0
+    f1: 0.0
+    hallucination_score: 1.0
+    hallucination_flagged: true
+    mmr_diversity_score: 0.005
+    factual_correctness: 0.0
+    noise_sensitivity: 0.0
+    semantic_similarity: 0.5

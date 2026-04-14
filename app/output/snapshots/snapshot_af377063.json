@@ -1,0 +1,844 @@
+{
+  "snapshot_version": 1,
+  "run_id": "af377063",
+  "timestamp": "2026-03-06T14:39:47.337397+00:00",
+  "company_name": "Vodafone",
+  "company_domain": "vodafone.com",
+  "url_count": 80,
+  "overall_score": 1.0,
+  "pillar_scores": {
+    "Strategy": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "what_is_the_maturity_of_the_companies_ai_strategy_1",
+        "evidence_of_ai_initiatives_with_reported_impact_on_key_metrics_efficiency_cx_cost_or_revenue_2",
+        "does_the_company_s_c_level_publicly_communicate_a_defined_ai_strategy_3",
+        "are_there_board_members_with_proven_ai_expertise_4",
+        "how_proactive_and_impactful_is_the_company_s_public_ai_messaging_social_white_papers_in_core_markets_5",
+        "what_is_the_number_of_documented_ai_use_cases_and_how_well_are_they_aligned_with_business_strategy_6",
+        "how_long_has_the_company_had_operational_ai_solutions_in_place_7",
+        "presence_and_clarity_of_a_publicly_communicated_ai_roadmap_outlining_long_term_objectives_milestones_and_investment_priorities_8",
+        "how_explicitly_does_ai_enhance_the_customer_value_proposition_e_g_personalization_nps_retention_and_tie_to_growth_margin_outcomes_60",
+        "evidence_that_ai_strategy_targets_disruptive_differentiation_new_ai_native_offerings_pricing_models_or_channels_beyond_efficiency_61",
+        "how_clear_are_cross_functional_roles_and_responsibilities_for_ai_business_product_data_risk_legal_from_idea_to_run_62"
+      ]
+    },
+    "Execution": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "to_what_extent_does_the_organization_allocate_and_scale_financial_human_and_technological_resources_to_ai_initiatives_in_a_way_that_delivers_measurable_business_outcomes_9",
+        "what_ai_technologies_models_are_used_and_what_is_the_maturity_of_agent_based_ai_integrations_in_business_operations_10",
+        "is_ai_development_mainly_in_house_or_partnership_based_and_how_does_this_affect_risk_and_expertise_11",
+        "are_ai_use_cases_integrated_into_core_business_processes_or_do_they_operate_as_standalone_projects_12",
+        "total_number_of_documented_ai_use_cases_implemented_by_the_company_13",
+        "number_of_ai_use_cases_demonstrating_measurable_financial_impact_e_g_revenue_cost_or_efficiency_gains_14",
+        "to_what_extent_has_the_company_achieved_measurable_workforce_efficiency_through_ai_or_genai_such_as_automation_task_augmentation_or_optimized_hiring_resulting_in_stable_or_increased_output_with_equal_or_fewer_ftes_15",
+        "proportion_of_ai_use_cases_that_are_roi_positive_benefits_exceed_total_costs_16",
+        "how_frequently_does_the_company_release_new_ai_based_functionalities_or_model_improvements_17",
+        "to_what_extent_has_the_company_operationalized_ai_demonstrating_tangible_rollout_and_active_usage_of_ai_or_genai_in_core_business_operations_workflows_or_decision_processes_at_scale_18",
+        "how_systematically_are_external_benchmarks_used_to_drive_ai_delivery_performance_speed_quality_cost_and_improvement_targets_63",
+        "what_business_visible_monitoring_exists_for_models_in_production_performance_drift_data_quality_incidents_and_who_sees_it_64",
+        "is_there_a_standardized_auditable_methodology_to_estimate_and_realize_roi_for_ai_ex_ante_and_ex_post_65",
+        "how_well_is_delivery_aligned_with_applicable_ai_sector_regulations_during_rollout_and_operation_e_g_dpia_model_cards_dsars_66",
+        "is_the_ai_use_case_portfolio_actively_balanced_by_impact_feasibility_risk_and_time_to_value_with_stage_gates_67"
+      ]
+    },
+    "Technical": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "has_the_company_appointed_a_dedicated_chief_data_officer_or_equivalent_position_exclusivly_related_to_governance_19",
+        "to_what_extent_has_the_company_maintained_data_security_and_confidentiality_in_its_ai_operations_including_the_presence_or_absence_of_data_breaches_leaks_or_other_security_incidents_over_the_past_five_years_20",
+        "to_what_extent_has_the_company_established_a_mature_enterprise_wide_data_strategy_and_foundational_architecture_that_effectively_supports_ai_development_and_deployment_21",
+        "to_what_extent_does_the_company_integrate_and_harmonize_data_from_diverse_internal_and_external_sources_to_make_it_efficiently_usable_for_ai_and_analytics_applications_22",
+        "to_what_extent_is_the_company_s_hardware_and_cloud_infrastructure_capable_of_handling_expanding_ai_workloads_with_high_responsiveness_scalability_and_cost_efficiency_23",
+        "to_what_extent_has_the_company_adopted_modern_enterprise_grade_analytics_and_ai_platforms_that_streamline_model_development_deployment_monitoring_and_lifecycle_management_24",
+        "to_what_extent_are_the_company_s_processes_and_tools_for_developing_deploying_monitoring_and_improving_ml_models_mature_automated_and_aligned_with_production_standards_25",
+        "to_what_extent_has_the_company_implemented_robust_mechanisms_that_safeguard_data_against_unauthorized_access_or_misuse_ensuring_compliance_with_privacy_and_security_regulations_e_g_gdpr_ccpa_26",
+        "to_what_extent_is_the_company_modernizing_or_integrating_legacy_systems_into_its_current_data_and_ai_architecture_to_eliminate_bottlenecks_and_data_silos_27",
+        "to_what_extent_does_the_company_explore_and_adopt_complementary_frontier_technologies_e_g_iot_blockchain_edge_computing_ar_vr_quantum_computing_that_enhance_or_expand_ai_capabilities_28",
+        "has_the_company_invested_in_ai_focused_startups_or_technology_companies_29",
+        "has_the_company_acquired_any_ai_focused_firms_in_recent_years_30",
+        "has_the_company_acquired_ai_specific_tools_platforms_or_software_assets_31",
+        "how_extensive_are_the_company_s_partnerships_with_external_ai_vendors_or_startups_32",
+        "how_mature_and_reproducible_is_the_model_development_workflow_from_experimentation_to_ci_cd_and_release_68",
+        "do_users_have_a_governed_self_service_data_ai_portal_marketplace_catalog_access_control_usage_analytics_69",
+        "is_there_an_enterprise_wide_canonical_data_model_that_underpins_ai_analytics_across_domains_70",
+        "how_complete_and_enforced_are_data_model_and_policies_standards_quality_lineage_privacy_retention_access_71",
+        "to_what_extent_is_metadata_technical_business_captured_and_used_to_improve_discovery_lineage_and_mdm_72"
+      ]
+    },
+    "Organizational": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "how_many_ai_related_roles_are_publicly_advertised_in_hr_job_postings_33",
+        "communication_of_ai_skill_building_academies_or_employee_enablement_34",
+        "ai_team_leadership_structure_number_of_leaders_percentage_of_job_titles_35",
+        "ai_team_leadership_structure_number_of_leaders_in_number_36",
+        "has_a_formal_chief_ai_officer_role_been_established_37",
+        "what_percentage_and_number_of_staff_work_in_ai_development_data_engineering_ai_product_management_etc_38",
+        "job_titles_number_of_employees_in_1_ai_ml_engineering_2_data_analytics_3_nlp_generative_ai_4_ai_product_strategy_39",
+        "what_percentage_and_count_of_ai_specific_researchers_are_at_the_company_40",
+        "research_size_of_the_ai_research_team_in_number_41",
+        "presence_of_clear_governance_or_accountability_for_ai_strategy_42",
+        "has_the_company_appointed_an_executive_or_function_dedicated_to_ai_ethics_and_risk_43",
+        "how_well_does_the_company_report_compliance_with_ai_related_regulations_44",
+        "does_the_company_collaborate_with_leading_ai_ethics_organizations_45",
+        "does_the_company_publish_clear_governance_documents_outlining_ai_and_data_use_deployment_and_controls_46",
+        "to_what_extent_does_the_company_actively_support_employee_well_being_and_engagement_throughout_its_ai_transformation_journey_47",
+        "how_effectively_does_the_organization_foster_international_and_multicultural_collaboration_in_ai_development_and_deployment_48",
+        "how_strongly_is_an_ai_driven_and_innovation_oriented_mindset_embedded_in_the_company_s_organizational_culture_49",
+        "how_mature_and_effective_are_the_company_s_change_management_and_communication_practices_in_enabling_ai_adoption_50",
+        "how_well_are_cross_functional_collaboration_and_governance_structures_established_to_coordinate_ai_initiatives_across_departments_51",
+        "to_what_degree_has_the_company_built_ai_literacy_and_encouraged_knowledge_sharing_across_the_workforce_52",
+        "how_ready_is_the_company_s_culture_to_embrace_data_driven_decision_making_and_continuous_ai_enabled_improvement_53",
+        "how_does_the_company_integrate_community_engagement_and_social_responsibility_into_its_ai_initiatives_54",
+        "to_what_extent_does_the_company_promote_an_ethical_culture_and_mechanisms_for_continuous_improvement_in_ai_practices_55",
+        "is_risk_appetite_for_ai_explicitly_defined_by_domain_use_case_and_used_for_approvals_and_guardrails_73",
+        "how_visible_and_concrete_is_the_company_s_public_advocacy_and_action_on_responsible_ai_ai_for_good_74",
+        "are_role_based_learning_paths_and_curricula_established_for_ai_from_execs_to_engineers_with_certification_75"
+      ]
+    },
+    "Innovation": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "does_the_company_sponsor_or_actively_participate_in_ai_research_conferences_and_academic_partnerships_56",
+        "how_many_ai_related_patents_has_the_company_filed_or_granted_in_the_past_5_years_57",
+        "how_many_ai_related_research_publications_has_the_company_released_in_5_years_58",
+        "to_what_extent_does_the_company_contribute_to_or_lead_open_source_ai_projects_and_repositories_59",
+        "how_structured_and_scalable_is_experimentation_pocs_pilots_with_clear_success_metrics_and_governance_76",
+        "are_there_structured_alliances_jvs_to_accelerate_ai_value_with_shared_ip_data_or_distribution_77",
+        "do_standardized_privacy_preserving_data_sharing_mechanisms_exist_across_the_ecosystem_78",
+        "is_the_firm_actively_shaping_ai_standards_and_regulation_via_consortia_position_papers_and_pilots_79",
+        "how_rigorous_is_partner_vendor_capability_assessment_security_compliance_quality_delivery_integration_80"
+      ]
+    }
+  },
+  "kpis": {
+    "what_is_the_maturity_of_the_companies_ai_strategy_1": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "evidence_of_ai_initiatives_with_reported_impact_on_key_metrics_efficiency_cx_cost_or_revenue_2": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "does_the_company_s_c_level_publicly_communicate_a_defined_ai_strategy_3": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "are_there_board_members_with_proven_ai_expertise_4": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_proactive_and_impactful_is_the_company_s_public_ai_messaging_social_white_papers_in_core_markets_5": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "what_is_the_number_of_documented_ai_use_cases_and_how_well_are_they_aligned_with_business_strategy_6": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_long_has_the_company_had_operational_ai_solutions_in_place_7": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "presence_and_clarity_of_a_publicly_communicated_ai_roadmap_outlining_long_term_objectives_milestones_and_investment_priorities_8": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_organization_allocate_and_scale_financial_human_and_technological_resources_to_ai_initiatives_in_a_way_that_delivers_measurable_business_outcomes_9": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "what_ai_technologies_models_are_used_and_what_is_the_maturity_of_agent_based_ai_integrations_in_business_operations_10": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_ai_development_mainly_in_house_or_partnership_based_and_how_does_this_affect_risk_and_expertise_11": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "are_ai_use_cases_integrated_into_core_business_processes_or_do_they_operate_as_standalone_projects_12": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "total_number_of_documented_ai_use_cases_implemented_by_the_company_13": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "number_of_ai_use_cases_demonstrating_measurable_financial_impact_e_g_revenue_cost_or_efficiency_gains_14": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_achieved_measurable_workforce_efficiency_through_ai_or_genai_such_as_automation_task_augmentation_or_optimized_hiring_resulting_in_stable_or_increased_output_with_equal_or_fewer_ftes_15": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "proportion_of_ai_use_cases_that_are_roi_positive_benefits_exceed_total_costs_16": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_frequently_does_the_company_release_new_ai_based_functionalities_or_model_improvements_17": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_operationalized_ai_demonstrating_tangible_rollout_and_active_usage_of_ai_or_genai_in_core_business_operations_workflows_or_decision_processes_at_scale_18": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_the_company_appointed_a_dedicated_chief_data_officer_or_equivalent_position_exclusivly_related_to_governance_19": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_maintained_data_security_and_confidentiality_in_its_ai_operations_including_the_presence_or_absence_of_data_breaches_leaks_or_other_security_incidents_over_the_past_five_years_20": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_established_a_mature_enterprise_wide_data_strategy_and_foundational_architecture_that_effectively_supports_ai_development_and_deployment_21": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_company_integrate_and_harmonize_data_from_diverse_internal_and_external_sources_to_make_it_efficiently_usable_for_ai_and_analytics_applications_22": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_is_the_company_s_hardware_and_cloud_infrastructure_capable_of_handling_expanding_ai_workloads_with_high_responsiveness_scalability_and_cost_efficiency_23": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_adopted_modern_enterprise_grade_analytics_and_ai_platforms_that_streamline_model_development_deployment_monitoring_and_lifecycle_management_24": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_are_the_company_s_processes_and_tools_for_developing_deploying_monitoring_and_improving_ml_models_mature_automated_and_aligned_with_production_standards_25": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_has_the_company_implemented_robust_mechanisms_that_safeguard_data_against_unauthorized_access_or_misuse_ensuring_compliance_with_privacy_and_security_regulations_e_g_gdpr_ccpa_26": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_is_the_company_modernizing_or_integrating_legacy_systems_into_its_current_data_and_ai_architecture_to_eliminate_bottlenecks_and_data_silos_27": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_company_explore_and_adopt_complementary_frontier_technologies_e_g_iot_blockchain_edge_computing_ar_vr_quantum_computing_that_enhance_or_expand_ai_capabilities_28": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_the_company_invested_in_ai_focused_startups_or_technology_companies_29": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_the_company_acquired_any_ai_focused_firms_in_recent_years_30": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_the_company_acquired_ai_specific_tools_platforms_or_software_assets_31": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_extensive_are_the_company_s_partnerships_with_external_ai_vendors_or_startups_32": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_many_ai_related_roles_are_publicly_advertised_in_hr_job_postings_33": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "communication_of_ai_skill_building_academies_or_employee_enablement_34": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "ai_team_leadership_structure_number_of_leaders_percentage_of_job_titles_35": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "ai_team_leadership_structure_number_of_leaders_in_number_36": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_a_formal_chief_ai_officer_role_been_established_37": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "what_percentage_and_number_of_staff_work_in_ai_development_data_engineering_ai_product_management_etc_38": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "job_titles_number_of_employees_in_1_ai_ml_engineering_2_data_analytics_3_nlp_generative_ai_4_ai_product_strategy_39": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "what_percentage_and_count_of_ai_specific_researchers_are_at_the_company_40": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "research_size_of_the_ai_research_team_in_number_41": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "presence_of_clear_governance_or_accountability_for_ai_strategy_42": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "has_the_company_appointed_an_executive_or_function_dedicated_to_ai_ethics_and_risk_43": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_well_does_the_company_report_compliance_with_ai_related_regulations_44": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "does_the_company_collaborate_with_leading_ai_ethics_organizations_45": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "does_the_company_publish_clear_governance_documents_outlining_ai_and_data_use_deployment_and_controls_46": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_company_actively_support_employee_well_being_and_engagement_throughout_its_ai_transformation_journey_47": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_effectively_does_the_organization_foster_international_and_multicultural_collaboration_in_ai_development_and_deployment_48": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_strongly_is_an_ai_driven_and_innovation_oriented_mindset_embedded_in_the_company_s_organizational_culture_49": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_mature_and_effective_are_the_company_s_change_management_and_communication_practices_in_enabling_ai_adoption_50": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_well_are_cross_functional_collaboration_and_governance_structures_established_to_coordinate_ai_initiatives_across_departments_51": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_degree_has_the_company_built_ai_literacy_and_encouraged_knowledge_sharing_across_the_workforce_52": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_ready_is_the_company_s_culture_to_embrace_data_driven_decision_making_and_continuous_ai_enabled_improvement_53": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_does_the_company_integrate_community_engagement_and_social_responsibility_into_its_ai_initiatives_54": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_company_promote_an_ethical_culture_and_mechanisms_for_continuous_improvement_in_ai_practices_55": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "does_the_company_sponsor_or_actively_participate_in_ai_research_conferences_and_academic_partnerships_56": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_many_ai_related_patents_has_the_company_filed_or_granted_in_the_past_5_years_57": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_many_ai_related_research_publications_has_the_company_released_in_5_years_58": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_does_the_company_contribute_to_or_lead_open_source_ai_projects_and_repositories_59": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_explicitly_does_ai_enhance_the_customer_value_proposition_e_g_personalization_nps_retention_and_tie_to_growth_margin_outcomes_60": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "evidence_that_ai_strategy_targets_disruptive_differentiation_new_ai_native_offerings_pricing_models_or_channels_beyond_efficiency_61": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_clear_are_cross_functional_roles_and_responsibilities_for_ai_business_product_data_risk_legal_from_idea_to_run_62": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_systematically_are_external_benchmarks_used_to_drive_ai_delivery_performance_speed_quality_cost_and_improvement_targets_63": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "what_business_visible_monitoring_exists_for_models_in_production_performance_drift_data_quality_incidents_and_who_sees_it_64": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_there_a_standardized_auditable_methodology_to_estimate_and_realize_roi_for_ai_ex_ante_and_ex_post_65": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_well_is_delivery_aligned_with_applicable_ai_sector_regulations_during_rollout_and_operation_e_g_dpia_model_cards_dsars_66": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_the_ai_use_case_portfolio_actively_balanced_by_impact_feasibility_risk_and_time_to_value_with_stage_gates_67": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_mature_and_reproducible_is_the_model_development_workflow_from_experimentation_to_ci_cd_and_release_68": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "do_users_have_a_governed_self_service_data_ai_portal_marketplace_catalog_access_control_usage_analytics_69": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_there_an_enterprise_wide_canonical_data_model_that_underpins_ai_analytics_across_domains_70": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_complete_and_enforced_are_data_model_and_policies_standards_quality_lineage_privacy_retention_access_71": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "to_what_extent_is_metadata_technical_business_captured_and_used_to_improve_discovery_lineage_and_mdm_72": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_risk_appetite_for_ai_explicitly_defined_by_domain_use_case_and_used_for_approvals_and_guardrails_73": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_visible_and_concrete_is_the_company_s_public_advocacy_and_action_on_responsible_ai_ai_for_good_74": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "are_role_based_learning_paths_and_curricula_established_for_ai_from_execs_to_engineers_with_certification_75": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_structured_and_scalable_is_experimentation_pocs_pilots_with_clear_success_metrics_and_governance_76": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "are_there_structured_alliances_jvs_to_accelerate_ai_value_with_shared_ip_data_or_distribution_77": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "do_standardized_privacy_preserving_data_sharing_mechanisms_exist_across_the_ecosystem_78": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "is_the_firm_actively_shaping_ai_standards_and_regulation_via_consortia_position_papers_and_pilots_79": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "how_rigorous_is_partner_vendor_capability_assessment_security_compliance_quality_delivery_integration_80": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_af377063.yaml"
+}

@@ -27,6 +27,39 @@ Ground truth strategy:
 How to use:
     from eval_rag import run_all_evaluations
     run_all_evaluations(kpi_results, sources, kpi_definitions)
+
+Where RAG report scores come from (when LLM/ragas is not used):
+----------------------------------------------------------------
+These metrics appear in report YAML under rag_evaluation. When the OpenAI API
+is unavailable (e.g. 429) or ragas is not installed, values come from local
+fallbacks in this file — no LLM is called.
+
+  • ragas_context_precision
+    Fallback: evaluate_ragas() local approximation (lines ~253–268).
+    Formula: For each retrieved context chunk, (question_tokens ∩ chunk_tokens) / len(chunk_tokens);
+             then average over chunks. Low = retrieved text shares few words with the question.
+
+  • ragas_context_recall
+    Fallback: same block. Formula: (ground_truth_tokens ∩ context_tokens) / len(ground_truth_tokens).
+    Ground truth = Score-5 rubric text from kpis.yaml. Fraction of "ideal" words found in evidence.
+
+  • hallucination_score / hallucination_flagged
+    Fallback: evaluate_hallucination() heuristic (lines ~585–633). Always runs first.
+    Formula: Split answer into sentences;              if <20% of a sentence's words appear in evidence,
+             count as "unsupported". heuristic_score = unsupported_sentences / total_sentences.
+    If LLM layer is skipped (no key or _call_llm fails), final_score = heuristic_score.
+    hallucination_flagged = (final_score > threshold), default threshold 0.4.
+
+  • mmr_diversity_score
+    No LLM. evaluate_mmr() (lines ~702–819) uses only _simple_embedding() (hash-based 64-d vector)
+    and _cosine_similarity(). Formula: MMR re-ranks chunks; diversity_score = 1.0 - avg_redundancy,
+    where avg_redundancy is mean pairwise cosine similarity of selected chunks. High = diverse sources.
+
+  • semantic_similarity
+    No LLM in fallback. evaluate_ragas_with_ground_truth() local path (lines ~965–973).
+    Formula: answer_vec = _simple_embedding(answer), gt_vec = _simple_embedding(ground_truth);
+             raw = cosine_similarity(answer_vec, gt_vec); semantic_similarity = (raw + 1) / 2 (scale to 0–1).
+    Measures hash-based similarity between answer and Score-5 rubric text.
 """
 
 from __future__ import annotations
@@ -40,19 +73,93 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
+from app.langfuse_client import create_trace, get_trace_id
+from app.score_extensions import DEFAULT_FEATURE_FLAGS, compute_bertscore, run_cot_eval
+
 
 # ==============================================================================
-# HELPER: Call the LLM 
+# HELPER: Call the LLM (OpenAI or Gemini)
 # ==============================================================================
+
+def _extract_json_from_response(text: str) -> Optional[dict]:
+    """Parse first JSON object from LLM response text."""
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        try:
+            return json.loads(text[start : end + 1])
+        except json.JSONDecodeError:
+            pass
+    return None
+
+
+def _call_llm_gemini(prompt: str, system_msg: str, verbose: bool) -> Optional[dict]:
+    """Call Google AI Studio (Gemini) REST API for LLM judge / JSON tasks."""
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        return None
+    model = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+    full_prompt = f"{system_msg}\n\n{prompt}" if system_msg else prompt
+    max_retries = 3
+    backoff = 5
+    for attempt in range(max_retries):
+        try:
+            resp = requests.post(
+                url,
+                json={
+                    "contents": [{"parts": [{"text": full_prompt}]}],
+                    "generationConfig": {"temperature": 0.1},
+                },
+                timeout=60,
+            )
+            if resp.status_code == 429:
+                wait = backoff * (2**attempt)
+                if verbose:
+                    print(f"  [Rate limit] Gemini 429 — waiting {wait}s before retry {attempt + 1}/{max_retries}...")
+                time.sleep(wait)
+                continue
+            if resp.status_code != 200:
+                return None
+            data = resp.json()
+            candidates = data.get("candidates") or []
+            if not candidates:
+                return None
+            parts = candidates[0].get("content", {}).get("parts") or []
+            if not parts:
+                return None
+            text = parts[0].get("text", "").strip()
+            result = _extract_json_from_response(text) if text else None
+            if result:
+                return result
+        except Exception as exc:
+            if verbose:
+                print(f"  [Gemini] Attempt {attempt + 1}/{max_retries} failed: {exc}")
+            if attempt < max_retries - 1:
+                wait = backoff * (2**attempt)
+                time.sleep(wait)
+    return None
+
 
 def _call_llm(prompt: str, system_msg: str = "You are a strict JSON generator.", verbose: bool = True) -> Optional[dict]:
     """
-    Send a question to the AI (GPT-4o-mini) and get a JSON answer back.
-    This is a self-contained helper used only within this evaluation file.
-    It does not touch or modify the main scoring system.
+    Send a question to the AI and get a JSON answer back.
+    Uses Gemini if GOOGLE_API_KEY/GEMINI_API_KEY and VITELIS_LLM_PROVIDER=gemini;
+    otherwise uses OpenAI (GPT-4o-mini).
     In pipeline mode (verbose=False): skips immediately on 429 — no waiting.
     In standalone mode (verbose=True): retries twice with short backoff.
     """
+    provider = (os.getenv("VITELIS_LLM_PROVIDER") or "").strip().lower()
+    google_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    use_gemini = provider in ("gemini", "google") or (google_key and provider != "openai")
+
+    if use_gemini and google_key:
+        result = _call_llm_gemini(prompt, system_msg, verbose)
+        if result is not None:
+            return result
+        if verbose:
+            print("  [Note] Gemini judge call failed; trying OpenAI if key set.")
+
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         if verbose:
@@ -205,50 +312,60 @@ def evaluate_ragas(
         A dictionary of scores, each between 0 and 1 (1 = best possible).
     """
 
+    provider = (os.getenv("VITELIS_LLM_PROVIDER") or "").strip().lower()
+    google_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    ragas_disabled = os.getenv("VITELIS_RAGAS_DISABLED", "").lower() in {"1", "true", "yes"}
+    if provider in {"gemini", "google"} and not google_key:
+        ragas_disabled = True
+
     # --- Attempt to use the ragas library (pip install ragas) ---
-    try:
-        from ragas import evaluate as ragas_evaluate
-        from ragas.metrics import (
-            faithfulness,
-            answer_relevancy,
-            context_precision,
-            context_recall,
-        )
-        from datasets import Dataset
-
-        # Build the dataset in the format ragas expects
-        data = {
-            "question": [question],
-            "answer": [answer],
-            "contexts": [contexts],
-        }
-        if ground_truth:
-            data["ground_truth"] = [ground_truth]
-
-        dataset = Dataset.from_dict(data)
-
-        # Choose which metrics to run based on what data we have
-        metrics = [faithfulness, answer_relevancy, context_precision]
-        if ground_truth:
-            metrics.append(context_recall)
-
-        # Run the ragas evaluation
-        result = ragas_evaluate(dataset, metrics=metrics)
-        scores = result.to_pandas().iloc[0].to_dict()
-
-        return {
-            "method": "ragas_library",
-            "faithfulness": round(float(scores.get("faithfulness", 0)), 3),
-            "answer_relevancy": round(float(scores.get("answer_relevancy", 0)), 3),
-            "context_precision": round(float(scores.get("context_precision", 0)), 3),
-            "context_recall": round(float(scores.get("context_recall", 0)), 3) if ground_truth else None,
-        }
-
-    except ImportError:
-        # ragas not installed — run a lightweight local approximation instead
+    if ragas_disabled:
+        # Force local approximation path below (no external LLM calls).
         pass
-    except Exception as exc:
-        print(f"  [Warning] ragas library failed ({exc}), falling back to local approximation.")
+    else:
+        try:
+            from ragas import evaluate as ragas_evaluate
+            from ragas.metrics import (
+                faithfulness,
+                answer_relevancy,
+                context_precision,
+                context_recall,
+            )
+            from datasets import Dataset
+
+            # Build the dataset in the format ragas expects
+            data = {
+                "question": [question],
+                "answer": [answer],
+                "contexts": [contexts],
+            }
+            if ground_truth:
+                data["ground_truth"] = [ground_truth]
+
+            dataset = Dataset.from_dict(data)
+
+            # Choose which metrics to run based on what data we have
+            metrics = [faithfulness, answer_relevancy, context_precision]
+            if ground_truth:
+                metrics.append(context_recall)
+
+            # Run the ragas evaluation
+            result = ragas_evaluate(dataset, metrics=metrics)
+            scores = result.to_pandas().iloc[0].to_dict()
+
+            return {
+                "method": "ragas_library",
+                "faithfulness": round(float(scores.get("faithfulness", 0)), 3),
+                "answer_relevancy": round(float(scores.get("answer_relevancy", 0)), 3),
+                "context_precision": round(float(scores.get("context_precision", 0)), 3),
+                "context_recall": round(float(scores.get("context_recall", 0)), 3) if ground_truth else None,
+            }
+
+        except ImportError:
+            # ragas not installed — run a lightweight local approximation instead
+            pass
+        except Exception as exc:
+            print(f"  [Warning] ragas library failed ({exc}), falling back to local approximation.")
 
     # --- Lightweight local fallback (no ragas library needed) ---
     # Faithfulness: what fraction of the answer's words appear in the evidence?
@@ -887,47 +1004,54 @@ def evaluate_ragas_with_ground_truth(
         Dictionary with scores for all three checks (0-1 scale each).
     """
 
+    provider = (os.getenv("VITELIS_LLM_PROVIDER") or "").strip().lower()
+    google_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    ragas_disabled = os.getenv("VITELIS_RAGAS_DISABLED", "").lower() in {"1", "true", "yes"}
+    if provider in {"gemini", "google"} and not google_key:
+        ragas_disabled = True
+
     # --- Attempt to use the ragas library ---
-    try:
-        from ragas import evaluate as ragas_evaluate
-        from ragas.metrics import (
-            FactualCorrectness,
-            NoiseSensitivity,
-            SemanticSimilarity,
-        )
-        from datasets import Dataset
+    if not ragas_disabled:
+        try:
+            from ragas import evaluate as ragas_evaluate
+            from ragas.metrics import (
+                FactualCorrectness,
+                NoiseSensitivity,
+                SemanticSimilarity,
+            )
+            from datasets import Dataset
 
-        # Build the dataset ragas expects
-        dataset = Dataset.from_dict({
-            "question": [question],
-            "answer": [answer],
-            "contexts": [contexts],
-            "ground_truth": [ground_truth],
-        })
+            # Build the dataset ragas expects
+            dataset = Dataset.from_dict({
+                "question": [question],
+                "answer": [answer],
+                "contexts": [contexts],
+                "ground_truth": [ground_truth],
+            })
 
-        # Run all three metrics together in one call (more efficient)
-        result = ragas_evaluate(
-            dataset,
-            metrics=[FactualCorrectness(), NoiseSensitivity(), SemanticSimilarity()],
-        )
-        scores = result.to_pandas().iloc[0].to_dict()
+            # Run all three metrics together in one call (more efficient)
+            result = ragas_evaluate(
+                dataset,
+                metrics=[FactualCorrectness(), NoiseSensitivity(), SemanticSimilarity()],
+            )
+            scores = result.to_pandas().iloc[0].to_dict()
 
-        return {
-            "method": "ragas_library",
-            "ground_truth_used": ground_truth[:150],
-            # Check 7: Factual correctness — claim-level accuracy vs ideal answer
-            "factual_correctness": round(float(scores.get("factual_correctness", 0)), 3),
-            # Check 8: Noise sensitivity — lower is better
-            "noise_sensitivity": round(float(scores.get("noise_sensitivity", 0)), 3),
-            # Check 9: Semantic similarity — meaning-level match to ideal answer
-            "semantic_similarity": round(float(scores.get("semantic_similarity", 0)), 3),
-        }
+            return {
+                "method": "ragas_library",
+                "ground_truth_used": ground_truth[:150],
+                # Check 7: Factual correctness — claim-level accuracy vs ideal answer
+                "factual_correctness": round(float(scores.get("factual_correctness", 0)), 3),
+                # Check 8: Noise sensitivity — lower is better
+                "noise_sensitivity": round(float(scores.get("noise_sensitivity", 0)), 3),
+                # Check 9: Semantic similarity — meaning-level match to ideal answer
+                "semantic_similarity": round(float(scores.get("semantic_similarity", 0)), 3),
+            }
 
-    except ImportError:
-        # ragas not installed — fall back to local approximations below
-        pass
-    except Exception as exc:
-        print(f"  [Warning] ragas ground-truth metrics failed ({exc}), using local approximation.")
+        except ImportError:
+            # ragas not installed — fall back to local approximations below
+            pass
+        except Exception as exc:
+            print(f"  [Warning] ragas ground-truth metrics failed ({exc}), using local approximation.")
 
     # --- Local fallback approximations (no ragas library needed) ---
 
@@ -1026,6 +1150,9 @@ def evaluate_single_kpi(
     hallucination_threshold: float = 0.4,
     run_llm_judge: bool = True,
     verbose: bool = True,
+    retrieved_chunk_ids: Optional[List[str]] = None,
+    trace_id: Optional[str] = None,
+    trace: Optional[Any] = None,
 ) -> Dict[str, Any]:
     """
     Run all 9 RAG evaluation checks for a single KPI result.
@@ -1045,10 +1172,14 @@ def evaluate_single_kpi(
                                 the Score-5 description as ground truth for checks 7-9)
         hallucination_threshold: Flag answers above this unsupported-content level
         run_llm_judge:          Whether to run the LLM-as-judge check
+        retrieved_chunk_ids:    Ordered chunk IDs for Hit Rate / MRR / nDCG (vs DB golden_chunks)
+        trace_id / trace:       LangFuse trace for scores (BERTScore, retrieval, CoT)
 
     Returns:
         Dictionary containing results from all 9 evaluations.
     """
+
+    eval_flags = dict(DEFAULT_FEATURE_FLAGS)
 
     # Extract the Score-5 rubric line as the ground truth benchmark
     # e.g. "Clear, coherent AI strategy with priorities and outcomes."
@@ -1114,6 +1245,38 @@ def evaluate_single_kpi(
     if verbose:
         print_mmr_summary(kpi_name, mmr_result)
 
+    # --- BERTScore + CoT eval (reference = top-3 retrieved chunk texts) ---
+    rubric_text = "\n".join(rubric) if rubric else ""
+    results["bertscore_f1"] = None
+    results["low_semantic_grounding"] = None
+    results["cot_eval"] = None
+    if contexts:
+        try:
+            bs = compute_bertscore(
+                answer,
+                contexts,
+                trace_id=trace_id,
+                trace=trace,
+                config=eval_flags,
+            )
+            results["bertscore_f1"] = bs
+            results["low_semantic_grounding"] = bool(bs is not None and bs < 0.75)
+        except Exception:
+            pass
+        try:
+            cot = run_cot_eval(
+                kpi_name,
+                rubric_text or "No rubric text available.",
+                contexts,
+                answer,
+                trace_id=trace_id,
+                trace=trace,
+                config=eval_flags,
+            )
+            results["cot_eval"] = cot
+        except Exception:
+            pass
+
     # --- 7, 8, 9. Ground-truth-based checks (Factual Correctness, Noise Sensitivity, Semantic Similarity) ---
     # These only run if a ground truth could be extracted from the Score-5 rubric.
     # If no rubric was provided, this section is skipped gracefully.
@@ -1133,6 +1296,31 @@ def evaluate_single_kpi(
         print_ragas_ground_truth_summary(kpi_name, gt_result)
         # --- Overall executive summary ---
         _print_overall_verdict(kpi_name, results)
+
+    # --- Retrieval vs golden chunks (Hit Rate, MRR, nDCG) ---
+    results["retrieval_metrics"] = None
+    if retrieved_chunk_ids:
+        try:
+            from app.langfuse_client import log_score_to_trace
+            from app.retrieval_metrics import compute_hit_rate, compute_mrr, compute_ndcg
+
+            hr = compute_hit_rate(kpi_name, retrieved_chunk_ids)
+            mrr_v = compute_mrr(kpi_name, retrieved_chunk_ids)
+            ndcg_v = compute_ndcg(kpi_name, retrieved_chunk_ids)
+            results["retrieval_metrics"] = {
+                "hit_rate": hr,
+                "mrr": mrr_v,
+                "ndcg": ndcg_v,
+            }
+            if trace_id:
+                if hr is not None:
+                    log_score_to_trace(trace_id, "retrieval_hit_rate", float(hr))
+                if mrr_v is not None:
+                    log_score_to_trace(trace_id, "retrieval_mrr", float(mrr_v))
+                if ndcg_v is not None:
+                    log_score_to_trace(trace_id, "retrieval_ndcg", float(ndcg_v))
+        except Exception:
+            pass
 
     return results
 
@@ -1283,6 +1471,26 @@ def run_all_evaluations(
         if sid:
             source_text_by_id[sid] = s.get("text", "")
 
+    show_progress = os.getenv("RAG_EVAL_PROGRESS", "1").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+    )
+
+    rubric_total = sum(
+        1
+        for k in kpi_results
+        if k.type == "rubric"
+        and (not kpi_ids_to_evaluate or k.kpi_id in kpi_ids_to_evaluate)
+    )
+    if show_progress:
+        print(
+            f"[eval_rag] {rubric_total} rubric KPIs to evaluate. "
+            f"Each KPI: RAGAS + judge + recall/F1/hallucination/MMR + BERTScore + CoT. "
+            f"This can take a long time — progress below.",
+            flush=True,
+        )
+
     all_results: Dict[str, Dict] = {}
     flagged_kpis: List[str] = []
     evaluated_count = 0
@@ -1320,6 +1528,24 @@ def run_all_evaluations(
         # Use the KPI's actual question from kpi_definitions; fall back to kpi_id
         kpi_question = question_by_kpi_id.get(kpi_id, kpi_id)
 
+        # Chunk IDs for Hit Rate / MRR / nDCG (match DB golden_chunks.kpi_id)
+        retrieved_chunk_ids: List[str] = []
+        for citation in kpi_result.citations or []:
+            sid = getattr(citation, "source_id", None) or ""
+            if sid:
+                retrieved_chunk_ids.append(f"{sid}::chunk_0")
+        if not retrieved_chunk_ids and source_text_by_id:
+            retrieved_chunk_ids = [
+                f"{sid}::chunk_0" for sid in list(source_text_by_id.keys())[:25]
+            ]
+
+        trace = create_trace(
+            name=f"rag_eval_{kpi_id}",
+            metadata={"kpi_id": kpi_id, "module": "eval_rag.run_all_evaluations"},
+            tags=["rag_eval"],
+        )
+        tid = get_trace_id(trace)
+
         # Run all 9 evaluations for this KPI
         eval_result = evaluate_single_kpi(
             kpi_name=kpi_name,
@@ -1330,17 +1556,26 @@ def run_all_evaluations(
             hallucination_threshold=hallucination_threshold,
             run_llm_judge=run_llm_judge,
             verbose=verbose,
+            retrieved_chunk_ids=retrieved_chunk_ids or None,
+            trace_id=tid,
+            trace=trace,
         )
 
         all_results[kpi_id] = eval_result
         evaluated_count += 1
 
+        if show_progress:
+            print(
+                f"[eval_rag] {evaluated_count}/{rubric_total} done  kpi_id={kpi_id[:72]}",
+                flush=True,
+            )
+
         if eval_result.get("hallucination", {}).get("is_flagged"):
             flagged_kpis.append(kpi_name)
 
-        # Small pause between LLM calls to avoid rate limits
+        # Pause between KPIs (rate limits)
         if run_llm_judge:
-            time.sleep(2)
+            time.sleep(float(os.getenv("RAG_EVAL_JUDGE_SLEEP_SEC", "2")))
 
     # --- Final batch summary (only shown in verbose / standalone mode) ---
     if verbose:

@@ -1,0 +1,332 @@
+{
+  "snapshot_version": 1,
+  "run_id": "e3556854",
+  "timestamp": "2026-03-04T20:56:10.922338+00:00",
+  "company_name": "Orange S.A",
+  "company_domain": "orange.com",
+  "url_count": 70,
+  "overall_score": 4.02,
+  "pillar_scores": {
+    "Strategy & Governance": {
+      "score": 4.22,
+      "confidence": 0.5,
+      "kpis": [
+        "strat_ai_vision",
+        "strat_ai_governance",
+        "strat_responsible_ai_mentions",
+        "strat_ai_case_studies",
+        "strat_ai_announcement_recency",
+        "ops_ai_compliance"
+      ]
+    },
+    "Product & Delivery": {
+      "score": 3.6,
+      "confidence": 0.43,
+      "kpis": [
+        "prod_ai_product_depth",
+        "prod_ai_use_cases",
+        "prod_ai_features_count",
+        "prod_ai_pricing_signal",
+        "prod_ai_quality",
+        "prod_ai_support"
+      ]
+    },
+    "People & Operations": {
+      "score": 4.19,
+      "confidence": 0.51,
+      "kpis": [
+        "people_ai_hiring_volume",
+        "people_ai_team_org",
+        "people_ai_training",
+        "ops_data_infra",
+        "ops_ai_partnerships",
+        "ops_ai_publications"
+      ]
+    }
+  },
+  "kpis": {
+    "strat_ai_vision": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.35,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "strat_ai_governance": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 2.0,
+      "confidence": 0.31,
+      "citation_urls": [
+        "https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/",
+        "https://rai.orange.com/en/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "hellofuture.orange.com-b162d76ae2",
+        "rai.orange.com-a1d2e97686",
+        "www.orange-business.com-14bf498fac"
+      ],
+      "evidence_gate": null
+    },
+    "strat_responsible_ai_mentions": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "www.orange-business.com-14bf498fac",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "strat_ai_case_studies": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "www.orange-business.com-14bf498fac"
+      ],
+      "evidence_gate": null
+    },
+    "strat_ai_announcement_recency": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.6,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "prod_ai_product_depth": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.31,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.orange-business.com-14bf498fac"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_use_cases": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.38,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "hellofuture.orange.com-b162d76ae2",
+        "www.orange-business.com-14bf498fac"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_features_count": {
+      "pillar": "Product & Delivery",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "perspective.orange-business.com-d38ea29ff2"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_pricing_signal": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.43,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://www.ainvest.com/news/orange-strategic-execution-ai-driven-efficiency-compelling-case-undervalued-growth-european-telecom-2507/"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "hellofuture.orange.com-6ceabedf96",
+        "www.ainvest.com-f9b8fa608d"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_quality": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.48,
+      "citation_urls": [
+        "https://www.orange-ir.pl/wp-content/uploads/2025/02/consolidated-financial-report-2024.pdf",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "www.orange-ir.pl-2aaf5772b2",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "people_ai_hiring_volume": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    },
+    "people_ai_team_org": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 2.0,
+      "confidence": 0.3,
+      "citation_urls": [
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://hellofuture.orange.com/en/the-carbon-impact-of-ai-oranges-navigator-for-the-net-zero-carbon-transition/",
+        "https://rai.orange.com/en/"
+      ],
+      "distinct_sources": [
+        "hellofuture.orange.com-6ceabedf96",
+        "hellofuture.orange.com-b162d76ae2",
+        "rai.orange.com-a1d2e97686"
+      ],
+      "evidence_gate": null
+    },
+    "people_ai_training": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.35,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.orange-business.com-d7145ed2a0"
+      ],
+      "evidence_gate": null
+    },
+    "ops_data_infra": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.31,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://rai.orange.com/en/",
+        "https://rai.orange.com/fr/"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "rai.orange.com-5ee1ccedac",
+        "rai.orange.com-a1d2e97686"
+      ],
+      "evidence_gate": null
+    },
+    "ops_ai_partnerships": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://techinformed.com/orange-business-genai-solution-meta-openai-african-languages-opentech/"
+      ],
+      "distinct_sources": [
+        "perspective.orange-business.com-d38ea29ff2",
+        "techinformed.com-307ec4a7cd"
+      ],
+      "evidence_gate": null
+    },
+    "ops_ai_compliance": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.36,
+      "citation_urls": [
+        "https://aws.amazon.com/blogs/industries/networks-for-ai-and-ai-for-networks-aws-and-oranges-journey/",
+        "https://investisseurs-individuels.orange.com/fr/news/list"
+      ],
+      "distinct_sources": [
+        "aws.amazon.com-c5ca0376f8",
+        "investisseurs-individuels.orange.com-f9b3908785"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_support": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 2.0,
+      "confidence": 0.31,
+      "citation_urls": [
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/",
+        "https://www.orange-business.com/en/blogs/building-strong-foundations-your-ai-services-how-digital-infrastructure-can-enable-your-data",
+        "https://www.orange-business.com/en/blogs/genai-transforming-hr-employees-enablement"
+      ],
+      "distinct_sources": [
+        "perspective.orange-business.com-d38ea29ff2",
+        "www.orange-business.com-a4db9428f9",
+        "www.orange-business.com-d7145ed2a0"
+      ],
+      "evidence_gate": null
+    },
+    "ops_ai_publications": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 5.0,
+      "confidence": 0.7,
+      "citation_urls": [
+        "https://hellofuture.orange.com/fr/mot-cle/5g-fr/",
+        "https://perspective.orange-business.com/en/established-ai-practices-and-new-promises-ahead/"
+      ],
+      "distinct_sources": [
+        "hellofuture.orange.com-640ceed4a6",
+        "perspective.orange-business.com-d38ea29ff2"
+      ],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_e3556854.yaml"
+}

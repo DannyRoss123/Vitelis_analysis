@@ -124,6 +124,8 @@ def build_snapshot(report: Dict[str, Any], report_path: Optional[str] = None) ->
         "company_domain": report.get("company_domain", ""),
         "url_count": int(report.get("url_count", 0) or 0),
         "overall_score": float(report.get("overall_score", 0) or 0),
+        # Feature 9: include snapshot ID so attribution state can detect data changes
+        "chromadb_snapshot_id": report.get("chromadb_snapshot_id", ""),
         "pillar_scores": pillar_scores,
         "kpis": kpis,
         "report_path": report_path or "",

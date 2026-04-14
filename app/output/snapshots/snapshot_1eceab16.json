@@ -1,0 +1,38 @@
+{
+  "snapshot_version": 1,
+  "run_id": "1eceab16",
+  "timestamp": "2026-03-06T01:09:00.822582+00:00",
+  "company_name": "Orange S.A",
+  "company_domain": "orange.com",
+  "url_count": 30,
+  "overall_score": 4.0,
+  "pillar_scores": {
+    "Strategy": {
+      "score": 4.0,
+      "confidence": 0.55,
+      "kpis": [
+        "1"
+      ]
+    }
+  },
+  "kpis": {
+    "1": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 4.0,
+      "confidence": 0.55,
+      "citation_urls": [
+        "https://hellofuture.orange.com/en/ric-testing-as-a-platform-a-free-open-source-open-ran-tool/",
+        "https://www.orange-business.com/en/blogs/empowering-ethical-ai-trust-transparency-sustainability-action",
+        "https://www.sofrecom.com/en/news-insights/how-generative-ai-tools-are-transforming-daily-work-at-orange.html"
+      ],
+      "distinct_sources": [
+        "hellofuture.orange.com-6ceabedf96",
+        "www.orange-business.com-14bf498fac",
+        "www.sofrecom.com-44d73afd72"
+      ],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_1eceab16.yaml"
+}

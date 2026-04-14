@@ -1,0 +1,300 @@
+{
+  "snapshot_version": 1,
+  "run_id": "5faf1cef",
+  "timestamp": "2026-03-04T20:41:59.591497+00:00",
+  "company_name": "Orange S.A",
+  "company_domain": "orange.com",
+  "url_count": 20,
+  "overall_score": 2.44,
+  "pillar_scores": {
+    "Strategy & Governance": {
+      "score": 2.28,
+      "confidence": 0.37,
+      "kpis": [
+        "strat_ai_vision",
+        "strat_ai_governance",
+        "strat_responsible_ai_mentions",
+        "strat_ai_case_studies",
+        "strat_ai_announcement_recency",
+        "ops_ai_compliance"
+      ]
+    },
+    "Product & Delivery": {
+      "score": 2.77,
+      "confidence": 0.44,
+      "kpis": [
+        "prod_ai_product_depth",
+        "prod_ai_use_cases",
+        "prod_ai_features_count",
+        "prod_ai_pricing_signal",
+        "prod_ai_quality",
+        "prod_ai_support"
+      ]
+    },
+    "People & Operations": {
+      "score": 2.22,
+      "confidence": 0.38,
+      "kpis": [
+        "people_ai_hiring_volume",
+        "people_ai_team_org",
+        "people_ai_training",
+        "ops_data_infra",
+        "ops_ai_partnerships",
+        "ops_ai_publications"
+      ]
+    }
+  },
+  "kpis": {
+    "strat_ai_vision": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "strat_ai_governance": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "strat_responsible_ai_mentions": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "strat_ai_case_studies": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "strat_ai_announcement_recency": {
+      "pillar": "Strategy & Governance",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "prod_ai_product_depth": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_use_cases": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_features_count": {
+      "pillar": "Product & Delivery",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "prod_ai_pricing_signal": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_quality": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "people_ai_hiring_volume": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "people_ai_team_org": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "people_ai_training": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "ops_data_infra": {
+      "pillar": "People & Operations",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "ops_ai_partnerships": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "ops_ai_compliance": {
+      "pillar": "Strategy & Governance",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "prod_ai_support": {
+      "pillar": "Product & Delivery",
+      "type": "rubric",
+      "score": 3.0,
+      "confidence": 0.47,
+      "citation_urls": [
+        "https://orange.com/investor-relations",
+        "https://orange.com/investors",
+        "https://orange.com/press"
+      ],
+      "distinct_sources": [
+        "orange.com-69aba02582",
+        "orange.com-79526f9cb5",
+        "orange.com-9e203ae516"
+      ],
+      "evidence_gate": null
+    },
+    "ops_ai_publications": {
+      "pillar": "People & Operations",
+      "type": "quant",
+      "score": 1.0,
+      "confidence": 0.3,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_5faf1cef.yaml"
+}

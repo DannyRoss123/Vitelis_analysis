@@ -1,0 +1,664 @@
+{
+  "snapshot_version": 1,
+  "run_id": "41d13ccf",
+  "timestamp": "2026-03-06T02:26:16.064455+00:00",
+  "company_name": "Vodafone",
+  "company_domain": "vodafone.com",
+  "url_count": 30,
+  "overall_score": 1.0,
+  "pillar_scores": {
+    "Strategy": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "1",
+        "2",
+        "3",
+        "19",
+        "5",
+        "5_28",
+        "20",
+        "8",
+        "62",
+        "63",
+        "64"
+      ]
+    },
+    "Execution": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "9",
+        "10",
+        "1_17",
+        "5_6_7_28",
+        "5_28",
+        "14",
+        "21",
+        "16",
+        "22",
+        "18",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70"
+      ]
+    },
+    "Technical": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "8",
+        "4",
+        "4",
+        "1_17",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ]
+    },
+    "Organizational": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "18",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "10",
+        "3",
+        "3",
+        "11",
+        "12_26",
+        "44",
+        "12_26",
+        "11",
+        "47",
+        "48",
+        "49",
+        "50",
+        "11",
+        "52",
+        "53",
+        "54",
+        "12_26",
+        "5_6_7_28",
+        "77",
+        "78"
+      ]
+    },
+    "Innovation": {
+      "score": 1.0,
+      "confidence": 0.2,
+      "kpis": [
+        "1_3_17",
+        "2",
+        "3",
+        "61",
+        "79",
+        "80",
+        "81",
+        "82",
+        "1"
+      ]
+    }
+  },
+  "kpis": {
+    "1": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "2": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "3": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "19": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "5": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "5_28": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "20": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "8": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "9": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "10": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "1_17": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "5_6_7_28": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "14": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "21": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "16": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "22": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "18": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "23": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "24": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "25": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "26": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "27": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "28": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "4": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "34": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "35": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "36": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "37": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "38": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "11": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "12_26": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "44": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "47": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "48": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "49": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "50": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "52": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "53": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "54": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "1_3_17": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "61": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "62": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "63": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "64": {
+      "pillar": "Strategy",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "66": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "67": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "68": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "69": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "70": {
+      "pillar": "Execution",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "71": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "72": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "73": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "74": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "75": {
+      "pillar": "Technical",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "77": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "78": {
+      "pillar": "Organizational",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "79": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "80": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "81": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    },
+    "82": {
+      "pillar": "Innovation",
+      "type": "rubric",
+      "score": 1.0,
+      "confidence": 0.2,
+      "citation_urls": [],
+      "distinct_sources": [],
+      "evidence_gate": null
+    }
+  },
+  "report_path": "C:\\Users\\som\\Desktop\\CourseSemII\\Capstone\\Team\\0304\\RAG-Evaluation\\app\\output\\report_41d13ccf.yaml"
+}

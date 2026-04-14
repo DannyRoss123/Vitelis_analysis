@@ -50,7 +50,9 @@ def fetch_sources_node(state: Dict) -> Dict:
             content_signals=tier_info.get("content_signals"),
         )
         sources.append(source)
-        if len(sources) >= 30:
+        # Allow a larger batch when URLs come from a curated export (e.g., Orange S.A data file).
+        # Cap at 70 sources to keep runtime reasonable.
+        if len(sources) >= 70:
             break
 
     return {

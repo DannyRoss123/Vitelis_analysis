@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/som/Desktop/CourseSemII/Capstone/Team/0326/RAG-Evaluation/mlruns/221054510593822219/4d9f9587754b400b84bcc80a0c1cafda/artifacts
+end_time: 1775510220665
+entry_point_name: ''
+experiment_id: '221054510593822219'
+lifecycle_stage: active
+run_id: 4d9f9587754b400b84bcc80a0c1cafda
+run_name: vodafone_group_plc__pipeline__6536e301
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775510220502
+status: 3
+tags: []
+user_id: som
